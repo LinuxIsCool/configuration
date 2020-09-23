@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Essentials
+Comment="important start up script"
+Exec="/home/ygg/.local/bin/essentials"
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true

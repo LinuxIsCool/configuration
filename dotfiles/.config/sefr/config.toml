@@ -1,0 +1,111 @@
+[engines._default]
+name = "Google"
+search_url = "https://www.google.com/search?q=%s"
+suggestion_url = "https://www.google.com/complete/search?client=chrome&q=%s"
+
+[engines._default.prompt]
+icon = " g "
+icon_bg = "Blue"
+icon_fg = "White"
+text = " Google "
+text_bg = "White"
+text_fg = "Black"
+
+[engines.ddg]
+name = "DuckDuckGo"
+search_url = "https://duckduckgo.com/?q=%s"
+suggestion_url = "https://duckduckgo.com/ac/?q=%s&type=list"
+
+[engines.ddg.prompt]
+icon = " ♞ "
+icon_bg = [222, 88, 51]
+icon_fg = "White"
+text_bg = "White"
+text_fg = "Black"
+
+[engines.g]
+name = "Google (I'm Feeling Lucky)"
+search_url = "https://www.google.com/search?btnI&q=%s"
+suggestion_url = "https://www.google.com/complete/search?client=chrome&q=%s"
+
+[engines.g.prompt]
+icon = " g "
+icon_bg = "Blue"
+icon_fg = "White"
+text = " I'm Feeling Lucky "
+text_bg = "White"
+text_fg = "Black"
+
+[engines.r]
+name = "Subreddit"
+search_url = "https://www.reddit.com/r/%s"
+space_becomes = ""
+suggestion_url = "https://us-central1-subreddit-suggestions.cloudfunctions.net/suggest?query=%s"
+
+[engines.r.prompt]
+icon = " ⬬ "
+icon_bg = [255, 69, 0]
+icon_fg = "White"
+text_bg = "White"
+text_fg = "Black"
+
+[engines.red]
+name = "Reddit"
+search_url = "https://www.google.com/search?q=site:reddit.com+%s"
+suggestion_url = "https://www.google.com/complete/search?client=chrome&q=%s"
+
+[engines.red.prompt]
+icon = " ⬬ "
+icon_bg = [255, 69, 0]
+icon_fg = "White"
+text_bg = "White"
+text_fg = "Black"
+
+[engines.w]
+name = "Wikipedia"
+search_url = "https://www.wikipedia.org/search-redirect.php?family=wikipedia&language=en&search=%s&language=en&go=Go"
+suggestion_url = "https://en.wikipedia.org/w/api.php?action=opensearch&search=%s&limit=15&namespace=0&format=json"
+
+[engines.w.prompt]
+icon = " W "
+icon_bg = "White"
+icon_fg = "Black"
+text_bg = "White"
+text_fg = "Black"
+
+[engines.wkt]
+name = "Wiktionary"
+search_url = "https://www.wiktionary.org/search-redirect.php?family=wiktionary&language=en&search=%s&go=Go"
+suggestion_url = "https://en.wiktionary.org/w/api.php?action=opensearch&search=%s&limit=15&namespace=0&format=json"
+
+[engines.wkt.prompt]
+icon = "['w]"
+icon_bg = "White"
+icon_fg = "Black"
+text_bg = "White"
+text_fg = "Black"
+
+[engines.yt]
+name = "YouTube"
+search_url = "https://www.youtube.com/results?q=%s"
+suggestion_url = "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=%s"
+
+[engines.yt.prompt]
+icon = " ▶ "
+icon_bg = "Red"
+icon_fg = "White"
+text_bg = "White"
+text_fg = "Black"
+
+[keybinds]
+"<BackTab>" = "SelectPrev"
+"<Backspace>" = "DeleteChar"
+"<C-c>" = "Exit"
+"<C-n>" = "SelectNext"
+"<C-p>" = "SelectPrev"
+"<C-w>" = "DeleteWord"
+"<CR>" = "Submit"
+"<Down>" = "SelectNext"
+"<Esc>" = "Exit"
+"<Tab>" = "SelectNext"
+"<Up>" = "SelectPrev"

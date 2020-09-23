@@ -1,0 +1,15 @@
+quit
+q
+host
+set passwd=pop-os
+pl-rename LadyZenaida
+pl-rename my-playlist LadyZenaida
+bind -f common ^N pl-create
+bind -f common pl-create
+bind common <key> pl-rename
+pl-create my-playlist
+bind common ^N pl-create
+bind common <key> pl-create ^N
+bind common <key> pl-create 
+bind common <key> bind
+save
