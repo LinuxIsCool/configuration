@@ -10,3 +10,24 @@ To install:
 
 	cd dotfiles  
 	sh stow
+	
+	
+# Popos
+In addition to the script-based configuration, I'll do my best to track and document my debian-gnome-popos settings, to make them as reproducable as possible.
+
+# Keyboard-driven screenshoting
+T
+|                                |       |      |        |          |
+|--------------------------------|-------|------|--------|----------|
+| Mnemonic                       | Move  | Area | Window | Screen |
+| Key                            | Shift | Ctrl | Super  | Alt      |
+| Screenshot Window to Clipboard |   *   |  *   | *      |          |
+| Screenshot Area to Clipboard |   *   |  *   |       |          |
+| Screenshot Screen to Clipboard |   *   |      | *      |          |
+| Screenshot Window to Pictures |       |      | *      |          |
+| Screenshot Area to Clipboard |       |   *  | *      |          |
+| Screenshot Screen to Clipboard |       |      | *      |          |
+
+
+[screenshot_keys.png](screenshot_keys.png)
+(screenshot_keys.png)[screenshot_keys.png](

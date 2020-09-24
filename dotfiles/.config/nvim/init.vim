@@ -41,11 +41,13 @@ call plug#begin('~/.local/share/nvim/plugged')
 "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------                                                                                                      
 "
 "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------                                                                                                      
-"
+" Add words in visible tmux panes to vims completefunc
+Plug 'wellle/tmux-complete.vim'
+" 
 " FZF Fuzzy Finder! Careful, things are about to get FAAAAASSSTTT
 "
 " A command line fuzzy finder Very powerful
-Plug 'junegunn/fzf', { 'dir': '~/Software/fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 " 
@@ -415,12 +417,11 @@ let g:mapleader=","
 " Here I make <b>shortcuts</b> to various system locations.
 " ssh config, fish config, vim config, my personal notes,
 nnoremap <leader>ev :e $MYVIMRC<CR>  
-nnoremap <leader>ec :e ~/.config/<CR>  
 nnoremap <leader>ef :e ~/.config/fish/config.fish<CR>  
-nnoremap <leader>ea :e ~/.config/alacritty/alacritty.yml<CR>  
-nnoremap <leader>es :e ~/.ssh/config<CR>  
 nnoremap <leader>et :e ~/.tmux.conf<CR>  
-nnoremap <leader>el :e ~/.log/log.org<CR>  
+nnoremap <leader>es :e ~/.ssh/config<CR>  
+nnoremap <leader>ed :e ~/Workspace/dotfiles/<CR>  
+nnoremap <leader>ew :e ~/Workspace/<CR>  
 nnoremap <leader>en :e ~/Notes/<CR>  
 
 " funct! Exec(command)
