@@ -1,0 +1,1 @@
+/home/ygg/.rsvm/rsvm.fish
