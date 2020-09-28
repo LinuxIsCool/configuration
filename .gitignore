@@ -1,6 +1,6 @@
 fish_variables
 NVIMS/
 plugged/
-plugins/
-themes/
-resurrect/
+dotfiles/.config/tmux/serious
+
+
