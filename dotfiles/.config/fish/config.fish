@@ -8,9 +8,13 @@
 #-------------------------------------------------------------------------------
 # FZF -> Fuzzy find everything!
 
+# Use tmux pane by default
+set FZF_TMUX 1
+
 # Use Ripgrep (Faster than Grep)
 if type rg &> /dev/null
-  set FZF_DEFAULT_COMMAND 'rg --files --hidden --follow --glob "!.git/"'
+  set FZF_DEFAULT_COMMAND 'rg --files --hidden --follow --glob "!.git/" --glob "!plugged/"'
+  set FZF_CTRL_T_COMMAND 'rg --files --hidden --follow --glob "!.git/" --glob "!plugged/" $dir'
 end
 
 # Multi-select by default
@@ -26,6 +30,7 @@ if test -f ~/.autojump/share/autojump/autojump.fish
 end
 #-------------------------------------------------------------------------------
 # Abbreviations 
+abbr python python3
 abbr vim nvim
 abbr cat bat
 abbr pd prevd
@@ -33,15 +38,12 @@ abbr l ls -a
 
 #-------------------------------------------------------------------------------
 # Key Bindings
-bind \er 'source ~/.config/fish/config.fish' 
-bind \ev '$EDITOR ~/.config/nvim/init.vim'
-bind \ef '$EDITOR ~/.config/fish/config.fish'
-bind \et '$EDITOR ~/.tmux.conf'
-# bind \es '$EDITOR ~/.ssh/config'
-bind \ed '$EDITOR ~/Workspace/dotfiles/'
-bind \ew '$EDITOR ~/Workspace/'
-bind \en '$EDITOR ~/Notes/'
-# bind \cg 'sr google '
-# bind \cy 'sr youtube '
-bind \ck beginning-of-line # Use k because \ca is overwitten as my tmux leader
-set FZF_TMUX 1
+
+# Edit and reload
+bind \ee '$EDITOR ~/.config/fish/config.fish'
+bind \er 'exec fish' 
+
+# Replace \cd with \cg because \cd also exits shells.
+bind \cg delete-char
+# Replace \ca with \ea because \ca is used as tmux leader key.
+bind \ea beginning-of-line
