@@ -12,22 +12,22 @@ To install:
 	sh stow
 	
 	
-# Popos
+# Popos-Gnome
 In addition to the script-based configuration, I'll do my best to track and document my debian-gnome-popos settings, to make them as reproducable as possible.
 
 # Keyboard-driven screenshoting
-T
-|                                |       |      |        |          |
-|--------------------------------|-------|------|--------|----------|
-| Mnemonic                       | Move  | Area | Window | Screen |
-| Key                            | Shift | Ctrl | Super  | Alt      |
-| Screenshot Window to Clipboard |   *   |  *   | *      |          |
-| Screenshot Area to Clipboard |   *   |  *   |       |          |
-| Screenshot Screen to Clipboard |   *   |      | *      |          |
-| Screenshot Window to Pictures |       |      | *      |          |
-| Screenshot Area to Clipboard |       |   *  | *      |          |
-| Screenshot Screen to Clipboard |       |      | *      |          |
+I used the following mnemonics for shortcuts across my system. I use alt-u as the base for screenshots because function-u is the default print-screen on my keyboard.
+
+| Key                            | Shift | Ctrl        | Super  | Alt    |
+|--------------------------------|-------|-------------|--------|--------|
+| Mnemonic                       | Move  | Select Area | Window | Screen |
+|--------------------------------|-------|-------------|--------|--------|
+| Screenshot Area to Clipboard   | *     | *           |        |        |
+| Screenshot Window to Clipboard | *     |             | *      |        |
+| Screenshot Screen to Clipboard | *     |             |        | *      |
+| Screenshot Area to Pictures    |       | *           |        |        |
+| Screenshot Window to Pictures  |       |             | *      |        |
+| Screenshot Screen to Pictures  |       |             |        | *      |
 
 
-[screenshot_keys.png](screenshot_keys.png)
-(screenshot_keys.png)[screenshot_keys.png](
+![screenshot_keys.png](popos-gnome/screenshot_keys.png)

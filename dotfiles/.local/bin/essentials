@@ -8,7 +8,7 @@
 # peat  rate.   In  the case that the server supports the XKB extension, the delay is the
 # number of milliseconds before autorepeat starts, and the rate is the number of  repeats
 # per second.  If the rate or delay is not given, it will be set to the default value.
-xset r rate 225 60 &
+xset r rate 200 60 &
 
 # make CapsLock behave like Ctrl:
 setxkbmap -option ctrl:nocaps
