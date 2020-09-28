@@ -4,11 +4,11 @@ A repository the dotfiles that I hack on. Can easily be installed to your ~/.con
 To install:  
 1. Clone the repo  
 
-	git clone git@github.com:LinuxIsCool/dotfiles.git  
+	git clone git@github.com:LinuxIsCool/configuration.git  
 	
 2. Symlink into ~/.config using stow  
 
-	cd dotfiles  
+	cd configuration  
 	sh stow
 	
 	
