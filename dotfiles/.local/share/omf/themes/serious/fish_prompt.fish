@@ -142,7 +142,7 @@ function prompt_virtual_env -d "Display Python or Nix virtual environment"
 
   if test "$VIRTUAL_ENV"
     set py_env (basename $VIRTUAL_ENV)
-    set envs $envs "($py_env)"
+    set envs $envs "🐍$py_env"
   end
 
   if test "$IN_NIX_SHELL"
