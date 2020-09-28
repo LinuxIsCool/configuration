@@ -47,3 +47,8 @@ bind \er 'exec fish'
 bind \cg delete-char
 # Replace \ca with \ea because \ca is used as tmux leader key.
 bind \ea beginning-of-line
+
+#-------------------------------------------------------------------------------
+# Forgit plugin requires sourcing to activate abbreviations
+# From https://github.com/wfxr/forgit
+source ./functions/forgit.plugin.fish
