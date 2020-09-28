@@ -1,4 +1,4 @@
-# Dotfiles of Shawn Anderson
+# Pop-os - Gnome - Tmux - Fish - Vim - FZF - Serious Configuration - Shawn Anderson
 A repository the dotfiles that I hack on. Can easily be installed to your ~/.config/ by using the gnu stow utility.
 
 To install:  
