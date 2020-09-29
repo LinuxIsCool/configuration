@@ -51,4 +51,4 @@ bind \ea beginning-of-line
 #-------------------------------------------------------------------------------
 # Forgit plugin requires sourcing to activate abbreviations
 # From https://github.com/wfxr/forgit
-source ./functions/forgit.plugin.fish
+source ~/.config/fish/functions/forgit.plugin.fish
