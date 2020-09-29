@@ -1,0 +1,29 @@
+= Welcome to the serious vim wiki =
+This wiki will link web of thoughts and ideas that I have expressed throughout
+my computer.
+
+== Header2 ==
+
+=== Header3 ===
+
+*bold text*
+_italic text_
+
+[[vimwiki.md]]
+
+[[test2.md]]
+[[wiki link|description]]
+
+* bullet list item 1
+* bullet list item 2
+    a) numbered list item 1
+    b) numbered list item 2
+
+{{{python
+def greet(s):
+    print("Hello, " + s)
+}}}
+
+| a table |   |
+|---------|---|
+|         |   |

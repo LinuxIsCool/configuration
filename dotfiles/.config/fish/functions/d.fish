@@ -1,0 +1,1 @@
+/home/ygg/.config/fish/fisher/fish-fzf/d.fish

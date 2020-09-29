@@ -29,6 +29,19 @@ if type rg &> /dev/null                     # Use Ripgrep (Faster than Grep)
   set FZF_DEFAULT_COMMAND 'rg --files --hidden --follow --glob "!.git/" --glob "!plugged/"'
   set FZF_CTRL_T_COMMAND 'rg --files --hidden --follow --glob "!.git/" --glob "!plugged/" $dir'
 end
+# Alt-c for directory history
+if type d &> /dev/null                     # Use <M-c> to fuzzy search directory history
+  set FZF_CTRL_J_COMMAND "__fastdir_dirhist -l -n | awk -v OFS='%s' '{print \$2}' | awk '!x[\$0]++' | fzf-tmux "
+end
+# Alt-c for autojump database
+set FZF_CTRL_O_COMMAND "bat ~/.local/share/autojump/autojump.txt | sort -nr | fzf-tmux +s | awk -F '\t' '{printf \$2}'"
+set FZF_PREVIEW_FILE_CMD "bat"
+set FZF_PREVIEW_DIR_CMD "tree"
+
+bind \cj eval $FZF_CTRL_J_COMMAND
+bind \co eval $FZF_CTRL_O_COMMAND
+
+command -v blsd > /dev/null && export FZF_ALT_C_COMMAND='blsd'
 
 #-------------------------------------------------------------------------------
 # Autojump -> Faster filesystem navigation
