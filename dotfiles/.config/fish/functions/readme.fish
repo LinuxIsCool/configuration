@@ -1,0 +1,1 @@
+/home/ygg/.config/fish/fisher/fish-github/readme.fish

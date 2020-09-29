@@ -1,0 +1,1 @@
+/home/ygg/.local/share/nvim/plugged/fzf/shell/key-bindings.fish

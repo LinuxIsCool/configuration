@@ -1,3 +1,1 @@
-function create_daily_log
-	touch (date +%d-%B).md
-end
+/home/ygg/.config/fish/fisher/fish-utils/create_daily_log.fish

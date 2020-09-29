@@ -1,4 +1,1 @@
-function OpenLogDirectory 
-    tmux split-window -h -c (LogDirectory)
-end
-
+/home/ygg/.config/fish/fisher/fish-utils/OpenLogDirectory.fish

@@ -1,3 +1,1 @@
-function EditDailyLog
-	vim (LogDirectory)/(date +%d-%B).md
-end
+/home/ygg/.config/fish/fisher/fish-utils/EditDailyLog.fish

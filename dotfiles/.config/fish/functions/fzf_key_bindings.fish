@@ -1,1 +1,1 @@
-/home/ygg/.local/share/nvim/plugged/fzf/shell/key-bindings.fish
+/home/ygg/.config/fish/fisher/fish-fzf/fzf_key_bindings.fish

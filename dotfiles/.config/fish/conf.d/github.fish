@@ -1,0 +1,1 @@
+/home/ygg/.config/fish/fisher/fish-github/conf.d/github.fish
