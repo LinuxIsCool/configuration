@@ -2,9 +2,7 @@
 A repository the dotfiles that I hack on. Can easily be installed to your ~/.config/ by using the gnu stow utility.
 
 <div align="center">
-<a href="https://pop.system76.com/" >
   <img src="https://raw.githubusercontent.com/LinuxIsCool/configuration/master/popos-gnome/Screenshot%20from%202020-09-29%2001-56-33.png"/>
-</a> 
 </div>
 
 To install:  
