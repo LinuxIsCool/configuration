@@ -1,1 +1,1 @@
-/home/ygg/.config/fish/fisher/fish-fzf/fzf_key_bindings.fish
+/home/ygg/.fzf/shell/key-bindings.fish
