@@ -23,35 +23,24 @@ nnoremap <buffer> <leader>e viW"ay :e <C-r>a<CR>
 " Use ,g to jump to plugin readme on github.
 nnoremap <buffer> <leader>g 0wwlvt."ay :!open https://github.com/<C-r>a<CR>
 " Use ,x to format Plug 'junegunn/vim-emoji' -> runtime plugconfig/junegunn/vim-emoji
-nnoremap <buffer> <leader>x 0ciwruntime plugconfig/<esc>t'xxf'xa.vim<esc>
+nnoremap <buffer> <leader>x 0"xyyciwruntime plugconfig/<esc>t'xxf'xa.vim<esc><leader>e"xp
 runtime plugconfig/junegunn/vim-emoji.vim
 runtime plugconfig/pechorin/any-jump.vim
 runtime plugconfig/townk/vim-autoclose.vim
 runtime plugconfig/tpope/vim-repeat.vim
 runtime plugconfig/liuchengxu/vim-which-key.vim
-runtime plugconfig/airblade/vim-rooter.vim 
+"runtime plugconfig/airblade/vim-rooter.vim 
 runtime plugconfig/luochen1990/rainbow.vim 
 runtime plugconfig/preservim/nerdcommenter.vim
+runtime plugconfig/preservim/nerdtree.vim
 runtime plugconfig/neoclide/coc.vim.vim
+runtime plugconfig/junegunn/fzf.vim
 runtime plugconfig/arielrossanigo/dir-configs-override.vim.vim
 runtime plugconfig/voldikss/vim-floaterm.vim
-runtime plugconfig/honza/vim-snippets.vim
 runtime plugconfig/justinmk/vim-sneak.vim
+runtime plugconfig/honza/vim-snippets.vim
 runtime plugconfig/unblevable/quick-scope.vim
-runtime plugconfig/junegunn/fzf.vim
-runtime plugconfig/unblevable/quick-scope.vim
-" TODO GITHUB DASHBOARD
-Plug 'junegunn/vim-github-dashboard'
-" Better file browser
-Plug 'preservim/nerdtree'
-" NERDTree -----------------------------
-" toggle nerdtree display
-map <C-n> :NERDTreeToggle<CR>
-nmap <leader><C-n> :NERDTreeFind<CR>
-" open nerdtree with the current file selected
-" don't show these file types
-let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
-
+runtime plugconfig/junegunn/vim-github-dashboard.vim
 
 " Tagbar -----------------------------
 Plug 'majutsushi/tagbar'
