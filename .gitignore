@@ -6,3 +6,4 @@ dotfiles/.config/tmux/serious
 
 library/
 tags
+node_modules

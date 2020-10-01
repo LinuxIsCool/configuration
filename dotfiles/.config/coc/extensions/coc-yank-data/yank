@@ -1,0 +1,2630 @@
+d44e222cf243e1d5cf71b720a76dc25e|file:///home/ygg/.config/fish/config.fish|46|7|V|fish
+	      builtin source $file 2>/dev/null
+211bf85c59dc3746acf3f99f3e9f581d|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/fish/config.fish|39|1|v|fish
+	#-------------------------------------------------------------------------------
+	# From https://github.com/wfxr/forgit
+	# Forgit plugin requires sourcing to activate abbreviations
+	source ~/.config/fish/functions/forgit.plugin.fish
+	
+	
+b8e0d431f78098112c6cc7e79d33ec8b|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.local/share/fzf/github_orgs|3|1|V|
+	cadcad
+5597c727807f5524dbaf7ff9bafa4a2d|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/library/serious/init.vim|24|1|v|vim
+	" ==============================================================================
+	" Now that I actually know what I'm doing in vim (somewhat) I'm starting a new
+	" config from scratch that will be the amalgamation of all the vim tricks and
+	" tweaks that I have accumulated over the years. Development is in close
+	" collaboration with Matthew Williams, whom I have been having a lot of vim
+	" discussions with lately. Original plugin count: Matt-28 Shawn-39. Only 10
+	" overlapping. Matt had the deprecated nerdtree and Shawn had the deprecated
+	" nerdcommenter. In these cases the author has changed to preservim from
+	" scrooloose.
+	" 
+	" September 22nd 2020 - Shawn Anderson
+	
+cb459696442eb2a7c7dc0d3b0135aa39|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/library/serious/changelog.md|11|1|V|vimwiki
+	" September 22nd 2020 - Shawn Anderson
+42ce3ed5b0ac09718141e475c41ddbe9|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/library/serious/changelog.md|7|1|V|vimwiki
+	" ==============================================================================
+8952656cb209551fc621f0e4f4749aa8|file:///home/ygg/Workspace/Ubuntu%F0%9F%A6%8B/panel-django/panel_django/panel_django/settings.py|41|1|V|python
+	    'apps.disarb.apps.DisarbConfig',
+4936090eab05bdd6df11bdeab63ea3fb|file:///home/ygg/Workspace/Ubuntu%F0%9F%A6%8B/panel-django/panel_django/panel_django/settings.py|41|11|v|python
+	disarb
+e6021d42dc4b51da7795f2518805023b|file:///home/ygg/Workspace/Ubuntu%F0%9F%A6%8B/panel-django/panel_django/panel_django/settings.py|41|23|v|python
+	Disarb
+505220a53e5e8ee383a47ccee012dd34|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/vimwiki/index.wiki|2|1|V|vimwiki
+	Welcome to the serious vim wiki
+61bbb8f06ad6fd29f717137af5eb2cb4|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/vimwiki/index.wiki|2|1|v|vimwiki
+	Header1
+ec80cc7cf7e71a374efcdc476c918cb6|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/vimwiki/index.wiki|12|2|v|vimwiki
+	wiki link
+eec2acff11e00421cc86ce1ec2c4217a|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/vimwiki/index.wiki|12|1|V|vimwiki
+	[[vimwiki.md]]
+508e9790d8fa91cd9ad31141bd210708|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/vimwiki/index.wiki|13|2|v|vimwiki
+	vimwiki
+96e3085ed50af61aa5c800f809938fe4|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/index.wiki|1|1|v|vimwiki
+	= Welcome to the serious vim wiki =
+	This wiki will link web of thoughts and ideas that I have expressed throughout
+	my computer.
+	
+	== Header2 ==
+	
+	=== Header3 ===
+	
+	*bold text*
+	_italic text_
+	
+	[[vimwiki.md]]
+	
+	[[test2.md]]
+	[[wiki link|description]]
+	
+	* bullet list item 1
+	* bullet list item 2
+	    a) numbered list item 1
+	    b) numbered list item 2
+	
+	{{{python
+	def greet(s):
+	    print("Hello, " + s)
+	}}}
+	
+	| a table |   |
+	|---------|---|
+	|         |   |
+3bc8ab1d6aa0f8aaf954baa1fd7a8a3f|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/library/serious/init.vim|24|1|v|vim
+	" ==============================================================================
+	" Now that I actually know what I'm doing in vim (somewhat) I'm starting a new
+	" config from scratch that will be the amalgamation of all the vim tricks and
+	" tweaks that I have accumulated over the years. Development is in close
+	" collaboration with Matthew Williams, whom I have been having a lot of vim
+	" discussions with lately. Original plugin count: Matt-28 Shawn-39. Only 10
+	" overlapping. Matt had the deprecated nerdtree and Shawn had the deprecated
+	" nerdcommenter. In these cases the author has changed to preservim from
+	" scrooloose.
+	" 
+	" September 22nd 2020 - Shawn Anderson
+3c8d503733c28c922da1ff559d031e11|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|268|5|v|vim
+	<leader>nn
+80bf53670983925c376e9968a5a5ec4e|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|130|1|V|vim
+	nnoremap <leader>e :e $MYVIMRC<CR>
+8fc2b289f8668a08c692c66b61ee245b|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|131|23|v|vim
+	$MYVIMRC<CR>
+8e4524ff3fe67e7e1d981772b7cd944d|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|1|1|v|vim
+	" Vim-plug initialization
+	let vim_plug_just_installed = 0
+	let vim_plug_path = expand('~/.config/nvim/autoload/plug.vim')
+	if !filereadable(vim_plug_path)
+	    echo "Installing Vim-plug..."
+	    echo "" silent !mkdir -p ~/.config/nvim/autoload
+	    silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	    let vim_plug_just_installed = 1
+	endif
+	
+	" manually load vim-plug the first time
+	if vim_plug_just_installed
+	    :execute 'source '.fnameescape(vim_plug_path)
+	    :PlugInstall
+	endif
+	
+	" ============================================================================
+	" Active plugins
+	call plug#begin('~/.config/nvim/plugged')
+	
+	" Now the actual plugins:
+	" rainbow brackets
+	Plug 'luochen1990/rainbow'
+	
+	" Vim emoji
+	Plug 'junegunn/vim-emoji'
+	
+	" quick commenter
+	Plug 'preservim/nerdcommenter'
+	
+	" Conquer of Completion
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	
+	" Override configs by directory
+	Plug 'arielrossanigo/dir-configs-override.vim'
+	
+	" Better file browser
+	Plug 'scrooloose/nerdtree'
+	
+	" Class/module browser
+	Plug 'majutsushi/tagbar'
+	" TODO known problems:
+	" * current block not refreshing'
+	
+	" Search results counter
+	Plug 'vim-scripts/IndexedSearch'
+	
+	" Plugin for live preview of LaTex
+	Plug 'donRaphaco/neotex', {'for': 'tex'}
+	
+	" Integrated Floating terminal
+	Plug 'voldikss/vim-floaterm'
+	
+	" Lightline
+	Plug 'itchyny/lightline.vim'
+	
+	" Code and files fuzzy finder
+	Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+	Plug 'junegunn/fzf.vim' 
+	
+	" Pending tasks list
+	Plug 'fisadev/FixedTaskList.vim'
+	
+	" Completion from other opened files
+	Plug 'Shougo/context_filetype.vim'
+	
+	" Automatically close parenthesis, etc
+	Plug 'Townk/vim-autoclose'
+	
+	" Indent text object
+	Plug 'michaeljsmith/vim-indent-object'
+	
+	" Indentation based movements
+	Plug 'jeetsukumaran/vim-indentwise'
+	
+	" Better language packs
+	Plug 'sheerun/vim-polyglot'
+	
+	" Ack code search (requires ack installed in the system)
+	Plug 'mileszs/ack.vim'
+	" TODO is there a way to prevent the progress which hides the editor?
+	
+	" Paint css colors with the real color
+	Plug 'lilydjwg/colorizer'
+	" TODO is there a better option for neovim?
+	
+	" Generate html in a simple way
+	Plug 'mattn/emmet-vim'
+	
+	" Git integration
+	Plug 'tpope/vim-fugitive'
+	
+	" Git/mercurial/others diff icons on the side of the file lines
+	Plug 'mhinz/vim-signify'
+	
+	" Linters
+	Plug 'neomake/neomake'
+	" TODO is it running on save? or when?
+	" TODO not detecting errors, just style, is it using pylint?
+	
+	" Nice icons: Need to install patched font for this to work
+	Plug 'ryanoasis/vim-devicons'
+	
+	" add or override individual additional filetypes
+	let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {} " needed
+	let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['mkv'] = 'ƛ'
+	
+	" Show indention level through lines
+	Plug 'Yggdroot/indentLine'
+	
+	" Distraction free programming
+	Plug 'junegunn/goyo.vim'
+	
+	" Tell vim-plug we finished declaring plugins, so it can load them
+	call plug#end()
+	
+	" ============================================================================
+	" Install plugins the first time vim runs
+	if vim_plug_just_installed
+	    echo "Installing Bundles, please ignore key map error messages"
+	    :PlugInstall
+	endif
+	
+	
+d0a60018ecfec7b71826f1efac6b0a19|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|15|1|v|vim
+	"" Make vim scroll faster
+	set ttyfast
+	set mouse=a
+	set lazyredraw
+	set nu
+	set nowrap
+	set relativenumber
+	set encoding=UTF-8
+	" set tabline to not display full path
+	set guitablabel=%t
+	
+	
+206064fd9fca49363b3c6733e4010a82|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|62|1|v|vim
+	" tabs and spaces handling
+	set expandtab
+	set tabstop=4
+	set softtabstop=4
+	set shiftwidth=4
+	" remove ugly vertical lines on window division
+	set fillchars+=vert:\ 
+	
+	
+37174878bc51015ac28bcf31dbfaaeea|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|84|1|v|vim
+	" autocompletion of files and commands behaves like shell
+	" (complete only the common part, list the options that match)
+	set wildmode=list:longest
+	
+	" save as sudo
+	ca w!! w !sudo tee "%"
+	
+	
+064ca248b8fea0066e76a98de9af7707|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|91|1|v|vim
+	
+	" when scrolling, keep cursor 3 lines away from screen border
+	set scrolloff=3
+	
+	
+7b0aad3214ae43dea0589ef6c2c693af|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|97|17|V|vim
+	" fix problems with uncommon shells (fish, xonsh) and plugins running commands
+	" (neomake, ...)
+	set shell=$SHELL
+711ecf648d117dd5bb5eee7f5e88c1fc|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|1|1|v|vim
+	source $HOME/.config/nvim/
+b38692d90fe71aa55e1033ae27b00ac4|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|16|1|v|vim
+	" Set tabs for certain file types
+	" for html and css js and vue
+	autocmd FileType html setlocal ts=2 sw=2 expandtab
+	autocmd FileType css setlocal ts=2 sw=2 expandtab
+	autocmd FileType scss setlocal ts=2 sw=2 expandtab
+	autocmd FileType javascript setlocal ts=2 sw=2 expandtab
+	autocmd FileType json setlocal ts=4 sw=4 expandtab
+	autocmd FileType vue setlocal ts=2 sw=2 expandtab
+	" Set expand width to 2 for C/C++
+	autocmd FileType cpp setlocal ts=2 sw=2 expandtab
+	autocmd FileType c setlocal ts=2 sw=2 expandtab
+	" Set expand width to 2 for Shell scripts and perl
+	autocmd FileType sh setlocal ts=2 sw=2 expandtab
+	autocmd FileType zsh setlocal ts=2 sw=2 expandtab
+	autocmd FileType bash setlocal ts=2 sw=2 expandtab
+	autocmd FileType perl setlocal ts=2 sw=2 expandtab
+	" Set expand width to 2 for markdown
+	autocmd FileType md setlocal ts=2 sw=2 expandtab
+	autocmd FileType markdown setlocal ts=2 sw=2 expandtab
+	
+	
+2f53da0b3fac81494d8082c2ad4bb9f2|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|5|1|v|vim
+	" remap default leader key to comma
+	let mapleader = ","
+	nnoremap <leader>r :source $MYVIMRC<CR>
+	nnoremap <leader>e :e $MYVIMRC<CR>
+	nnoremap <leader>w :w<CR>
+	
+	
+	" Change Ctrl N mapping to Ctrl Space "
+	inoremap <C-space> <C-n>
+	
+	
+	" " Copy to clipboard
+	vnoremap  <leader>y  "+y
+	nnoremap  <leader>Y  "+yg_
+	nnoremap  <leader>y  "+y
+	nnoremap  <leader>yy "+yy
+	
+	" " Paste from clipboard
+	nnoremap <leader>p "+p
+	nnoremap <leader>P "+P
+	vnoremap <leader>p "+p
+	vnoremap <leader>P "+P
+	
+	
+c4aacbc76c8e3d5b78585033bc5ab845|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|5|1|v|vim
+	
+	" Run xrdb whenever Xdefaults or Xresources are updated.
+	autocmd BufWritePost *Xresources,*Xdefaults !xrdb %
+	
+	" Recompile suckless programs. only for files that are config.h
+	autocmd BufWritePost config.h,config.def.h !sudo make install; make clean    
+	
+	" Comile any latex document into pdf form
+	autocmd BufWritePost answers.tex !pdflatex answers.tex   
+	
+	" Compile VIU markdown notes to pdf
+	autocmd BufWritePost notes.md !pandoc -s -o notes.pdf notes.md
+	
+	
+f9e2b2ff190ea41dec06089eaf43fce9|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|5|1|v|vim
+	
+	"" Color Scheme set up for Material ===============================
+	if (has("nvim"))
+	  "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
+	  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+	endif
+	
+	" < https://github.com/neovim/neovim/wiki/Following-HEAD #20160511 >
+	if (has("termguicolors"))
+	  set termguicolors
+	endif
+	
+	" use 256 colors when possible
+	if (&term =~? 'mlterm\|xterm\|xterm-256\|screen-256') || has('nvim')
+	    let &t_Co = 256
+	    syntax on
+	    set background=light
+	    colorscheme quantum
+	else
+	    colorscheme jellybeans
+	endif
+	
+	
+2c815e631f0ae178c1d79b1fcf625417|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|5|1|v|vim
+	
+	" tab navigation mappings
+	map tt :tabnew 
+	map <M-Right> :tabn<CR>
+	imap <M-Right> <ESC>:tabn<CR>
+	map <M-Left> :tabp<CR>
+	imap <M-Left> <ESC>:tabp<CR>
+	
+	" clear search results
+	nnoremap <silent> // :noh<CR>
+	
+	
+a240e26086258e48b026351e91e384c5|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|5|1|v|vim
+	" clear empty spaces at the end of lines on save of python files
+	"autocmd BufWritePre *.py :%s/\s\+$//e
+	
+	
+	" Ability to add python breakpoints
+	" (I use ipdb, but you can change it to whatever tool you use for debugging)
+	au FileType python map <silent> <leader>b Oimport ipdb; ipdb.set_trace()<esc>
+	
+	
+61a13624d9f5c0b38c5131a8b2e56731|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|9|1|v|vim
+	" Tagbar -----------------------------
+	" toggle tagbar display
+	nmap <leader>tb :TagbarToggle<CR>
+	" autofocus on tagbar open
+	let g:tagbar_autofocus = 1
+	
+	
+bc3a3414e88a35b07ec031366a1b4423|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|44|1|V|vim
+	" Tagbar -----------------------------
+3752cb83dc214d2460e81d98f855783e|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|40|1|V|vim
+	" Class/module browser
+09d7377a7913b80952f17a5835170405|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|9|1|v|vim
+	" NERDTree -----------------------------
+	" toggle nerdtree display
+	map <C-n> :NERDTreeToggle<CR>
+	" open nerdtree with the current file selected
+	nmap <leader>nf :NERDTreeFind<CR>
+	" don;t show these file types
+	let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
+	
+	
+f3fe60d737fe5c85e28935ba562ff10d|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|9|1|v|vim
+	" Tasklist ------------------------------
+	" show pending tasks list
+	map <leader>tl :TaskList<CR>
+	
+	
+651bc897f1a977598fdc10ba3bc09615|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|9|1|v|vim
+	" Neomake ------------------------------
+	" Run linter on write
+	autocmd! BufWritePost * Neomake
+	
+	" Check code as python3 by default
+	let g:neomake_python_python_maker = neomake#makers#ft#python#python()
+	let g:neomake_python_flake8_maker = neomake#makers#ft#python#flake8()
+	let g:neomake_python_python_maker.exe = 'python3 -m py_compile'
+	let g:neomake_python_flake8_maker.exe = 'python3 -m flake8'
+	
+	" Disable error messages inside the buffer, next to the problematic line
+	let g:neomake_virtualtext_current_error = 1
+	
+	
+bf8a62143691eba37e2efa002de29899|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|9|1|v|vim
+	
+	" Fzf ------------------------------
+	" file finder mapping
+	nmap <leader>e :Files<CR>
+	" tags (symbols) in current file finder mapping
+	nmap <leader>g :BTag<CR>
+	" tags (symbols) in all files finder mapping
+	nmap <leader>G :Tags<CR>
+	" general code finder in current file mapping
+	nmap <leader>f :BLines<CR>
+	" general code finder in all files mapping
+	nmap <leader>F :Lines<CR>
+	" commands finder mapping
+	nmap <leader>c :Commands<CR>
+	
+	
+b930fb918197e7b283f01a3ad306d0e0|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|10|1|v|vim
+	" Signify ------------------------------
+	" this first setting decides in which order try to guess your current vcs
+	" UPDATE it to reflect your preferences, it will speed up opening files
+	let g:signify_vcs_list = [ 'git', 'hg' ]
+	" mappings to jump to changed blocks
+	nmap <leader>sn <plug>(signify-next-hunk)
+	nmap <leader>sp <plug>(signify-prev-hunk)
+	
+	" nicer colors
+	highlight DiffAdd           cterm=bold ctermbg=none ctermfg=119
+	highlight DiffDelete        cterm=bold ctermbg=none ctermfg=167
+	highlight DiffChange        cterm=bold ctermbg=none ctermfg=227
+	highlight SignifySignAdd    cterm=bold ctermbg=237  ctermfg=119
+	highlight SignifySignDelete cterm=bold ctermbg=237  ctermfg=167
+	highlight SignifySignChange cterm=bold ctermbg=237  ctermfg=227
+	
+	
+14277be2bb6f9ca6db9c3ac011dfe34c|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|128|1|V|vim
+	" Signify ------------------------------
+d385d4458d325a8082262fa8038c7767|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|10|1|v|vim
+	" Autoclose ------------------------------
+	" Fix to let ESC work as espected with Autoclose plugin
+	" (without this, when showing an autocompletion window, ESC won't leave insert
+	"  mode)
+	
+	let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
+	let g:AutoClosePairs = "() {} [] ' ` \" "
+	
+	
+90947180e54cb038318e77fb165a4ed4|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|102|1|V|vim
+	" Autoclose ------------------------------
+e563f2299c343f248ef53a4bb27f9711|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|10|1|v|vim
+	" This is solves a bug in devicons that appears when sourcing vimrc
+	if exists("g:loaded_webdevicons")
+	  call webdevicons#refresh()
+	endif
+	
+	
+d0aa22ee5bef01a1f17d51fd36e922ff|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|1|1|V|vim
+	runtime plugins.vim
+63dc9087c660611bdf3fcb1a1257247a|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|2|9|v|vim
+	plugins
+fa1c7c1d2d68990593f76cd275895338|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|6|1|V|vim
+	" ============================================================================
+9febd1a0e2adbe01a4499908edb846c2|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|6|1|V|vim
+	" Vim settings and mappings
+362d64a38ee276875ed05c5fafb73eba|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|6|1|V|vim
+	" Plugins settings and mappings
+657dd98e234f763b6a6cb5bdb5bf737a|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|6|1|V|vim
+	" Edit them as you wish.
+94eb44f7987880e0e8adbb38b13a1495|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/custom.vim|45|1|v|vim
+	" +++++++++++++++++++++ vim-float-term configuration +++++++++++++++++++++++++
+	
+	let g:floaterm_keymap_new    = '<leader>.'
+	let g:floaterm_position      = 'center'
+	let g:floaterm_type          = 'normal'
+	
+	" custom mappings for my person tools in normal mode only
+	nnoremap <C-p> :FloatermNew ipython<CR>
+	nnoremap <C-l> :FloatermNew lf<CR>
+	nnoremap <C-s> :FloatermNew sefr<CR>
+24398bc1a90287606effcbbf5a15710f|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|68|1|V|vim
+	" +++++++++++++++++++++ vim-float-term configuration +++++++++++++++++++++++++
+e9b348aa585a29d624cc642d8bd0919f|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/custom.vim|26|1|v|vim
+	" Lightline Themes Configurations
+	let g:lightline = {
+	    \ 'colorscheme': 'simpleblack',
+	    \ 'active': {
+	    \   'left': [ [ 'mode', 'paste' ],
+	    \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
+	    \ },
+	    \ 'component_function': {
+	    \   'cocstatus': 'coc#status'
+	    \ },
+	    \ }
+	
+	
+b3df8c92e55777ccfd6d5a93967435c6|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|81|1|V|vim
+	" Lightline Themes Configurations
+ce06153639ccc0578c66d4e4137b7cc2|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|80|1|V|vim
+	" Lightline
+d5d36d908fdf1858e1ec0d011a36ceae|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/custom.vim|1|1|v|vim
+	
+	" Goyo mappings
+	nmap <C-g> :Goyo 60x60
+	
+	
+626f9fb2eb5eb05d1f5a112974fbe3bb|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/custom.vim|1|1|v|vim
+	" Enable the Vue Language server
+	let g:LanguageClient_serverCommands = {
+	    \ 'vue': ['vls']
+	    \ }
+	
+	
+fb4c18fc0fd776ab7148ba3a2654cf0d|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/custom.vim|12|1|v|vim
+	
+	" Indention Config
+	let g:indentLine_char = '┊'
+	
+	
+48f5de49ef1d2f11d05b25efd49406e0|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/custom.vim|23|1|v|vim
+	
+	" if hidden is not set, TextEdit might fail.
+	set hidden
+	
+	" Some servers have issues with backup files, see #649
+	set nobackup
+	set nowritebackup
+	
+	" Better display for messages
+	set cmdheight=2
+	
+	" You will have bad experience for diagnostic messages when it's default 4000.
+	set updatetime=300
+	
+	" don't give |ins-completion-menu| messages.
+	set shortmess+=c
+	
+	" always show signcolumns
+	set signcolumn=yes
+	
+	" Use tab for trigger completion with characters ahead and navigate.
+	" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
+	inoremap <silent><expr> <TAB>
+	      \ pumvisible() ? "\<C-n>" :
+	      \ <SID>check_back_space() ? "\<TAB>" :
+	      \ coc#refresh()
+	inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+	
+	function! s:check_back_space() abort
+	  let col = col('.') - 1
+	  return !col || getline('.')[col - 1]  =~# '\s'
+	endfunction
+	
+	" Use <c-space> to trigger completion.
+	inoremap <silent><expr> <c-space> coc#refresh()
+	
+	" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
+	" Coc only does snippet and additional edit on confirm.
+	inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+	" Or use `complete_info` if your vim support it, like:
+	" inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+	
+	" Use `[g` and `]g` to navigate diagnostics
+	nmap <silent> [g <Plug>(coc-diagnostic-prev)
+	nmap <silent> ]g <Plug>(coc-diagnostic-next)
+	
+	" Remap keys for gotos
+	nmap <silent> gd <Plug>(coc-definition)
+	nmap <silent> gy <Plug>(coc-type-definition)
+	nmap <silent> gi <Plug>(coc-implementation)
+	nmap <silent> gr <Plug>(coc-references)
+	
+	" Use K to show documentation in preview window
+	"nnoremap <silent> K :call <SID>show_documentation()<CR>
+	
+	function! s:show_documentation()
+	  if (index(['vim','help'], &filetype) >= 0)
+	    execute 'h '.expand('<cword>')
+	  else
+	    call CocAction('doHover')
+	  endif
+	endfunction
+	
+	" Highlight symbol under cursor on CursorHold
+	autocmd CursorHold * silent call CocActionAsync('highlight')
+	
+	" Remap for rename current word
+	nmap <leader>rn <Plug>(coc-rename)
+	
+	" Remap for format selected region
+	xmap <leader>fr  <Plug>(coc-format-selected)
+	nmap <leader>fr  <Plug>(coc-format-selected)
+	
+	augroup mygroup
+	  autocmd!
+	  " Setup formatexpr specified filetype(s).
+	  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+	  " Update signature help on jump placeholder
+	  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+	augroup end
+	
+	" Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
+	xmap <leader>a  <Plug>(coc-codeaction-selected)
+	nmap <leader>a  <Plug>(coc-codeaction-selected)
+	
+	" Remap for do codeAction of current line
+	nmap <leader>ac  <Plug>(coc-codeaction)
+	" Fix autofix problem of current line
+	nmap <leader>qf  <Plug>(coc-fix-current)
+	
+	" Create mappings for function text object, requires document symbols feature of languageserver.
+	xmap if <Plug>(coc-funcobj-i)
+	xmap af <Plug>(coc-funcobj-a)
+	omap if <Plug>(coc-funcobj-i)
+	omap af <Plug>(coc-funcobj-a)
+	
+	" Use <TAB> for select selections ranges, needs server support, like: coc-tsserver, coc-python
+	nmap <silent> <TAB> <Plug>(coc-range-select)
+	xmap <silent> <TAB> <Plug>(coc-range-select)
+	
+	" Use `:Format` to format current buffer
+	command! -nargs=0 Format :call CocAction('format')
+	
+	" Use `:Fold` to fold current buffer
+	command! -nargs=? Fold :call     CocAction('fold', <f-args>)
+	
+	" use `:OR` for organize import of current buffer
+	command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+	
+	" Add status line support, for integration with other plugin, checkout `:h coc-status`
+	set statusline^=%{StatusDiagnostic()}
+	
+	" Using CocList
+	" Show all diagnostics
+	nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
+	" Manage extensions
+	nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
+	" Show commands
+	nnoremap <silent> <space>c  :<C-u>CocList commands<cr>
+	" Find symbol of current document
+	nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
+	" Search workspace symbols
+	nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
+	" Do default action for next item.
+	nnoremap <silent> <space>j  :<C-u>CocNext<CR>
+	" Do default action for previous item.
+	nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
+	" Resume latest coc list
+	nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+	
+	
+cad48593d6ccedcca393061433219c7f|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/custom.vim|1|1|v|vim
+	" init rainbow brackets
+	"set to 0 if you want to enable it later via :RainbowToggle
+	let g:rainbow_active = 0
+	
+	
+965ae55cc9409d448e0922a9fb9cca3f|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/custom.vim|1|1|v|vim
+	" Emmet mappings
+	let g:user_emmet_mode='a'  " enable all functions in all modes
+	let g:user_emmet_leader_key='<C-S>'
+	
+	
+3f6d33c56ec25cb8ef1061b2a92e117a|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/custom.vim|1|1|v|vim
+	" Devicon Configurations
+	" loading the plugin
+	let g:webdevicons_enable = 1
+	
+	
+c14f01ff0baf212003368e8c05add4a0|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/custom.vim|5|1|v|vim
+	" Fancy markdown syntax
+	let g:markdown_fenced_languages = ['css', 'js=javascript']
+	
+	
+6f7853de5516f225ecdf473dfcfb9779|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/custom.vim|6|1|v|vim
+	" +++++++++++++++++++++++++ Conquer of Completion +++++++++++++++++++++++++
+	" Auto command for python projects
+	autocmd FileType python let b:coc_root_patterns = ['.git', '.env']
+	
+	" Auto command for correct comment highlighting in Json files
+	  autocmd FileType json syntax match Comment +\/\/.\+$+
+	" status line function
+	function! StatusDiagnostic() abort
+	  let info = get(b:, 'coc_diagnostic_info', {})
+	  if empty(info) | return '' | endif
+	  let msgs = []
+	  if get(info, 'error', 0)
+	    call add(msgs, 'E' . info['error'])
+	  endif
+	  if get(info, 'warning', 0)
+	    call add(msgs, 'W' . info['warning'])
+	  endif
+	  return join(msgs, ' ') . ' ' . get(g:, 'coc_status', '')
+	endfunction
+	
+	" Disable node version warning
+	let g:coc_disable_startup_warning = 1
+	
+	" Vim script coc extension
+	let g:markdown_fenced_languages = [
+	      \ 'vim',
+	      \ 'help'
+	      \]
+	
+	" Fancy markdown syntax
+	let g:markdown_fenced_languages = ['css', 'js=javascript']
+	
+	
+b3646fe90048900ca988225c3d573286|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/custom.vim|1|1|v|vim
+	
+	" Use auocmd to force lightline update.
+	autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
+	
+	
+a0336dd5b06f020653a2956eedd9df9f|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/custom.vim|1|1|v|vim
+	
+	" Emoji completion
+	set completefunc=emoji#complete
+0c8a463c4abb8af0753518a7d535f4ab|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|7|1|V|vim
+	" Include user's custom nvim configurations
+21683570ec7caa5e62b767b943840e10|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|7|1|V|vim
+	if filereadable(expand("~/.config/nvim/custom.vim"))
+41cf75d459c3545e2fc56d94aa6568f8|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|7|3|V|vim
+	  source ~/.config/nvim/custom.vim
+e96d8afc259593a20838480dfb84400b|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|7|1|V|vim
+	endif
+8e8d119d922df090ecbc8043b19e14ce|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|31|1|V|vim
+	" Emoji completion
+6cea05686401618cafc5c8d446760c72|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|24|1|V|vim
+	" init rainbow brackets
+7b9ae81db1df82bbd1b756ed2a87bdab|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|353|1|v|vim
+	" TODO not detecting errors, just style, is it using pylint?
+	" Neomake ------------------------------
+	" Run linter on write
+	autocmd! BufWritePost * Neomake
+	
+	" Check code as python3 by default
+	let g:neomake_python_python_maker = neomake#makers#ft#python#python()
+	let g:neomake_python_flake8_maker = neomake#makers#ft#python#flake8()
+	let g:neomake_python_python_maker.exe = 'python3 -m py_compile'
+	let g:neomake_python_flake8_maker.exe = 'python3 -m flake8'
+	
+	" Disable error messages inside the buffer, next to the problematic line
+	l
+5983610633cb1434325cbcf57b553178|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|354|1|v|vim
+	" Neomake ------------------------------
+	" Run linter on write
+	autocmd! BufWritePost * Neomake
+	
+	" Check code as python3 by default
+	let g:neomake_python_python_maker = neomake#makers#ft#python#python()
+	let g:neomake_python_flake8_maker = neomake#makers#ft#python#flake8()
+	let g:neomake_python_python_maker.exe = 'python3 -m py_compile'
+	let g:neomake_python_flake8_maker.exe = 'python3 -m flake8'
+	
+	" Disable error messages inside the buffer, next to the problematic line
+	let g:neomake_virtualtext_current_error = 1
+84e82b2fb57886a05717b4f107e2c313|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|354|1|v|vim
+	"
+	" Neomake ------------------------------
+	" Run linter on write
+	autocmd! BufWritePost * Neomake
+	
+	" Check code as python3 by default
+	let g:neomake_python_python_maker = neomake#makers#ft#python#python()
+	let g:neomake_python_flake8_maker = neomake#makers#ft#python#flake8()
+	let g:neomake_python_python_maker.exe = 'python3 -m py_compile'
+	let g:neomake_python_flake8_maker.exe = 'python3 -m flake8'
+	
+	" Disable error messages inside the buffer, next to the problematic line
+	let g:neomake_virtualtext_current_error = 1
+	
+	
+dbe80b317bc50a11e8e8a132408efc3b|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|354|1|v|vim
+	"
+	" Neomake ------------------------------
+	" Run linter on write
+	autocmd! BufWritePost * Neomake
+	
+	" Check code as python3 by default
+	let g:neomake_python_python_maker = neomake#makers#ft#python#python()
+	let g:neomake_python_flake8_maker = neomake#makers#ft#python#flake8()
+	let g:neomake_python_python_maker.exe = 'python3 -m py_compile'
+	let g:neomake_python_flake8_maker.exe = 'python3 -m flake8'
+	
+	" Disable error messages inside the buffer, next to the problematic line
+	let g:neomake_virtualtext_current_error = 1
+	
+	
+	
+0ec5dd230dd53fc7af73147455f5d0b8|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/autocommands.vim|53|1|v|vim
+	" Check code as python3 by default
+	let g:neomake_python_python_maker = neomake#makers#ft#python#python()
+	let g:neomake_python_flake8_maker = neomake#makers#ft#python#flake8()
+	let g:neomake_python_python_maker.exe = 'python3 -m py_compile'
+	let g:neomake_python_flake8_maker.exe = 'python3 -m flake8'
+	
+	" Disable error messages inside the buffer, next to the problematic line
+	let g:neomake_virtualtext_current_error = 1
+	
+	
+	
+56d142b90c43e363e04b01d1b5e097d3|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|7|1|V|vim
+	g:neomake_python_python_maker
+eb4bfec69b5670ecef9b45b684b8eb2f|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|6|1|v|vim
+	
+	" Check code as python3 by default
+	let g:neomake_python_python_maker = neomake#makers#ft#python#python()
+	let g:neomake_python_flake8_maker = neomake#makers#ft#python#flake8()
+	let g:neomake_python_python_maker.exe = 'python3 -m py_compile'
+	let g:neomake_python_flake8_maker.exe = 'python3 -m flake8'
+	
+	" Disable error messages inside the buffer, next to the problematic line
+	let g:neomake_virtualtext_current_error = 1
+	
+	
+	
+fcf01c8275739ec11cff183cbf5dbf58|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/library/serious%E2%8C%9A/init.vim|62|1|V|vim
+	Plug 'airblade/vim-rooter' " Used by fzf... TODO Why? #FuzzySearch #:experimental #Origin-Shawn
+30a15087dd01f4f0cde2c75646125b53|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|22|1|V|vim
+	" Now the actual plugins:
+8c3e5509ee4083cb74a7f878820ae6f7|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/settings.vim|5|3|v|vim
+	-----------------------------
+3a689f055d858d5c0f10dc523bdd1738|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/settings.vim|5|1|V|vim
+	" ------------------------------------------------------------------------------
+3772f0953bf2fc65f6d3f26de9fd2e86|file:///home/ygg/Workspace/Ubuntu%F0%9F%A6%8B/panel-django/panel_django/apps/ubuntu/admin.py|2|1|V|python
+	
+	# Register your models here.
+f6fedf40a05661d85a630820c5c24eae|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|39|1|v|vim
+	" Enable the Vue Language server
+	let g:LanguageClient_serverCommands = {
+	    \ 'vue': ['vls']
+	    \ }
+	
+	" if hidden is not set, TextEdit might fail.
+	set hidden
+	
+	" Some servers have issues with backup files, see #649
+	set nobackup
+	set nowritebackup
+	
+	" Better display for messages
+	set cmdheight=2
+	
+	" You will have bad experience for diagnostic messages when it's default 4000.
+	set updatetime=300
+	
+	" don't give |ins-completion-menu| messages.
+	set shortmess+=c
+	
+	" always show signcolumns
+	set signcolumn=yes
+	
+	" Use tab for trigger completion with characters ahead and navigate.
+	" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
+	inoremap <silent><expr> <TAB>
+	      \ pumvisible() ? "\<C-n>" :
+	      \ <SID>check_back_space() ? "\<TAB>" :
+	      \ coc#refresh()
+	inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+	
+	function! s:check_back_space() abort
+	  let col = col('.') - 1
+	  return !col || getline('.')[col - 1]  =~# '\s'
+	endfunction
+	
+	" Use <c-space> to trigger completion.
+	inoremap <silent><expr> <c-space> coc#refresh()
+	
+	" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
+	" Coc only does snippet and additional edit on confirm.
+	inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+	" Or use `complete_info` if your vim support it, like:
+	" inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+	
+	" Use `[g` and `]g` to navigate diagnostics
+	nmap <silent> [g <Plug>(coc-diagnostic-prev)
+	nmap <silent> ]g <Plug>(coc-diagnostic-next)
+	
+	" Remap keys for gotos
+	nmap <silent> gd <Plug>(coc-definition)
+	nmap <silent> gy <Plug>(coc-type-definition)
+	nmap <silent> gi <Plug>(coc-implementation)
+	nmap <silent> gr <Plug>(coc-references)
+	
+	" Use K to show documentation in preview window
+	"nnoremap <silent> K :call <SID>show_documentation()<CR>
+	
+	function! s:show_documentation()
+	  if (index(['vim','help'], &filetype) >= 0)
+	    execute 'h '.expand('<cword>')
+	  else
+	    call CocAction('doHover')
+	  endif
+	endfunction
+	
+	" Highlight symbol under cursor on CursorHold
+	autocmd CursorHold * silent call CocActionAsync('highlight')
+	
+	" Remap for rename current word
+	nmap <leader>rn <Plug>(coc-rename)
+	
+	" Remap for format selected region
+	xmap <leader>fr  <Plug>(coc-format-selected)
+	nmap <leader>fr  <Plug>(coc-format-selected)
+	
+	augroup mygroup
+	  autocmd!
+	  " Setup formatexpr specified filetype(s).
+	  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+	  " Update signature help on jump placeholder
+	  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+	augroup end
+	
+	" Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
+	xmap <leader>a  <Plug>(coc-codeaction-selected)
+	nmap <leader>a  <Plug>(coc-codeaction-selected)
+	
+	" Remap for do codeAction of current line
+	nmap <leader>ac  <Plug>(coc-codeaction)
+	" Fix autofix problem of current line
+	nmap <leader>qf  <Plug>(coc-fix-current)
+	
+	" Create mappings for function text object, requires document symbols feature of languageserver.
+	xmap if <Plug>(coc-funcobj-i)
+	xmap af <Plug>(coc-funcobj-a)
+	omap if <Plug>(coc-funcobj-i)
+	omap af <Plug>(coc-funcobj-a)
+	
+	" Use <TAB> for select selections ranges, needs server support, like: coc-tsserver, coc-python
+	nmap <silent> <TAB> <Plug>(coc-range-select)
+	xmap <silent> <TAB> <Plug>(coc-range-select)
+	
+	" Use `:Format` to format current buffer
+	command! -nargs=0 Format :call CocAction('format')
+	
+	" Use `:Fold` to fold current buffer
+	command! -nargs=? Fold :call     CocAction('fold', <f-args>)
+	
+	" use `:OR` for organize import of current buffer
+	command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+	
+	" Add status line support, for integration with other plugin, checkout `:h coc-status`
+	set statusline^=%{StatusDiagnostic()}
+	
+	" +++++++++++++++++++++++++ Conquer of Completion +++++++++++++++++++++++++
+	" Auto command for python projects
+	autocmd FileType python let b:coc_root_patterns = ['.git', '.env']
+	
+	" Auto command for correct comment highlighting in Json files
+	  autocmd FileType json syntax match Comment +\/\/.\+$+
+	" status line function
+	function! StatusDiagnostic() abort
+	  let info = get(b:, 'coc_diagnostic_info', {})
+	  if empty(info) | return '' | endif
+	  let msgs = []
+	  if get(info, 'error', 0)
+	    call add(msgs, 'E' . info['error'])
+	  endif
+	  if get(info, 'warning', 0)
+	    call add(msgs, 'W' . info['warning'])
+	  endif
+	  return join(msgs, ' ') . ' ' . get(g:, 'coc_status', '')
+	endfunction
+	
+	" Disable node version warning
+	let g:coc_disable_startup_warning = 1
+	
+	" Vim script coc extension
+	let g:markdown_fenced_languages = [
+	      \ 'vim',
+	      \ 'help'
+	      \]
+	
+	" Fancy markdown syntax
+	let g:markdown_fenced_languages = ['css', 'js=javascript']
+	
+	
+	
+	" Using CocList
+	" Show all diagnostics
+	nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
+	" Manage extensions
+	nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
+	" Show commands
+	nnoremap <silent> <space>c  :<C-u>CocList commands<cr>
+	" Find symbol of current document
+	nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
+	" Search workspace symbols
+	nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
+	" Do default action for next item.
+	nnoremap <silent> <space>j  :<C-u>CocNext<CR>
+	" Do default action for previous item.
+	nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
+	" Resume latest coc list
+	nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+	
+	
+	
+7e66503b0bc6228f3b828fdd6e58cb7d|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|5|1|V|vim
+	runtime autocommands.vim                
+8e29fe9778aedc64e733235a42731803|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|6|9|v|vim
+	autocommands
+9b24e61cefbe509f502f283a82fa178f|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/mappings.vim|1|1|V|vim
+	"------------------------------------------------------------------------------
+1c3fd55fff9b615c0882b74f6c6cb5ce|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/mappings.vim|3|1|V|vim
+	nnoremap <leader>f 0
+c6ce0e311ab53906b1ad052d9ca8d705|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/mappings.vim|1|1|v|vim
+	"------------------------------------------------------------------------------
+	" Shawn Anderson as of September 30th 2020
+	nnoremap <leader>f 0
+	nnoremap <leader>j $
+8de955f3671263894214ad4c1863bdf3|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|24|39|v|vim
+	<Space>
+8505333109350a9624bfe0fbcd1bd0ab|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|23|1|V|vim
+	autocmd! User vim-which-key call which_key#register(',', 'g:which_key_map')
+8286b37aeaff499287731ea8bb9d6532|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|22|32|v|vim
+	, {'on': ['WhichKey', 'WhichKey!']
+3edab2d70d756af34e533a4fe7d0f3d8|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|2|1|V|vim
+	runtime mappings.vim
+9719cb24ea6680cb7b1b85ff5de5e450|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/library/serious%E2%8C%9A/init.vim|109|1|V|
+	Plug 'townk/vim-autoclose' "Automatically close parenthesis, etc #Origin-Matt
+93f302fd74aef9f39fc0342bedd0be51|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/mappings.vim|8|1|V|vim
+	nnoremap <leader>w :w<CR>
+77e94c59614f9660d72f260d211afacd|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|21|1|V|vim
+	Plug 'pechorin/any-jump.vim'
+dfd9cf34caf9a5afcee1a65b225bcf62|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|36|1|v|vim
+	" Vim emoji
+	Plug 'junegunn/vim-emoji'
+	set completefunc=emoji#complete
+	
+	
+712d063b6d40fe17ae3e6fd137f28def|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|21|1|V|vim
+	runtime townk/vim-autoclose.vim
+fbbbcd42aba26e40db60f0543f2f693c|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|21|9|v|vim
+	townk
+3d97b836cec5dcf86f9197677942141d|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|21|27|v|vim
+	vim-autoclose
+42a9ff7f4316a4b846097b5a8bc1b4bc|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins/junegunn/vim-emoji.vim|1|7|v|vim
+	junegunnkj
+a7ae2d25863a14f18399ea47993ff14d|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins/junegunn/vim-emoji.vim|3|1|V|vim
+	" Emojis as Git Gutter Symbols
+453ab3ed7135fe7e3f6cc59320e09dd5|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins/junegunn/vim-emoji.vim|9|3|v|vim
+	Emojis as Git Gutter Symbols
+	se
+5f7c911c520a299c98847e2f349d30e7|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins/junegunn/vim-emoji.vim|9|3|v|vim
+	Emojis as Git Gutter Symbols
+322a805785e3f11cf6312ac5ec001e4c|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|22|1|V|vim
+	runtime plugins/townk/vim-autoclose.vim
+83ce61d4f271572847d1ccdc6a9f4e30|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|23|1|V|vim
+	runtime plugins/liuchengxu/vim-autoclose.vim
+6b22e89d5e4cc7a879c8f477c0d83c41|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|24|17|v|vim
+	liuchengxu
+3163d8e2b314be983cc4be0a547b1ff3|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|24|1|V|vim
+	"Plug 'tpop/vim-repeat'
+b410cfa58bda46dcfe3182610a40953c|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|24|1|v|vim
+	Plug 'liuchengxu/vim-which-key'
+	nnoremap <silent> <leader> :WhichKey ','<CR>
+	"autocmd! User vim-which-key call which_key#register(',', 'g:which_key_map')
+	
+	
+a87c1bfa30285efdc973b365e701fbeb|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|23|1|V|vim
+	runtime plugins/tpope/vim-repeat.vim
+7dd354d508db26ad753ac6b4f53bef8f|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|25|7|v|vim
+	liuchengxu/vim-which-key
+8d567a7e3c8bc0eb3344b0358ab613e6|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|24|17|v|vim
+	tpope/vim-repeat
+c2e46e11b306e8a69f2e32b1846daa83|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|26|1|V|vim
+	nnoremap <silent> <leader> :WhichKey ','<CR>
+f1285e8c2e83aa9e7d97125f821d19b5|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|26|1|V|vim
+	"autocmd! User vim-which-key call which_key#register(',', 'g:which_key_map')
+c34a353e65fa2dd7d0e9ba41ca31ed29|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|25|1|V|vim
+	Plug ''
+a956533316e9767edc6231a6bab4c137|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|24|1|V|vim
+	runtime plugins/liuchengxu/vim-which-key.vim
+b4f260280fe9a2e241202466fb248be6|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|26|29|v|vim
+	" Used by fzf... TODO Why? #FuzzySearch #:experimental #Origin-Shawn
+a8f0ef2cde0813c693f2db5769d564c0|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|26|1|V|vim
+	"Plug 'airblade/vim-rooter' 
+c3879030785ede70c044a6d5eea30124|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|25|1|V|vim
+	runtime plugins/airblade/vim-rooter.vim " Used by fzf... TODO Why? #FuzzySearch #:experimental #Origin-Shawn
+c4a171beb3dacb5a58fe2f49defdf955|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|26|17|v|vim
+	airblade
+d27c77da043f01fdad415398a3105528|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|26|29|v|vim
+	vim-rooter
+9450905f38117a361f9b5f6f7c132fdc|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|28|1|v|vim
+	" rainbow brackets
+	Plug 'luochen1990/rainbow'
+	"set to 0 if you want to enable it later via :RainbowToggle
+	let g:rainbow_active = 0
+	
+	
+36a59a16de19385e493015c6c389e2cc|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins/luochen1990/rainbow.vim|1|1|V|
+	" rainbow brackets
+fe0c571455f2366d775bfa2c95d1fde9|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|28|17|v|vim
+	junegunn
+6e4eada2478a1b49e8e96c6cb64cdc51|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|28|27|v|vim
+	vim-emoji
+33a8e900e02730cd5aef48af9962de41|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|29|1|V|vim
+	" quick commenter
+8b2bbf094c14626fbc2239fba9e49eb1|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|29|1|V|vim
+	Plug 'preservim/nerdcommenter'
+4999efbdada66edde806c741689ce08a|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|27|1|V|vim
+	runtime plugins/preservim/nerdcommenter.vim
+c731f95d323b390d83177f857779df3b|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|28|17|v|vim
+	preservim
+e82c6add4ee06843c880f2695222e92b|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|28|26|v|vim
+	nerdcommenter
+48bcc3ebfae6f3a2b78ccdfd24589c57|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|30|1|v|vim
+	" Conquer of Completion
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	
+	
+3a9c6bbe769b66638885a590d184927d|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/cocconfig.vim|1|1|v|
+	" Enable the Vue Language server
+	let g:LanguageClient_serverCommands = {
+	    \ 'vue': ['vls']
+	    \ }
+	
+	" if hidden is not set, TextEdit might fail.
+	set hidden
+	
+	" Some servers have issues with backup files, see #649
+	set nobackup
+	set nowritebackup
+	
+	" Better display for messages
+	set cmdheight=2
+	
+	" You will have bad experience for diagnostic messages when it's default 4000.
+	set updatetime=300
+	
+	" don't give |ins-completion-menu| messages.
+	set shortmess+=c
+	
+	" always show signcolumns
+	set signcolumn=yes
+	
+	" Use tab for trigger completion with characters ahead and navigate.
+	" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
+	inoremap <silent><expr> <TAB>
+	      \ pumvisible() ? "\<C-n>" :
+	      \ <SID>check_back_space() ? "\<TAB>" :
+	      \ coc#refresh()
+	inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+	
+	function! s:check_back_space() abort
+	  let col = col('.') - 1
+	  return !col || getline('.')[col - 1]  =~# '\s'
+	endfunction
+	
+	" Use <c-space> to trigger completion.
+	inoremap <silent><expr> <c-space> coc#refresh()
+	
+	" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
+	" Coc only does snippet and additional edit on confirm.
+	inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+	" Or use `complete_info` if your vim support it, like:
+	" inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+	
+	" Use `[g` and `]g` to navigate diagnostics
+	nmap <silent> [g <Plug>(coc-diagnostic-prev)
+	nmap <silent> ]g <Plug>(coc-diagnostic-next)
+	
+	" Remap keys for gotos
+	nmap <silent> gd <Plug>(coc-definition)
+	nmap <silent> gy <Plug>(coc-type-definition)
+	nmap <silent> gi <Plug>(coc-implementation)
+	nmap <silent> gr <Plug>(coc-references)
+	
+	" Use K to show documentation in preview window
+	"nnoremap <silent> K :call <SID>show_documentation()<CR>
+	
+	function! s:show_documentation()
+	  if (index(['vim','help'], &filetype) >= 0)
+	    execute 'h '.expand('<cword>')
+	  else
+	    call CocAction('doHover')
+	  endif
+	endfunction
+	
+	" Highlight symbol under cursor on CursorHold
+	autocmd CursorHold * silent call CocActionAsync('highlight')
+	
+	" Remap for rename current word
+	nmap <leader>rn <Plug>(coc-rename)
+	
+	" Remap for format selected region
+	"xmap <leader>fr  <Plug>(coc-format-selected)
+	"nmap <leader>fr  <Plug>(coc-format-selected)
+	
+	augroup mygroup
+	  autocmd!
+	  " Setup formatexpr specified filetype(s).
+	  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+	  " Update signature help on jump placeholder
+	  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+	augroup end
+	
+	" Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
+	xmap <leader>a  <Plug>(coc-codeaction-selected)
+	nmap <leader>a  <Plug>(coc-codeaction-selected)
+	
+	" Remap for do codeAction of current line
+	nmap <leader>ac  <Plug>(coc-codeaction)
+	" Fix autofix problem of current line
+	nmap <leader>qf  <Plug>(coc-fix-current)
+	
+	" Create mappings for function text object, requires document symbols feature of languageserver.
+	xmap if <Plug>(coc-funcobj-i)
+	xmap af <Plug>(coc-funcobj-a)
+	omap if <Plug>(coc-funcobj-i)
+	omap af <Plug>(coc-funcobj-a)
+	
+	" Use <TAB> for select selections ranges, needs server support, like: coc-tsserver, coc-python
+	nmap <silent> <TAB> <Plug>(coc-range-select)
+	xmap <silent> <TAB> <Plug>(coc-range-select)
+	
+	" Use `:Format` to format current buffer
+	command! -nargs=0 Format :call CocAction('format')
+	
+	" Use `:Fold` to fold current buffer
+	command! -nargs=? Fold :call     CocAction('fold', <f-args>)
+	
+	" use `:OR` for organize import of current buffer
+	command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+	
+	" Add status line support, for integration with other plugin, checkout `:h coc-status`
+	set statusline^=%{StatusDiagnostic()}
+	
+	" +++++++++++++++++++++++++ Conquer of Completion +++++++++++++++++++++++++
+	" Auto command for python projects
+	autocmd FileType python let b:coc_root_patterns = ['.git', '.env']
+	
+	" Auto command for correct comment highlighting in Json files
+	  autocmd FileType json syntax match Comment +\/\/.\+$+
+	" status line function
+	function! StatusDiagnostic() abort
+	  let info = get(b:, 'coc_diagnostic_info', {})
+	  if empty(info) | return '' | endif
+	  let msgs = []
+	  if get(info, 'error', 0)
+	    call add(msgs, 'E' . info['error'])
+	  endif
+	  if get(info, 'warning', 0)
+	    call add(msgs, 'W' . info['warning'])
+	  endif
+	  return join(msgs, ' ') . ' ' . get(g:, 'coc_status', '')
+	endfunction
+	
+	" Disable node version warning
+	let g:coc_disable_startup_warning = 1
+	
+	" Vim script coc extension
+	let g:markdown_fenced_languages = [
+	      \ 'vim',
+	      \ 'help'
+	      \]
+	
+	" Fancy markdown syntax
+	let g:markdown_fenced_languages = ['css', 'js=javascript']
+	
+	
+	
+	" Using CocList
+	" Show all diagnostics
+	nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
+	" Manage extensions
+	nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
+	" Show commands
+	nnoremap <silent> <space>c  :<C-u>CocList commands<cr>
+	" Find symbol of current document
+	nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
+	" Search workspace symbols
+	nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
+	" Do default action for next item.
+	nnoremap <silent> <space>j  :<C-u>CocNext<CR>
+	" Do default action for previous item.
+	nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
+	" Resume latest coc list
+	nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+	
+	
+	
+d201639c8faa3abb6e04afc599dce000|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|28|1|V|vim
+	runtime plugins/neoclide/coc.vim.vim
+a58292f30bc9a5ebf004c2e2aba3efd0|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|29|17|v|vim
+	neoclide
+7356af905dff226d5d7806149663ba1c|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|29|32|v|vim
+	coc.vim.vim
+edd075ffd46d5db3822e19999beb12d9|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|31|31|V|vim
+	" Override configs by directory
+	Plug 'arielrossanigo/dir-configs-override.vim'
+a0b4c3c5b64c42a3852fe4a07c7e806a|file:///home/ygg/.tmux.conf|77|1|V|tmux
+	bind-key r source-file ~/.tmux.conf \; display-message "Tmux config reloaded"
+10c14f44eddc00ea666c33d7f43a9bc3|file:///home/ygg/.tmux.conf|1|1|v|tmux
+	bind-key r 
+a923c6fe127f95f1048bc447300c5764|file:///home/ygg/.tmux.conf|1|16|v|tmux
+	tmux.conf
+97b5d3b66b7fc1313c1f2fc8896a4274|file:///home/ygg/.tmux.conf|1|37|v|tmux
+	\; display-message "Tmux config reloaded
+d8e23b791f4ced4d23db067b32520236|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|2|9|v|vim
+	mappings
+720ef02e4b1d81e1590fab65e74eb85f|file:///home/ygg/.tmux.conf|2|1|v|tmux
+	# Changed prefix to C-Space October 10th
+	# Set prefix to Ctrl-Space
+	# unbind C-b
+	# set -g prefix C-Space
+	# bind Space send-prefix
+	# Set the prefix to ^A
+	unbind C-b
+	set -g prefix ^A
+	
+	# change pane numbers to start with 1 instead of 0
+	set -g base-index 1
+	set -g pane-base-index 1
+	
+	# Set fish as default shell
+	set -g default-shell /usr/bin/fish
+	
+	# screen ^C c
+	unbind ^C
+	bind ^C new-window -c '#{pane_current_path}'
+	bind c new-window -c '#{pane_current_path}' 
+	
+	
+	# No lag after ESC.
+	set -sg escape-time 5
+	
+	set -g visual-bell on
+	
+	#urxvt tab like window switching (-n: no prior escape seq)
+	bind -n S-down new-window
+	bind -n S-left prev
+	bind -n S-right next
+	bind -n C-left swap-window -t -1
+	bind -n C-right swap-window -t +1
+	
+	# Surfraw shortcuts
+	# bind -n g send-keys -t . "sr google "
+	bind -n g send-keys -t . "g"
+	
+	
+	# zoom a pane into a new window for temporary work
+	# unbind +
+	# bind + new-window -d -n tmux-zoom 'clear && echo TMUX ZOOM && read' \; swap-pane -s tmux-zoom.0 \; select-window -t tmux-zoom
+	# unbind -
+	# bind - last-window \; swap-pane -s tmux-zoom.0 \; kill-window -t tmux-zoom
+	
+	# dont automatically rename windows
+	set-option -g allow-rename off
+	
+	#detach ^D d
+	unbind ^D
+	bind ^D detach
+	
+	unbind p
+	bind p previous-window
+	
+	# Break pane into it's own window
+	unbind b
+	bind b break-pane
+	
+	#remove prompt from kill
+	unbind x
+	bind x kill-pane
+	# -a is for all panes except current
+	bind C-x kill-pane -a
+	
+	# windows ^W w
+	unbind ^W
+	bind ^W list-windows
+	unbind w
+	bind w list-windows
+	
+	#redisplay ^L l
+	unbind ^L
+	bind ^L refresh-client
+	
+	#quick reload and edit config
+	bind-key r source-file ~/.tmux.conf \; display-message "Tmux config reloaded"
+	bind-key e split-window -h "nvim ~/.tmux.conf"
+	
+	# split windows like vim
+	bind s split-window -v -c '#{pane_current_path}' 
+	bind v split-window -h -c '#{pane_current_path}' 
+	
+	# move around panes with hjkl
+	bind h select-pane -L
+	bind j select-pane -D
+	bind k select-pane -U
+	unbind l
+	bind l select-pane -R
+	
+	#activate mouse
+	set -g mouse on
+	
+	# From https://github.com/tmux/tmux/issues/1320
+	# Emulate scrolling by sending up and down keys if these commands are running in the pane
+	tmux_commands_with_legacy_scroll="nano less more man git"
+	
+	bind-key -T root WheelUpPane \
+		if-shell -Ft= '#{?mouse_any_flag,1,#{pane_in_mode}}' \
+			'send -Mt=' \
+			'if-shell -t= "#{?alternate_on,true,false} || echo \"#{tmux_commands_with_legacy_scroll}\" | grep -q \"#{pane_current_command}\"" \
+				"send -t= Up" "copy-mode -et="'
+	
+	bind-key -T root WheelDownPane \
+		if-shell -Ft = '#{?pane_in_mode,1,#{mouse_any_flag}}' \
+			'send -Mt=' \
+			'if-shell -t= "#{?alternate_on,true,false} || echo \"#{tmux_commands_with_legacy_scroll}\" | grep -q \"#{pane_current_command}\"" \
+				"send -t= Down" "send -Mt="'
+	
+	
+	
+	# vi-style controls for copy-mode
+	setw -g mode-keys vi
+	setw -g xterm-keys on
+	
+	# Get 24 bit colors
+	set -g default-terminal "tmux-256color" # or tmux-256color
+	set -ga terminal-overrides ",*256col*:Tc"
+	# set -ga terminal-overrides ",xterm-256color:Tc"
+	# set -ga terminal-overrides 'xterm*:smcup@:rmcup@'
+	
+	# Recommended by nvim from ':checkhealth'
+	set-option -sg escape-time 0
+	
+	# Nord Theme
+	# Powerline
+	run-shell "powerline-daemon -q"
+	# source "$/home/shawn/.config/powerline/themes/tmux///tmux/powerline.conf"
+	# set -g status-right ''
+	
+	# set -g @plugin "arcticicestudio/nord-tmux"
+	set -g @plugin 'tmux-plugins/tmux-prefix-highlight'
+	set -g @plugin 'tmux-plugins/tmux-resurrect'
+	set -g @continuum-save-interval '15'
+	set -g @continuum-restore 'off'
+	set -g @plugin 'tmux-plugins/tmux-continuum'
+	# run -b "~/.config/serious-tmux/serious/plugins/tpm/tpm"
+	
+	set -g status-right-length 240
+	set -g status-left-length 140
+	
+	set -g status-right 'Continuum status: #{continuum_status}'
+	# set -g status-left 'Continuum status: #{continuum_status}'
+	
+	set -g status-right "#{pane_current_path}                    "
+	set -ag status-right "#{prefix_highlight}"
+	set -ag status-right '#[fg=brightblack,bg=black,nobold,noitalics,nounderscore]#[fg=white,bg=brightblack] Continuum: #{@continuum-restore} #[fg=white,bg=brightblack,nobold,noitalics,nounderscore] '
+	# run -b "~/.config/serious-tmux/serious/plugins/tpm/tpm"
+	# run-shell "~/.config/serious-tmux/serious/plugins/nord-tmux/nord.tmux"
+	# set -ag status-left "#{prefix_highlight}"
+	
+	# set -g pane-border-status on
+	set -g pane-border-style "bg=default,fg=default"
+	set -g pane-active-border-style "bg=default,fg=green"
+	# Pane naming
+	# toggle pane title visibility from https://github.com/tmux/tmux/issues/680
+	bind H run 'zsh -c "arr=( off top ) && tmux setw pane-border-status \${arr[\$(( \${arr[(I)#{pane-border-status}]} % 2 + 1 ))]}"'
+	
+	# rename pane
+	bind P command-prompt -p "(rename-pane)" -I "#T" "select-pane -T '%%'"
+	
+	# Choose Tree
+	unbind t
+	bind t choose-tree
+	
+	# The following 10 lines are all from https://gitlab.com/protesilaos/dotfiles/blob/master/tmux/.tmux.conf
+	# copy mode
+	# Vim copy-paste behaviour using the clipboard
+	# bind -T copy-mode-vi v send-keys -X begin-selection
+	unbind -T copy-mode-vi v
+	# bind -T copy-mode-vi y send-keys -X copy-pipe "xclip -selection clipboard -i"
+	unbind -T copy-mode-vi y
+	# bind -T copy-mode-vi r send-keys -X rectangle-toggle
+	unbind -T copy-mode-vi r
+	# For vi copy mode bindings
+	# bind -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe "xclip -selection clipboard -i"
+	unbind -T copy-mode-vi MouseDragEnd1Pane
+	# For emacs copy mode bindings
+	# bind -T copy-mode MouseDragEnd1Pane send-keys -X copy-pipe "xclip -selection clipboard -i"
+	unbind -T copy-mode MouseDragEnd1Pane
+	
+	
+	# set -g status-utf9 on
+	# set -ag window-status-current-format "#[fg=black,bg=white,nobold,noitalics,nounderscore]"
+	# set -ag window-status-current-format "#[fg=black,bg=white]#P #{pane-border-status} #{pane-current-command}"
+	# set -ag window-status-current-format "#[fg=black,bg=white,nobold,noitalics,nounderscore]"
+	# set -ag window-status-current-format "#[fg=black,bg=white]#{pane_current_command}"
+	# set -ag window-status-current-format "#[fg=white,bg=black,nobold,noitalics,nounderscore]"
+	# set -ag window-status-current-format "#[fg=red,bg=black] #{pane_current_path}"
+	# set -ag window-status-current-format ' '
+	
+	# ------------------------------------------------------------------------------
+	# From https://www.rockyourcode.com/copy-and-paste-in-tmux/
+	# Use vim keybindings in copy mode
+	set-option -g mouse on
+	setw -g mode-keys vi
+	set-option -s set-clipboard off
+	bind P paste-buffer
+	bind-key -T copy-mode-vi v send-keys -X begin-selection
+	bind-key -T copy-mode-vi y send-keys -X rectangle-toggle
+	unbind -T copy-mode-vi Enter
+	bind-key -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel 'xclip -se c -i'
+	bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel 'xclip -se c -i'
+	#
+	#     <c-a>[ Now Enters copy mode
+	#     Navigate the copy mode with vi-like-key bindings (u for up, d for down, etc.)
+	#     Hit v to start copying.
+	#     Press y or Enter to copy the text into the tmux buffer. This automatically cancels copy mode.
+	#     Paste into the buffer with <prefix>+P (make sure that it’s uppercase P).
+	#
+	# Or alternatively, use the mouse to copy text after you’ve entered copy mode.
+	#
+	# The above commands use xclip, a Linux command line tool for X11. You can
+	# replace xclip -se c -i with a platform-specific command like pbcopy (MacOS) or
+	#
+0f9a4a7e5eccada9b34a3466e08acb26|file:///home/ygg/.tmux.conf|2|1|v|tmux
+	# Changed prefix to C-Space October 10th
+	# Set prefix to Ctrl-Space
+	# unbind C-b
+	# set -g prefix C-Space
+	# bind Space send-prefix
+	# Set the prefix to ^A
+	unbind C-b
+	set -g prefix ^A
+	
+	# change pane numbers to start with 1 instead of 0
+	set -g base-index 1
+	set -g pane-base-index 1
+	
+	# Set fish as default shell
+	set -g default-shell /usr/bin/fish
+	
+	# screen ^C c
+	unbind ^C
+	bind ^C new-window -c '#{pane_current_path}'
+	bind c new-window -c '#{pane_current_path}' 
+	
+	
+	# No lag after ESC.
+	set -sg escape-time 5
+	
+	set -g visual-bell on
+	
+	#urxvt tab like window switching (-n: no prior escape seq)
+	bind -n S-down new-window
+	bind -n S-left prev
+	bind -n S-right next
+	bind -n C-left swap-window -t -1
+	bind -n C-right swap-window -t +1
+	
+	# Surfraw shortcuts
+	# bind -n g send-keys -t . "sr google "
+	bind -n g send-keys -t . "g"
+	
+	
+	# zoom a pane into a new window for temporary work
+	# unbind +
+	# bind + new-window -d -n tmux-zoom 'clear && echo TMUX ZOOM && read' \; swap-pane -s tmux-zoom.0 \; select-window -t tmux-zoom
+	# unbind -
+	# bind - last-window \; swap-pane -s tmux-zoom.0 \; kill-window -t tmux-zoom
+	
+	# dont automatically rename windows
+	set-option -g allow-rename off
+	
+	#detach ^D d
+	unbind ^D
+	bind ^D detach
+	
+	unbind p
+	bind p previous-window
+	
+	# Break pane into it's own window
+	unbind b
+	bind b break-pane
+	
+	#remove prompt from kill
+	unbind x
+	bind x kill-pane
+	# -a is for all panes except current
+	bind C-x kill-pane -a
+	
+	# windows ^W w
+	unbind ^W
+	bind ^W list-windows
+	unbind w
+	bind w list-windows
+	
+	#redisplay ^L l
+	unbind ^L
+	bind ^L refresh-client
+	
+	#quick reload and edit config
+	bind-key r source-file ~/.tmux.conf \; display-message "Tmux config reloaded"
+	bind-key e split-window -h "nvim ~/.tmux.conf"
+	
+	# split windows like vim
+	bind s split-window -v -c '#{pane_current_path}' 
+	bind v split-window -h -c '#{pane_current_path}' 
+	
+	# move around panes with hjkl
+	bind h select-pane -L
+	bind j select-pane -D
+	bind k select-pane -U
+	unbind l
+	bind l select-pane -R
+	
+	#activate mouse
+	set -g mouse on
+	
+	# From https://github.com/tmux/tmux/issues/1320
+	# Emulate scrolling by sending up and down keys if these commands are running in the pane
+	tmux_commands_with_legacy_scroll="nano less more man git"
+	
+	bind-key -T root WheelUpPane \
+		if-shell -Ft= '#{?mouse_any_flag,1,#{pane_in_mode}}' \
+			'send -Mt=' \
+			'if-shell -t= "#{?alternate_on,true,false} || echo \"#{tmux_commands_with_legacy_scroll}\" | grep -q \"#{pane_current_command}\"" \
+				"send -t= Up" "copy-mode -et="'
+	
+	bind-key -T root WheelDownPane \
+		if-shell -Ft = '#{?pane_in_mode,1,#{mouse_any_flag}}' \
+			'send -Mt=' \
+			'if-shell -t= "#{?alternate_on,true,false} || echo \"#{tmux_commands_with_legacy_scroll}\" | grep -q \"#{pane_current_command}\"" \
+				"send -t= Down" "send -Mt="'
+	
+	
+	
+	# vi-style controls for copy-mode
+	setw -g mode-keys vi
+	setw -g xterm-keys on
+	
+	# Get 24 bit colors
+	set -g default-terminal "tmux-256color" # or tmux-256color
+	set -ga terminal-overrides ",*256col*:Tc"
+	# set -ga terminal-overrides ",xterm-256color:Tc"
+	# set -ga terminal-overrides 'xterm*:smcup@:rmcup@'
+	
+	# Recommended by nvim from ':checkhealth'
+	set-option -sg escape-time 0
+	
+	# Nord Theme
+	# Powerline
+	run-shell "powerline-daemon -q"
+	# source "$/home/shawn/.config/powerline/themes/tmux///tmux/powerline.conf"
+	# set -g status-right ''
+	
+	# set -g @plugin "arcticicestudio/nord-tmux"
+	set -g @plugin 'tmux-plugins/tmux-prefix-highlight'
+	set -g @plugin 'tmux-plugins/tmux-resurrect'
+	set -g @continuum-save-interval '15'
+	set -g @continuum-restore 'off'
+	set -g @plugin 'tmux-plugins/tmux-continuum'
+	# run -b "~/.config/serious-tmux/serious/plugins/tpm/tpm"
+	
+	set -g status-right-length 240
+	set -g status-left-length 140
+	
+	set -g status-right 'Continuum status: #{continuum_status}'
+	# set -g status-left 'Continuum status: #{continuum_status}'
+	
+	set -g status-right "#{pane_current_path}                    "
+	set -ag status-right "#{prefix_highlight}"
+	set -ag status-right '#[fg=brightblack,bg=black,nobold,noitalics,nounderscore]#[fg=white,bg=brightblack] Continuum: #{@continuum-restore} #[fg=white,bg=brightblack,nobold,noitalics,nounderscore] '
+	# run -b "~/.config/serious-tmux/serious/plugins/tpm/tpm"
+	# run-shell "~/.config/serious-tmux/serious/plugins/nord-tmux/nord.tmux"
+	# set -ag status-left "#{prefix_highlight}"
+	
+	# set -g pane-border-status on
+	set -g pane-border-style "bg=default,fg=default"
+	set -g pane-active-border-style "bg=default,fg=green"
+	# Pane naming
+	# toggle pane title visibility from https://github.com/tmux/tmux/issues/680
+	bind H run 'zsh -c "arr=( off top ) && tmux setw pane-border-status \${arr[\$(( \${arr[(I)#{pane-border-status}]} % 2 + 1 ))]}"'
+	
+	# rename pane
+	bind P command-prompt -p "(rename-pane)" -I "#T" "select-pane -T '%%'"
+	
+	# Choose Tree
+	unbind t
+	bind t choose-tree
+	
+	# The following 10 lines are all from https://gitlab.com/protesilaos/dotfiles/blob/master/tmux/.tmux.conf
+	# copy mode
+	# Vim copy-paste behaviour using the clipboard
+	# bind -T copy-mode-vi v send-keys -X begin-selection
+	unbind -T copy-mode-vi v
+	# bind -T copy-mode-vi y send-keys -X copy-pipe "xclip -selection clipboard -i"
+	unbind -T copy-mode-vi y
+	# bind -T copy-mode-vi r send-keys -X rectangle-toggle
+	unbind -T copy-mode-vi r
+	# For vi copy mode bindings
+	# bind -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe "xclip -selection clipboard -i"
+	unbind -T copy-mode-vi MouseDragEnd1Pane
+	# For emacs copy mode bindings
+	# bind -T copy-mode MouseDragEnd1Pane send-keys -X copy-pipe "xclip -selection clipboard -i"
+	unbind -T copy-mode MouseDragEnd1Pane
+	
+	
+	# set -g status-utf9 on
+	# set -ag window-status-current-format "#[fg=black,bg=white,nobold,noitalics,nounderscore]"
+	# set -ag window-status-current-format "#[fg=black,bg=white]#P #{pane-border-status} #{pane-current-command}"
+	# set -ag window-status-current-format "#[fg=black,bg=white,nobold,noitalics,nounderscore]"
+	# set -ag window-status-current-format "#[fg=black,bg=white]#{pane_current_command}"
+	# set -ag window-status-current-format "#[fg=white,bg=black,nobold,noitalics,nounderscore]"
+	# set -ag window-status-current-format "#[fg=red,bg=black] #{pane_current_path}"
+	# set -ag window-status-current-format ' '
+	
+	# ------------------------------------------------------------------------------
+	# From https://www.rockyourcode.com/copy-and-paste-in-tmux/
+	# Use vim keybindings in copy mode
+	set-option -g mouse on
+	setw -g mode-keys vi
+	set-option -s set-clipboard off
+	bind P paste-buffer
+	bind-key -T copy-mode-vi v send-keys -X begin-selection
+	bind-key -T copy-mode-vi y send-keys -X rectangle-toggle
+	unbind -T copy-mode-vi Enter
+	bind-key -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel 'xclip -se c -i'
+	bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel 'xclip -se c -i'
+	#
+	#     <c-a>[ Now Enters copy mode
+	#     Navigate the copy mode with vi-like-key bindings (u for up, d for down, etc.)
+	#     Hit v to start copying.
+	#     Press y or Enter to copy the text into the tmux buffer. This automatically cancels copy mode.
+	#     Paste into the buffer with <prefix>+P (make sure that it’s uppercase P).
+	#
+	# Or alternatively, use the mouse to copy text after you’ve entered copy mode.
+	#
+	# The above commands use xclip, a Linux command line tool for X11. You can
+	# replace xclip -se c -i with a platform-specific command like pbcopy (MacOS) or
+	# wl-copy (Wayland).
+404ba9c46ceac3673911dd713648cee5|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/tmux/init.tmux|77|48|v|sh
+	.tmux.conf
+d2fa2602d1c391ded3e7ea7a744c54e2|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/tmux/init.tmux|78|58|v|sh
+	.tmux.conf"
+d5d584a15906c4faf52cc92b5cfc9383|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|2|1|V|vim
+	" Assert that vim plug is installed
+d281a7decac651ef5aad85dfb2feb05f|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|19|3|v|vim
+	Active plugs
+fd59267c1d847545bc94bf42bfbe1367|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|22|9|v|vim
+	plugconfig
+c23f7ab876ac167e05468ef79f046cb7|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.local/bin/open_plug_config.py|2|39|v|python
+	configs
+5c8cbfdf5913840f7228e4eb5a253ddf|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|21|1|V|vim
+	let b:P = "plugconfig"
+ae342db540d3f2e3353da912d0d87108|file:///home/ygg/notes.md|10|1|V|markdown
+	Regarding gold
+ced3abab681384670829deea1745f2dc|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|21|1|V|vim
+	"TODO 
+0cfb2e179ffacb347a2cc20e01e85ce9|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|89|20|v|vim
+	arielrossanigo
+7bb92f50342930e4c6f16e984f5053cc|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|89|29|v|vim
+	dir-configs-override.vim
+0070271444ed09c4a7248e619a326aa9|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|90|1|v|vim
+	
+	" Code and files fuzzy finder
+	Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+	Plug 'junegunn/fzf.vim' 
+	" Fzf ------------------------------
+	" file finder mapping
+	nmap <leader>e :Files<CR>
+	" tags (symbols) in current file finder mapping
+	nmap <leader>g :BTag<CR>
+	" tags (symbols) in all files finder mapping
+	nmap <leader>G :Tags<CR>
+	" general code finder in current file mapping
+	nmap <leader>f :BLines<CR>
+	" general code finder in all files mapping
+	nmap <leader>F :Lines<CR>
+	" commands finder mapping
+	nmap <leader>c :Commands<CR>
+	
+	
+9da0e44e134d935a9d5f5f8473a5df8c|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|1|3|v|vim
+	Code and files fuzzy finder
+9bc7e922c8be4930c6cc680ad4bf51d4|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|4|1|V|vim
+	" Fzf ------------------------------
+70e5bf4d2484dde8dd9ffed89349ba90|file:///home/ygg/.fzf/doc/fzf.txt|96|1|v|help
+	    " Look for files under current directory
+	    :FZF
+	
+	    " Look for files under your home directory
+	    :FZF ~
+	
+	    " With fzf command-line options
+	    :FZF --reverse --info=inline /tmp
+	
+	    " Bang version starts fzf in fullscreen mode
+	    :FZF!
+	<
+	Similarly to {ctrlp.vim}{2}, use enter key, CTRL-T, CTRL-X or CTRL-V to open
+	selected files in the current window, in new tabs, in horizontal splits, or in
+	vertical splits respectively.
+	
+	Note that the environment variables `FZF_DEFAULT_COMMAND` and
+	`FZF_DEFAULT_OPTS` also apply here.
+	
+	
+ce3996063fca1522e653653a4a3fa6b4|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|21|1|V|vim
+	nnoremap <buffer> <leader>e viW"ay :!open_plug_config<C-r>"
+770774a1d9e4bc4a461862c0260737fc|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|22|9|v|vim
+	plugconfig/junegunn/vim-emoji.vim
+a59a95548a04163cfa34e4307936ecd4|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|21|39|v|vim
+	!open_plug_config 
+de4dfe27938c4d4d76420e2c375e8c73|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|21|46|v|vim
+	<Cr>
+f99709064fd050b01fdcd7e4c4f8682b|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|23|9|v|vim
+	plugconfig/pechorin/any-jump.vim
+37490c91b7dd88060862f31eb475f77c|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|24|9|v|vim
+	plugconfig/townk/vim-autoclose.vim
+c2ccf885bd399365c02ba628781884e1|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/townk/vim-autoclose.vim|1|28|v|
+	"Automatically close parenthesis, etc #Origin-Matt
+6c685468eeaf8ac6a73349eb617f7429|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|21|3|v|vim
+	Use this buffer shortcut by hovering over the plugconfig paths below in
+8cb8553e681369ffa8e4c1517171cea4|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|21|3|v|vim
+	Place the cursor on one of the config paths below and use leader e to jump
+	" to config
+	
+d49f12955c844325877268d8d7630fc1|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|21|3|v|vim
+	Place the cursor on one of the config paths below and use leader e to jump
+	" to config
+d2c67b6632211b8777bd5c3ca35220d3|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|64|1|v|vim
+	" +++++++++++++++++++++ vim-float-term configuration +++++++++++++++++++++++++
+	" Integrated Floating terminal
+	Plug 'voldikss/vim-floaterm'
+	
+	let g:floaterm_keymap_new    = '<leader>.'
+	let g:floaterm_position      = 'center'
+	let g:floaterm_type          = 'normal'
+	
+	" custom mappings for my person tools in normal mode only
+	nnoremap <C-p> :FloatermNew ipython<CR>
+	nnoremap <C-l> :FloatermNew lf<CR>
+	nnoremap <C-s> :FloatermNew sefr<CR>
+	
+e34ade92d70caebc701728860d19cdc8|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|64|1|v|vim
+	" +++++++++++++++++++++ vim-float-term configuration +++++++++++++++++++++++++
+	" Integrated Floating terminal
+	Plug 'voldikss/vim-floaterm'
+	
+	let g:floaterm_keymap_new    = '<leader>.'
+	let g:floaterm_position      = 'center'
+	let g:floaterm_type          = 'normal'
+	
+	" custom mappings for my person tools in normal mode only
+	nnoremap <C-p> :FloatermNew ipython<CR>
+	nnoremap <C-l> :FloatermNew lf<CR>
+	nnoremap <C-s> :FloatermNew sefr<CR>
+	
+	
+413743de004f916a50374365df6424c7|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|66|1|V|vim
+	" Integrated Floating terminal
+d523cdb0463eadd252beb84ae7682d57|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|66|1|V|vim
+	Plug 'voldikss/vim-floaterm'
+74f0ef8915caa36493b76a4a9b8d6ceb|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|66|1|V|vim
+	let g:floaterm_keymap_new    = '<leader>.'
+c437217ed8de7a20808f4809040bfec9|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|66|1|V|vim
+	let g:floaterm_position      = 'center'
+8d4acdbec87d1635b5d0b4e60338eee9|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|66|1|V|vim
+	let g:floaterm_type          = 'normal'
+c7025bb86c60479c73f6308a36c62824|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|66|1|V|vim
+	" custom mappings for my person tools in normal mode only
+3ec4629b9ed899744b029919f6ef2c4d|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|66|1|V|vim
+	nnoremap <C-p> :FloatermNew ipython<CR>
+d23cd20e1e12d9d1ff78ed25f2f11637|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|66|1|V|vim
+	nnoremap <C-l> :FloatermNew lf<CR>
+02f9dd959e2ebb270a8e6563eb354311|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|66|1|V|vim
+	nnoremap <C-s> :FloatermNew sefr<CR>
+fcbfae5c483149d8054b9b48c9c46a92|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|65|1|V|vim
+	runtime plugconfig/voldikss/vim-floaterm.vim
+5f7199526715b2e67b8f1d6d830c707d|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|23|1|V|vim
+	Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+ecbb20dbf99d288d0804ad6b2f47483c|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|62|59|V|vim
+	                                                          "*g:fzf_command_prefix*
+356384a1d68e70b7b85eaeef71d3a2d4|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|62|2|V|vim
+	 "- Most commands support CTRL-T / CTRL-X / CTRL-V key bindings to open in a new
+c7b4cb29a11f375888cd09cbbd19404d|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|62|4|V|vim
+	   "tab, a new split, or in a new vertical split
+10f8b66f23729a83321c4d5ee8d78f84|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|62|2|V|vim
+	 "- Bang-versions of the commands (e.g. `Ag!`) will open fzf in fullscreen
+eb9b86a23c16d5ea1a4ae70c49a37134|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|62|2|V|vim
+	 "- You can set `g:fzf_command_prefix` to give the same prefix to the commands
+2e81260dfa0320b3a4daebf047b97ff6|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|62|4|V|vim
+	   "- e.g. `let g:fzf_command_prefix = 'Fzf'` and you have `FzfFiles`, etc.
+6e86f2a730d4d40d42e56256688a7701|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|62|1|V|vim
+	"(1: `Helptags` will shadow the command of the same name from {pathogen}{10}.
+28719276b8d63529d5c8ca010f824f23|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|62|1|V|vim
+	"But its functionality is still available via `call pathogen#helptags()`.)
+eaf1f7014b5f5cd1de62159835e559a8|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|62|30|V|vim
+	                             "{6} https://github.com/ggreer/the_silver_searcher
+f06208730fd1eeb08dc39ef753439412|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|62|30|V|vim
+	                             "{7} https://github.com/BurntSushi/ripgrep
+64b58fa81bab75b46547558bab432567|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|4|1|v|vim
+	"
+	     "Look for files under current directory
+	    ":FZF
+	
+	    "" Look for files under your home directory
+	    ":FZF ~
+	
+	    "" With fzf command-line options
+	    ":FZF --reverse --info=inline /tmp
+	
+	    "" Bang version starts fzf in fullscreen mode
+	    ":FZF!
+	"Similarly to {ctrlp.vim}{2}, use enter key, CTRL-T, CTRL-X or CTRL-V to open
+	"selected files in the current window, in new tabs, in horizontal splits, or in
+	"vertical splits respectively.
+	
+	"Note that the environment variables `FZF_DEFAULT_COMMAND` and
+	"`FZF_DEFAULT_OPTS` also apply here.
+	
+	
+14f371635bdafe48d1f1c0c4d069fde2|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|34|1|V|vim
+	" TODO SNEAK
+3f70fd68f4329380ee4a0bb895a9ec30|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|35|8|v|vim
+	SNEAK
+bd052217971183afd3cf312d51f7e6f2|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|1|1|v|vim
+	plugconfig/voldikss/vim-floaterm.vim
+68bb237691b65438029a5d36b8109ab7|file:///home/ygg/Workspace/Practice%F0%9F%8F%B9/dotfile_analysis/nvim/plugins/mach2.vim|1|1|v|vim
+	" auto-install vim-plug
+	if empty(glob('~/.config/nvim/autoload/plug.vim'))
+	  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
+	    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	  "autocmd VimEnter * PlugInstall
+	  autocmd VimEnter * PlugInstall | source $MYVIMRC
+	endif
+	
+	call plug#begin('~/.config/nvim/autoload/plugged')
+	
+	    " Better Comments
+	    Plug 'tpope/vim-commentary'
+	    " Change dates fast
+	    Plug 'tpope/vim-speeddating'
+	    " Convert binary, hex, etc..
+	    Plug 'glts/vim-radical'
+	    " Repeat stuff
+	    Plug 'tpope/vim-repeat'
+	    " Text Navigation
+	    Plug 'unblevable/quick-scope'
+	    " Useful for React Commenting 
+	    Plug 'suy/vim-context-commentstring'
+	    " highlight all matches under cursor
+	    " Plug 'RRethy/vim-illuminate'
+	
+	  if exists('g:vscode')
+	    " Easy motion for VSCode
+	    Plug 'asvetliakov/vim-easymotion'
+	    Plug 'machakann/vim-highlightedyank'
+	  else
+	
+	    " Sneak
+	    Plug 'justinmk/vim-sneak'
+	    " Surround
+	    Plug 'tpope/vim-surround'
+	    " Files
+	    Plug 'tpope/vim-eunuch'
+	    " Have the file system follow you around
+	    Plug 'airblade/vim-rooter'
+	    " auto set indent settings
+	    Plug 'tpope/vim-sleuth'
+	    " Better Syntax Support
+	    " Plug 'nvim-treesitter/nvim-treesitter'
+	    Plug 'sheerun/vim-polyglot'
+	    " Cool Icons
+	    Plug 'ryanoasis/vim-devicons'
+	    " Auto pairs for '(' '[' '{'
+	    Plug 'jiangmiao/auto-pairs'
+	    " Closetags
+	    Plug 'alvan/vim-closetag'
+	    " Themes
+	    Plug 'christianchiarulli/nvcode.vim'
+	    " Plug 'ChristianChiarulli/nv-code'
+	    " Plug 'kyazdani42/blue-moon'
+	    " Intellisense
+	    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	    " Status Line
+	    Plug 'vim-airline/vim-airline'
+	    Plug 'kevinhwang91/rnvimr'
+	    " FZF
+	    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	    Plug 'junegunn/fzf.vim'
+	    " Git
+	    Plug 'airblade/vim-gitgutter'
+	    Plug 'tpope/vim-fugitive'
+	    Plug 'tpope/vim-rhubarb'
+	    Plug 'junegunn/gv.vim'
+	    Plug 'rhysd/git-messenger.vim'
+	    " Terminal
+	    Plug 'voldikss/vim-floaterm'
+	    " Start Screen
+	    Plug 'mhinz/vim-startify'
+	    " Vista
+	    Plug 'liuchengxu/vista.vim'
+	    " See what keys do like in emacs
+	    Plug 'liuchengxu/vim-which-key'
+	    " Zen mode
+	    Plug 'junegunn/goyo.vim'
+	    " Snippets
+	    Plug 'honza/vim-snippets'
+	    Plug 'mattn/emmet-vim'
+	    " Interactive code
+	    Plug 'metakirby5/codi.vim'
+	    " Debugging
+	    " Plug 'puremourning/vimspector'
+	    " Better tabline
+	    Plug 'mg979/vim-xtabline'
+	    " undo time travel
+	    Plug 'mbbill/undotree'
+	    " Find and replace
+	    Plug 'ChristianChiarulli/far.vim'
+	    " Plug 'brooth/far.vim'
+	    " Auto change html tags
+	    Plug 'AndrewRadev/tagalong.vim'
+	    " live server
+	    Plug 'turbio/bracey.vim'
+	    " Smooth scroll
+	    Plug 'psliwka/vim-smoothie'
+	    " async tasks
+	    Plug 'skywind3000/asynctasks.vim'
+	    Plug 'skywind3000/asyncrun.vim'
+	    " Swap windows
+	    Plug 'wesQ3/vim-windowswap'
+	    " Markdown Preview
+	    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
+	    " Easily Create Gists
+	    Plug 'mattn/vim-gist'
+	    Plug 'mattn/webapi-vim'
+	    " Colorizer
+	    Plug 'norcalli/nvim-colorizer.lua'
+	    " Rainbow brackets
+	    " Plug 'luochen1990/rainbow'
+	    " Async Linting Engine
+	    " TODO make sure to add ale config before plugin
+	    " Plug 'dense-analysis/ale'
+	    " Better Whitespace
+	    Plug 'ntpeters/vim-better-whitespace'
+	    " Multiple Cursors
+	    " TODO add this back in change from C-n
+	    " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+	    Plug 'moll/vim-bbye'
+	    " Plug 'yuezk/vim-js'
+	    " Plug 'maxmellon/vim-jsx-pretty'
+	    " Plug 'jelera/vim-javascript-syntax'
+	    " Plugin Graveyard
+	
+	    " jsx syntax support
+	    " Typescript syntax
+	    " Plug 'HerringtonDarkholme/yats.vim'
+	    " Multiple Cursors
+	    " Plug 'terryma/vim-multiple-cursors'
+	    " Plug 'kaicataldo/material.vim'
+	    " Plug 'NLKNguyen/papercolor-theme'
+	    " Plug 'tomasiser/vim-code-dark'
+	    " Vim Wiki
+	    " Plug 'https://github.com/vimwiki/vimwiki.git'
+	    " Better Comments
+	    " Plug 'jbgutierrez/vim-better-comments'
+	    " Echo doc
+	    " Plug 'Shougo/echodoc.vim'
+	    " Plug 'hardcoreplayers/spaceline.vim'
+	    " Plug 'vim-airline/vim-airline-themes'
+	    " Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+	    " Plug 'arcticicestudio/nord-vim'
+	    " Ranger
+	    " Plug 'francoiscabrol/ranger.vim'
+	    " Plug 'rbgrouleff/bclose.vim'
+	    " Making stuff
+	    " Plug 'neomake/neomake'
+	    " Plug 'mhinz/vim-signify'
+	    " Plug 'easymotion/vim-easymotion'
+	    " Plug 'preservim/nerdcommenter'
+	    " Plug 'brooth/far.vim'
+	    " Plug 'atishay/far.vim'
+	  endif
+	
+	call plug#end()
+	
+	" Automatically install missing plugins on startup
+	autocmd VimEnter *
+	  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+	  \|   PlugInstall --sync | q
+	  \| endif
+3a77857dd74e7b04e4c25916d6aaceac|file:///home/ygg/Workspace/Practice%F0%9F%8F%B9/dotfile_analysis/nvim/plugins/mach2.vim|1|1|v|
+	" auto-install vim-plug
+	if empty(glob('~/.config/nvim/autoload/plug.vim'))
+	  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
+	    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	  "autocmd VimEnter * PlugInstall
+	  autocmd VimEnter * PlugInstall | source $MYVIMRC
+	endif
+	
+	call plug#begin('~/.config/nvim/autoload/plugged')
+	
+	    " Better Comments
+	    Plug 'tpope/vim-commentary'
+	    " Change dates fast
+	    Plug 'tpope/vim-speeddating'
+	    " Convert binary, hex, etc..
+	    Plug 'glts/vim-radical'
+	    " Repeat stuff
+	    Plug 'tpope/vim-repeat'
+	    " Text Navigation
+	    Plug 'unblevable/quick-scope'
+	    " Useful for React Commenting 
+	    Plug 'suy/vim-context-commentstring'
+	    " highlight all matches under cursor
+	    " Plug 'RRethy/vim-illuminate'
+	
+	  if exists('g:vscode')
+	    " Easy motion for VSCode
+	    Plug 'asvetliakov/vim-easymotion'
+	    Plug 'machakann/vim-highlightedyank'
+	  else
+	
+	    " Sneak
+	    Plug 'justinmk/vim-sneak'
+	    " Surround
+	    Plug 'tpope/vim-surround'
+	    " Files
+	    Plug 'tpope/vim-eunuch'
+	    " Have the file system follow you around
+	    Plug 'airblade/vim-rooter'
+	    " auto set indent settings
+	    Plug 'tpope/vim-sleuth'
+	    " Better Syntax Support
+	    " Plug 'nvim-treesitter/nvim-treesitter'
+	    Plug 'sheerun/vim-polyglot'
+	    " Cool Icons
+	    Plug 'ryanoasis/vim-devicons'
+	    " Auto pairs for '(' '[' '{'
+	    Plug 'jiangmiao/auto-pairs'
+	    " Closetags
+	    Plug 'alvan/vim-closetag'
+	    " Themes
+	    Plug 'christianchiarulli/nvcode.vim'
+	    " Plug 'ChristianChiarulli/nv-code'
+	    " Plug 'kyazdani42/blue-moon'
+	    " Intellisense
+	    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	    " Status Line
+	    Plug 'vim-airline/vim-airline'
+	    Plug 'kevinhwang91/rnvimr'
+	    " FZF
+	    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	    Plug 'junegunn/fzf.vim'
+	    " Git
+	    Plug 'airblade/vim-gitgutter'
+	    Plug 'tpope/vim-fugitive'
+	    Plug 'tpope/vim-rhubarb'
+	    Plug 'junegunn/gv.vim'
+	    Plug 'rhysd/git-messenger.vim'
+	    " Terminal
+	    Plug 'voldikss/vim-floaterm'
+	    " Start Screen
+	    Plug 'mhinz/vim-startify'
+	    " Vista
+	    Plug 'liuchengxu/vista.vim'
+	    " See what keys do like in emacs
+	    Plug 'liuchengxu/vim-which-key'
+	    " Zen mode
+	    Plug 'junegunn/goyo.vim'
+	    " Snippets
+	    Plug 'honza/vim-snippets'
+	    Plug 'mattn/emmet-vim'
+	    " Interactive code
+	    Plug 'metakirby5/codi.vim'
+	    " Debugging
+	    " Plug 'puremourning/vimspector'
+	    " Better tabline
+	    Plug 'mg979/vim-xtabline'
+	    " undo time travel
+	    Plug 'mbbill/undotree'
+	    " Find and replace
+	    Plug 'ChristianChiarulli/far.vim'
+	    " Plug 'brooth/far.vim'
+	    " Auto change html tags
+	    Plug 'AndrewRadev/tagalong.vim'
+	    " live server
+	    Plug 'turbio/bracey.vim'
+	    " Smooth scroll
+	    Plug 'psliwka/vim-smoothie'
+	    " async tasks
+	    Plug 'skywind3000/asynctasks.vim'
+	    Plug 'skywind3000/asyncrun.vim'
+	    " Swap windows
+	    Plug 'wesQ3/vim-windowswap'
+	    " Markdown Preview
+	    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
+	    " Easily Create Gists
+	    Plug 'mattn/vim-gist'
+	    Plug 'mattn/webapi-vim'
+	    " Colorizer
+	    Plug 'norcalli/nvim-colorizer.lua'
+	    " Rainbow brackets
+	    " Plug 'luochen1990/rainbow'
+	    " Async Linting Engine
+	    " TODO make sure to add ale config before plugin
+	    " Plug 'dense-analysis/ale'
+	    " Better Whitespace
+	    Plug 'ntpeters/vim-better-whitespace'
+	    " Multiple Cursors
+	    " TODO add this back in change from C-n
+	    " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+	    Plug 'moll/vim-bbye'
+	    " Plug 'yuezk/vim-js'
+	    " Plug 'maxmellon/vim-jsx-pretty'
+	    " Plug 'jelera/vim-javascript-syntax'
+	    " Plugin Graveyard
+	
+	    " jsx syntax support
+	    " Typescript syntax
+	    " Plug 'HerringtonDarkholme/yats.vim'
+	    " Multiple Cursors
+	    " Plug 'terryma/vim-multiple-cursors'
+	    " Plug 'kaicataldo/material.vim'
+	    " Plug 'NLKNguyen/papercolor-theme'
+	    " Plug 'tomasiser/vim-code-dark'
+	    " Vim Wiki
+	    " Plug 'https://github.com/vimwiki/vimwiki.git'
+	    " Better Comments
+	    " Plug 'jbgutierrez/vim-better-comments'
+	    " Echo doc
+	    " Plug 'Shougo/echodoc.vim'
+	    " Plug 'hardcoreplayers/spaceline.vim'
+	    " Plug 'vim-airline/vim-airline-themes'
+	    " Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+	    " Plug 'arcticicestudio/nord-vim'
+	    " Ranger
+	    " Plug 'francoiscabrol/ranger.vim'
+	    " Plug 'rbgrouleff/bclose.vim'
+	    " Making stuff
+	    " Plug 'neomake/neomake'
+	    " Plug 'mhinz/vim-signify'
+	    " Plug 'easymotion/vim-easymotion'
+	    " Plug 'preservim/nerdcommenter'
+	    " Plug 'brooth/far.vim'
+	    " Plug 'atishay/far.vim'
+	  endif
+	
+	call plug#end()
+	
+	" Automatically install missing plugins on startup
+	autocmd VimEnter *
+	  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+	  \|   PlugInstall --sync | q
+	  \
+4ad14ceb37b4a2e99587de092db8bfcb|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/library/mach2-plugins.vim|20|1|V|vim
+	    Plug 'unblevable/quick-scope'
+f3410e754d191e18ccecc71b1c518484|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/library/mach2-plugins.vim|33|1|V|vim
+	    Plug 'justinmk/vim-sneak'
+a8875bbe4272c0bdd786cfaaedf77921|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|43|20|v|vim
+	Toggle
+4cfa6c981549e990fe2344e4c805405e|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|43|20|v|vim
+	Find
+c444858e0aaeb727da73d2eae62321ad|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|45|7|v|vim
+	leader
+740b876ef40ed019556cfc1bf8eb602e|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|45|1|V|vim
+	nmap <leader><C-n> :NERDTreeFind<CR>
+3a34aa363506bfa5826a54c5435e9b16|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|40|7|v|vim
+	scrooloose
+b0ae7354a08ec4dabd3e92474d026db6|file:///home/ygg/Workspace/Practice%F0%9F%8F%B9/dotfile_analysis/nvim/plugins/plugins.csv|50|1|V|csv
+	junegunn/vim-github-dashboard,1,0,1,0,0,0,0,2
+5195c1ebeb21ede910f6650551022c62|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|38|36|v|vim
+	,1,0,1,0,0,0,0,2
+559730fb8ae926820675e4b4ca615b6c|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|0|0|v|vim
+	plugconfig/tpope/vim-repeat.vim
+127f9f5b3873ea44a169a11402af117b|unknown:139|1|7|v|
+	plugconfig/
+4caf2505b9cc336331987dda3132448b|unknown:139|1|1|v|
+	Plug 'tpope/vim-repeat'
+160ff3614f7fc5e36ac7aa35e304de62|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|43|1|v|vim
+	 
+	" file finder mapping
+	nmap <leader>e :Files<CR>
+	" tags (symbols) in current file finder mapping
+	nmap <leader>g :BTag<CR>
+	" tags (symbols) in all files finder mapping
+	nmap <leader>G :Tags<CR>
+	" general code finder in current file mapping
+	nmap <leader>f :BLines<CR>
+	" general code finder in all files mapping
+	nmap <leader>F :Lines<CR>
+	" commands finder mapping
+	nmap <leader>c :Commands<CR>
+	
+	
+e5ca8ff82739786b04541f2092a58456|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|43|1|V|vim
+	nnoremap <C-p><C-p> :History<CR>
+1b66fa8aad2008741f4fc3b3bd4ad427|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|44|1|V|vim
+	nnoremap <C-p><C-r> :History:<CR>
+c0bdaf5867f2ac7af234e84e930275fd|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|45|22|v|vim
+	History:
+11e959fa411067788b8a95ada506661a|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|45|1|V|vim
+	nnoremap <C-p><C-t> :Files<CR>
+91f3a2c0e4424c87689525da44c4db11|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|46|22|v|vim
+	Files
+3113074e69d5502596d98a4a3087aa0d|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|46|1|V|vim
+	nnoremap <C-p><C-c> :Colors<CR>
+5d50889672f6f860d14f502de3de1957|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|47|22|v|vim
+	Colors
+182fa0e33626b5df1d6e97b21ccfb27e|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|47|1|V|vim
+	nnoremap <C-p><C-w> :Windows<CR>
+aea23489ce3aa9b6406ebb28e0cda430|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|48|22|v|vim
+	Windows
+a9dd99c0d7d70d4585493db6ca2f171c|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|48|1|V|vim
+	nnoremap <C-p><C-c> :Commands<CR>
+c441ee50c88f6e5e3a7c69fc69dad8b8|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|49|22|v|vim
+	Commands
+25e7c7e591f5a5c9302e9edc2ec1803c|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|49|1|V|vim
+	nnoremap <C-p><C-h> :Helptags<CR>
+659ddff9baad118753e08e0d8cc03011|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|50|22|v|vim
+	Helptags
+18d7ce428f7a5b55c06121e76721ce05|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|43|15|v|vim
+	<C-p>
+16d2b386b2034b9488996466aaae0b57|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|43|17|v|vim
+	History
+9fa0ed075a0b1790f3c444453b9390cd|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|52|1|V|vim
+	nnoremap <C-p><C-m> :Maps<CR>
+af51fdf94adbb4b6fe4f1275b07df10d|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|53|22|v|vim
+	Maps
+76881e5adb014b020fd626c6d3894a18|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|54|21|V|vim
+	" file finder mapping
+8f7af734ae987743dbc1393c7a5f0ec3|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|54|25|V|vim
+	nmap <leader>e :Files<CR>
+34e70dc0ee92d9e3e4b8aac60d5aa787|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|54|25|V|vim
+	" tags (symbols) in current file finder mapping
+91c1a79419efaf0b5dc4654ed5919229|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|54|24|V|vim
+	nmap <leader>g :BTag<CR>
+aea277bc206393751ced1e9dd1551391|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|54|24|V|vim
+	" tags (symbols) in all files finder mapping
+f0ce4c9d3c0ef0390c51c60501ca4c49|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|54|24|V|vim
+	nmap <leader>G :Tags<CR>
+2bb2a921e286333c875720c6e65c03a5|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|54|24|V|vim
+	" general code finder in current file mapping
+5c08088b6250c3fcbc3558622c33fe38|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|54|24|V|vim
+	nmap <leader>f :BLines<CR>
+efdfbefa66fbf7470285d0b607971ac0|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|54|24|V|vim
+	" general code finder in all files mapping
+37688092739df91418be5d6fbf8cda89|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|54|24|V|vim
+	nmap <leader>F :Lines<CR>
+7487f4bceb1c44fc5f0fa0599627d745|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|54|24|V|vim
+	" commands finder mapping
+56650b221fbe07988bf7016fa4549b77|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugconfig/junegunn/fzf.vim|54|24|V|vim
+	nmap <leader>c :Commands<CR>
+ced66a533cd1c2d5cc9939b356b365b5|file:///home/ygg/Workspace/Practice%F0%9F%8F%B9/dotfile_analysis/nvim/plugins/plugins.csv|24|1|v|csv
+	honza/vim-snippets
+0c9137ead966cbb37cd512b8256b47cc|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|22|1|V|vim
+	nnoremap <buffer> <leader>e viW"ay :e <C-r>"<CR>
+3989761d671739ad6d9abdf1870c75b1|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|23|39|v|vim
+	viW"ay
+e64f41b3f68ec870b643598bcfb11fbe|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|23|44|v|vim
+	:e <C-r>"<CR>
+58f9c70c8fdb2dccecabba3d269c8448|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|24|20|v|vim
+	junegunn/vim-emoji
+8200ebcf799abcf39c3527facd14614b|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|21|1|V|vim
+	" Use this shortcut to jump to plugin config files.
+98e83c49b511c91754281fc4a72437c8|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|21|7|v|vim
+	this shortcut
+d70f02c12c2d93d993964ffd861d6da6|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|23|28|v|vim
+	config files
+fa44f8d4d8f8a53ac8c88a4bc9fcd5c9|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|0|0|v|vim
+	plugconfig/airblade/vim-rooter.vim
+64894524ad04f0393d19acd8bc95e269|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|38|18|v|vim
+	quick-sc
+4d24ba3dd94edae7191f62e4aa2c02af|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|39|29|V|vim
+	Plug 'unblevable/quick-scope'
+876f9b9471c8d32a6050dc3226d36334|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|0|0|v|vim
+	plugconfig/unblevable/quick-scope.vim
+01d04a0a6e158257f9e5c79471341bd4|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|34|20|v|vim
+	arielrossanigo/dir-configs-override.vim
+88332b8af992b98b179c68969f34a9a6|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|38|20|v|vim
+	unblevable/quick-scope
+ee5ac5d1b84d6c009eb36f1ab93f87fb|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|23|1|V|vim
+	" Use ,g to jump to plugin readme on github.
+61287511571dca4af0a76b24c9b7492c|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|25|10|v|vim
+	to jump to plugin readme on github.
+41afaea1aa867401dacc2267832ca4d7|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|39|1|v|vim
+	Plug
+9aa7a26e70c7ca4d8005e5b1ef17cc27|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|28|6|V|vim
+	    "nnoremap <buffer> <leader>x 0ciwruntime plugconfig/<esc>t'xxf'xa.vim
+11e06a0f373dadc38a0859c0c993c48f|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|24|1|V|vim
+	nnoremap <buffer> <leader>g Bt/llv$hhhhh"ay :!open https://github.com/<C-r>a<CR>
+23d016fb30028357a122b2cb3d106ee2|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|0|0|v|vim
+	plugins.vim
+9467998d72f92efc0f742fc007898a6a|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|1|1|v|vim
+	keys.vim
+58e6af07393c907914e5f0a5a18eb4f8|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|1|1|v|vim
+	settings.vim
+484a838be17f7a374e706398c9a17799|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/plugins.vim|22|1|V|vim
+	nnoremap <buffer> <leader>e viW"ay :e <C-r>a<CR>
+a96eaf0651b82344c576f12d9f909b3d|unknown:2|0|0|v|
+	plugconfig/junegunn/fzf.vim
+e076cbdbbf6cdb58a5b46fe300484373|unknown:13|53|1|V|
+	nnoremap <C-p><C-b> :Buffers<CR>
+4c19ddb10d5a902842dda06a62c3d601|unknown:13|54|22|v|
+	Buffers
+daefc061086fc659d3d1acfb223ddab2|unknown:2|87|1|V|vim
+	runtime plugconfig/junegunn/fzf.vim
+0ed5eebe671bcc8a782faf82976cc76f|unknown:2|24|29|v|vim
+	viW"ay :e <C-r>a<CR>
+8bb2365b3919d79c146274dc8e40148a|unknown:2|24|1|V|vim
+	nnoremap <buffer> <leader>g 0ciwruntime plugconfig/<esc>t'xxf'xa.vim<esc>
+11cb67338b0de166398ff12a82478df1|unknown:2|26|1|v|vim
+	" TODO Plug 
+cb85338c6343d73916f49a9a45470380|unknown:2|24|29|v|vim
+	0ciwruntime plugconfig/<esc>t'xxf'xa.vim<esc>
+54901248c2fe9b339db0bd2da3bbd840|unknown:2|27|9|v|vim
+	plugconfig/junegunn/vim-emoji
+56a71fac2d5754868baf21b031e65b3e|unknown:2|24|34|v|vim
+	iWhhhh
+472197580b593218cb4d6801353744d8|file:///home/ygg/notes.md|14|14|v|markdown
+	: 1.
+759042b4784c573742130752c9c089af|file:///home/ygg/notes.md|8|45|v|markdown
+	 to support everything that we have
+1e836cae5fbb210997bec61b440934ba|file:///home/ygg/notes.md|5|1|v|markdown
+	
+	GODL is a gold backed token.
+	
+	The main advantage that we have is liquidity.
+	
+	Two layers
+	1. Business Layer
+	You can see at the very top, the digital bank. A custodial service, third party, eco bank, some kind of gold partnership.
+	The oracle is for various metrics required such as buy gold price. Any parameters that we need for the gold. Any parameters that we require can be accessed
+	from the oracle for pricing the token.
+	
+	
+	2. Defi Layer
+	Layer 2 is the blockchain, developed on hyper ledger. Hyper ledger is a gateway to IBM. We
+	need to set our own transaction fee. It is not gas. 5% of the transaction fee is distributed to the 
+	foundation and go towards social investment. Transaction fee is a variable. It can be 5% or 10%.
+	
+	
+	We have users that can exchange between wallets.
+	
+	We can transfer GODL tokens from layer 1 to layer 2.
+	
+	We have the price difference because we have the oracle price, and then we
+	have the price of gold that we buy. Between oracle, and the gold. So we ask
+	people to buy the discount on gold. People don't need to understand how it works.
+	People pool their money and get access to the gold. They simply store their money
+	and have the interest happening. The oracle and the difference can be mined. It's
+	essentially practical yield farming with a high social impact.
+	
+	Gold mining.
+	We build a pool on balancer with 80% of our gold-backed token which is godl. Plus
+	we can use 10% of any liquidity from defi like uniswap or lend. At the same time,
+	we issue a governance token. That is Ubuntu token. This governance token will give
+	people the right to vote on changes inside of the system. It works like a traditional
+	governance token. People will see real value on this token because they can make decisions
+	such as how much commission is charged and where the funds go. We can create new votes new
+	cases ect. So this pool on balancer will help people to find profit. Thus we have a separate token
+	that is not completely coupled to the ubuntu ecosystem.
+	
+	Services
+	Telemeds and services will be provided through the voting. This ecosystem has so many angles. People
+	have so many things that they can vote for so we get user retention. Users can vote for the multi-stake
+	pool that is backing the token. Which tokens in pool? We now have a smart Africa, and we have an agreement
+	for the technical implementations across Africa, and we can export this to countries around the globe,
+	especially other developing companies. 
+	
+	We have introduced defi and we have not changed any of the features of the initial idea. We have two layers
+	of users, basic users. Same as you make a deposit in the bank, you click two buttons and have a high interest
+	savings account. Secondly, the defi users will see the advantage of what we are creating. 1. gold backed token.
+	2. governance token. 3. large user base. 
+	
+	In general we need 1 to 3 months to make the development. But working with 
+	
+	GODL is on hyperledger
+	GODL needs to be added to the pool on Balancer
+	
+	We do not modify the ecosystem. We add to the value of the solution by adding defi.
+	
+	It's essentially a bank where the main currency is backed by gold. Where this currency will not just be in one
+	country but will circulate the economy.
+f9752901068a1566e82230f009f80c34|file:///home/ygg/notes.md|5|1|v|markdown
+	
+	GODL is a gold backed token.
+	
+	The main advantage that we have is liquidity.
+	
+	Two layers
+	1. Business Layer You can see at the very top, the digital bank. A custodial
+	   service, third party, eco bank, some kind of gold partnership.  The oracle
+	   is for various metrics required such as buy gold price. Any parameters that
+	   we need for the gold. Any parameters that we require can be accessed from
+	   the oracle for pricing the token.
+	
+	
+	2. Defi Layer Layer 2 is the blockchain, developed on hyper ledger. Hyper
+	   ledger is a gateway to IBM. We need to set our own transaction fee. It is
+	   not gas. 5% of the transaction fee is distributed to the foundation and go
+	   towards social investment. Transaction fee is a variable. It can be 5% or
+	   10%.
+	
+	
+	We have users that can exchange between wallets.
+	
+	We can transfer GODL tokens from layer 1 to layer 2.
+	
+	We have the price difference because we have the oracle price, and then we have
+	the price of gold that we buy. Between oracle, and the gold. So we ask people
+	to buy the discount on gold. People don't need to understand how it works.
+	People pool their money and get access to the gold. They simply store their
+	money and have the interest happening. The oracle and the difference can be
+	mined. It's essentially practical yield farming with a high social impact.
+	
+	Gold mining.  We build a pool on balancer with 80% of our gold-backed token
+	which is godl. Plus we can use 10% of any liquidity from defi like uniswap or
+	lend. At the same time, we issue a governance token. That is Ubuntu token. This
+	governance token will give people the right to vote on changes inside of the
+	system. It works like a traditional governance token. People will see real
+	value on this token because they can make decisions such as how much commission
+	is charged and where the funds go. We can create new votes new cases ect. So
+	this pool on balancer will help people to find profit. Thus we have a separate
+	token that is not completely coupled to the ubuntu ecosystem.
+	
+	Services Telemeds and services will be provided through the voting. This
+	ecosystem has so many angles. People have so many things that they can vote for
+	so we get user retention. Users can vote for the multi-stake pool that is
+	backing the token. Which tokens in pool? We now have a smart Africa, and we
+	have an agreement for the technical implementations across Africa, and we can
+	export this to countries around the globe, especially other developing
+	companies. 
+	
+	We have introduced defi and we have not changed any of the features of the
+	initial idea. We have two layers of users, basic users. Same as you make a
+	deposit in the bank, you click two buttons and have a high interest savings
+	account. Secondly, the defi users will see the advantage of what we are
+	creating. 1. gold backed token.
+	2. governance token. 3. large user base. 
+	
+	In general we need 1 to 3 months to make the development. But working with 
+	
+	GODL is on hyperledger GODL needs to be added to the pool on Balancer
+	
+	We do not modify the ecosystem. We add to the value of the solution by adding
+	defi.
+	
+	It's essentially a bank where the main currency is backed by gold. Where this
+	currency will not just be in one country but will circulate the economy.
+a1e75b726bad78bbef46e4b290eb439d|unknown:3|0|0|v|vim
+	plugconfig/junegunn/fzf.vim.vim
+c9cfc6c61690d99dfaad9c535f3e4439|unknown:8|54|1|V|
+	nnoremap <C-p><C-f> :Filetypes<CR>
+f7ea5baae85835104f8567e9c2067531|unknown:8|55|22|v|
+	Filetypes
+b665cf8fcf9959ca49fe2cdc6298a407|unknown:8|0|0|v|
+	:Filetypes<CR>
+5a868d2a21a9f643898ae51a9f202551|file:///home/ygg/Workspace/Practice%F0%9F%8F%B9/dotfile_analysis/nvim/plugins/plugins.csv|24|1|V|csv
+	honza/vim-snippets,0,0,0,1,0,1,1,3
+645ad62983756e884727df5a2e2fa65b|unknown:3|43|16|V|vim
+	,0,0,0,1,0,1,1,3
+6fcb1f61ba7d433c77aa9c54459ae2ec|unknown:3|40|23|V|vim
+	runtime plugconfig/unblevable/quick-scope.vim
+096a383af19465aab9bca8134726880e|unknown:3|42|1|V|vim
+	runtime plugconfig/honza/vim-snippets.vim
+e5176b3f2f3ec8422a375abf3a79d490|unknown:3|0|0|v|vim
+	plugconfig/preservim/nerdcommenter.vim
+f2a9faa735401e43390a35c167f9254e|unknown:3|34|1|V|vim
+	runtime plugconfig/preservim/nerdcommenter.vim
+f88164372f879e886205883383868c71|unknown:3|35|34|v|vim
+	commenter
+22bb29791523a6913b2c12f08268778f|unknown:3|45|1|v|vim
+	" Better file browser
+	Plug 'preservim/nerdtree'
+	" NERDTree -----------------------------
+	" toggle nerdtree display
+	map <C-n> :NERDTreeToggle<CR>
+	nmap <leader><C-n> :NERDTreeFind<CR>
+	" open nerdtree with the current file selected
+	" don't show these file types
+	let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
+	
+59a175c2ab2b27ad9cee6e23c76884bf|unknown:3|0|0|v|vim
+	plugconfig/preservim/nerdtree.vim
+d9349e89ad6f4f3a514cc64af18caaad|unknown:38|1|1|V|
+	kkjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj:q
+2f5ec0378569ff28381a88825bd8db81|unknown:38|3|1|V|
+	" NERDTree -----------------------------
+9e15d85d7ef1938f14b63b2b6ab9f25a|unknown:38|8|1|V|
+	" open nerdtree with the current file selected
+45fd6abb7edf2e8e277ae2748aba2fea|unknown:38|1|1|v|
+	" NERDTree -----------------------------
+	" Better file browser
+	Plug 'preservim/nerdtree'
+	
+	" toggle nerdtree display
+	map <C-n> :NERDTreeToggle<CR>
+	
+	" open nerdtree with the current file selected
+	nmap <leader><C-n> :NERDTreeFind<CR>
+	
+	" don't show these file types
+	let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
+	
+89ab3b6a7f7ed4702c997d0c74a9f7c7|unknown:3|44|1|V|vim
+	Plug 'junegunn/vim-github-dashboard'
+e5a3053072c40738f687ea6c85478f91|unknown:3|0|0|v|vim
+	plugconfig/junegunn/vim-github-dashboard.vim
+197079038bdc1f81904808f4e978f1a4|unknown:3|43|10|V|vim
+	" TODO GITHUB DASHBOARD
+ee856d049bd69f0696de052d78f84bc4|unknown:3|0|0|v|vim
+	plugconfig/neoclide/coc.vim.vim
+28a976f09876422f9496704d8ec05f3e|unknown:43|36|1|v|vim
+	function! s:check_back_space() abort
+	  let col = col('.') - 1
+	  return !col || getline('.')[col - 1]  =~# '\s'
+	endfunction
+	
+0b7f336dc6672d4cf6e38c3d084b80e2|file:///home/ygg/Workspace/configuration%F0%9F%A7%AA/dotfiles/.config/nvim/init.vim|1|1|V|vim
+	" Use ,e to jump to file under curor
+	nnoremap <buffer> <leader>e "ayiW :e <C-r>a<CR>
