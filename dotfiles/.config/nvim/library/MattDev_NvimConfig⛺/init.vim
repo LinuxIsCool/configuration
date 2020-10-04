@@ -19,5 +19,3 @@ let g:neomake_virtualtext_current_error = 1
 noremap <leader>f 0
 noremap <leader>j $
 map <leader>/ :nohl<CR>
-
-test
