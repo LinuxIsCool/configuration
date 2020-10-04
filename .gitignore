@@ -2,7 +2,6 @@ fish_variables
 NVIMS/
 plugged/
 dotfiles/.config/tmux/serious
-library/
 tags
 node_modules
 dotfiles/.config/tmux/resurrect/
