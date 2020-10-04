@@ -66,8 +66,8 @@ setw -g xterm-keys on
 bind P command-prompt -p "(rename-pane)" -I "#T" "select-pane -T '%%'"
 
 # Choose Tree
-unbind t
-bind t choose-tree
+unbind T
+bind T choose-tree
 
 # https://gitlab.com/protesilaos/dotfiles/blob/master/tmux/.tmux.conf
 # copy mode
