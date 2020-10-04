@@ -3,9 +3,18 @@
 # source "$/home/shawn/.config/powerline/themes/tmux///tmux/powerline.conf"
 # set -g status-right ''
 
+
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+
 # Nord
 # set -g @plugin "arcticicestudio/nord-tmux"
 # run-shell "~/.config/serious-tmux/serious/plugins/nord-tmux/nord.tmux"
+
+# Tmux Power
+set -g @tmux_power_theme 'gold'
+set -g @plugin 'wfxr/tmux-power'
 
 # Prefix Highlight
 set -g @plugin 'tmux-plugins/tmux-prefix-highlight'
