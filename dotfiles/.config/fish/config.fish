@@ -52,3 +52,4 @@ end
 #-------------------------------------------------------------------------------
 # See fishfile for installed plugins through fisherman
 abbr gc git commit -m
+abbr gp git push origin master
