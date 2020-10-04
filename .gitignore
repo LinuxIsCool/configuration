@@ -7,3 +7,7 @@ dotfiles/.config/tmux/serious
 library/
 tags
 node_modules
+dotfiles/.config/tmux/resurrect/
+**/tmux/plugins/
+**/tmux/themes/
+dotfiles/.config/coc/mru

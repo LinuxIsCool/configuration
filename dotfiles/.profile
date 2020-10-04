@@ -31,3 +31,15 @@ export EDITOR="nvim"
 export TERMINAL="gnome-terminal"
 export BROWSER="firefox"
 export READER="zathura"
+# Turn foxhound engine logging on/off
+# 1 is for True, and 0 is for False
+export FOXHOUND_LOGGING="1"
+# Turn foxhound engine logging on/off
+# 1 is for True, and 0 is for False
+export FOXHOUND_LOGGING="1"
+# Turn foxhound engine logging on/off
+# 1 is for True, and 0 is for False
+export FOXHOUND_LOGGING="1"
+# Turn foxhound engine logging on/off
+# 1 is for True, and 0 is for False
+export FOXHOUND_LOGGING="1"

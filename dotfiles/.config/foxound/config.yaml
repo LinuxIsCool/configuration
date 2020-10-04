@@ -1,0 +1,89 @@
+Managers:
+  Default:
+    Indicators:
+      moving_averages:
+      - ma2
+      - ma5
+      - ma14
+      - m30
+      - ma60
+      - ma100
+      - ma150
+      - ma200
+      orderbook_features:
+      - volumetric_average_price
+      oscilators:
+      - bull_bear_index
+      - awesome_oscillator
+      pivots:
+      - fibonacci
+      - catalina
+      - jacobson
+    Stablebaselines:
+      Agent:
+        model: 19788c2a
+        portfolio_action: normalize
+        reward: log_return
+      Backtesting:
+        include_learn_period: false
+        initial_portfolio_value_USD: 1000
+        render:
+        - mean_returns
+        - portfolio_return
+        - market_return
+        - portfolio_value
+      Environment:
+        features:
+        - forecasts
+        - returns
+        frequency: 1h
+        observation_periods: 7
+      Learning:
+        end_date: '2020-01-01'
+        start_date: '2016-01-01'
+      Trading:
+        live: false
+    Timeseries:
+      Live:
+        epochs: 1
+        frequency: 1h
+        max_coins: null
+        periods: 200
+        targetperiod: 7
+      Training:
+        epochs: 4
+        frequency: 1h
+        max_coins: null
+        periods: 26280
+        targetperiod: 7
+    Tpot:
+      generations: 100
+      n_jobs: -1
+      populations: 100
+Services:
+  Crytpocompare:
+    Private_key: null
+    Public_key: f4c265730044e74d20660c034279083ef9bac9fe9eaebedc9b866338095eb680
+  Shrimpy:
+    Private_key: "36a920b1efd5a3f787ad29bbeedc935b1042f41199c7da45f848fc880d59e228"
+    Public_key: "e28c27e25cf3a94c9ada49b629236c81b3c56a519ba88a8af2b9b20d9bd7e1540afdec241f02bfa6949de956197f4ccc8a6bfd6edc7642e389ad725fc51c5c90"
+Storage:
+  Database:
+  - filebase
+  Local:
+  - volume-data
+  - ohlc-data
+  - feature-matrices
+  - pipelines
+  - models
+  - forecasts
+  - agents
+  - portfolios
+Users:
+  kieran:
+    Accounts:
+      binance:
+        Manager: Default
+        Online: false
+        Private_key: private key here
+        Public_key: public key here

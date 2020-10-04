@@ -41,6 +41,8 @@ runtime plugconfig/justinmk/vim-sneak.vim
 runtime plugconfig/honza/vim-snippets.vim
 runtime plugconfig/unblevable/quick-scope.vim
 runtime plugconfig/junegunn/vim-github-dashboard.vim
+runtime plugconfig/jmcomets/vim-pony.vim
+Plug 'psliwka/vim-smoothie'
 
 " Tagbar -----------------------------
 Plug 'majutsushi/tagbar'

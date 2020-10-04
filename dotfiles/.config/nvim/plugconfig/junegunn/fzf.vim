@@ -41,15 +41,18 @@ Plug 'junegunn/fzf.vim'
   "`:Filetypes`       | File types
  "------------------+-----------------------------------------------------------------------
 nnoremap <C-p> :Commands<CR>fzf#
-nnoremap <C-p><C-p> :History<CR>
-nnoremap <C-p><C-r> :History:<CR>
-nnoremap <C-p><C-s> :History/<CR>
-nnoremap <C-p><C-t> :Files<CR>
-nnoremap <C-p><C-c> :Colors<CR>
-nnoremap <C-p><C-w> :Windows<CR>
-nnoremap <C-p><C-k> :Commands<CR>
-nnoremap <C-p><C-h> :Helptags<CR>
-nnoremap <C-p><C-m> :Maps<CR>
-nnoremap <C-p><C-b> :Buffers<CR>
-nnoremap <C-p><C-f> :Filetypes<CR>
-nnoremap <C-p><C-l> :Lines<CR>
+"nnoremap <C-p><C-p> :History<CR>
+"nnoremap <C-p><C-r> :History:<CR>
+"nnoremap <C-p><C-s> :History/<CR>
+"nnoremap <C-p><C-t> :Files<CR>
+"nnoremap <C-p><C-c> :Colors<CR>
+"nnoremap <C-p><C-w> :Windows<CR>
+"nnoremap <C-p><C-k> :Commands<CR>
+"nnoremap <C-p><C-h> :Helptags<CR>
+"nnoremap <C-p><C-m> :Maps<CR>
+"nnoremap <C-p><C-b> :Buffers<CR>
+"nnoremap <C-p><C-f> :Filetypes<CR>
+"nnoremap <C-p><C-l> :Lines<CR>
+
+"For jmcomets/vim-pony
+nnoremap <leader>d :Commands<CR>^D 

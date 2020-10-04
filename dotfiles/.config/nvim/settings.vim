@@ -2,6 +2,7 @@
 "  Neoconfig by Shawn Anderson starting September 30 2020
 set autochdir
 set noswapfile
+set tags=tags
 "
 " ------------------------------------------------------------------------------
 "  These are inherited from MattCoding4Days

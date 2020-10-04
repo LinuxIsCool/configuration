@@ -1,0 +1,48 @@
+disable_existing_loggers: false
+formatters:
+  colored:
+    (): colorlog.ColoredFormatter
+    format: '%(log_color)s%(levelname)-8s%(reset)s %(blue)s%(message)s'
+  pedantic:
+    format: '%(asctime)s - %(module)s - %(funcName)s - %(name)s - %(lineno)d - %(levelname)s
+      - %(message)s'
+  simple:
+    format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: simple
+    level: INFO
+    stream: ext://sys.stdout
+  console-color:
+    class: logging.StreamHandler
+    formatter: colored
+    level: INFO
+    stream: ext://sys.stdout
+  file_handler:
+    class: logging.handlers.RotatingFileHandler
+    filename: /home/runner/.local/share/foxhound/log/foxhound-engine.log
+    formatter: pedantic
+    level: DEBUG
+loggers:
+  dev:
+    handlers:
+    - console-color
+    - file_handler
+    level: DEBUG
+    propagate: false
+  production:
+    handlers:
+    - console
+    - file_handler
+    level: DEBUG
+    propagate: false
+  test:
+    handlers:
+    - console
+    level: INFO
+    propagate: false
+root:
+  handlers:
+  - file_handler
+version: 1
