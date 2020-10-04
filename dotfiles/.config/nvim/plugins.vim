@@ -44,6 +44,7 @@ runtime plugconfig/junegunn/vim-github-dashboard.vim
 runtime plugconfig/jmcomets/vim-pony.vim
 Plug 'psliwka/vim-smoothie'
 
+Plug 'airblade/vim-gitgutter'
 " Tagbar -----------------------------
 Plug 'majutsushi/tagbar'
 " TODO known problems:

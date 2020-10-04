@@ -9,3 +9,4 @@ dotfiles/.config/tmux/resurrect/
 **/tmux/themes/
 dotfiles/.config/coc/mru
 dotfiles/.config/coc/extensions/coc-yank-data/yank
+dotfiles/.config/coc/memos.json
