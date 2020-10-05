@@ -40,8 +40,8 @@ Plug 'junegunn/fzf.vim'
   "`:Helptags`        | Help tags [1]
   "`:Filetypes`       | File types
  "------------------+-----------------------------------------------------------------------
-nnoremap <C-p> :Commands<CR>fzf#
-"nnoremap <C-p><C-p> :History<CR>
+nnoremap <C-f> :Commands<CR>fzf#
+nnoremap <C-p> :History<CR>
 "nnoremap <C-p><C-r> :History:<CR>
 "nnoremap <C-p><C-s> :History/<CR>
 "nnoremap <C-p><C-t> :Files<CR>
@@ -55,4 +55,23 @@ nnoremap <C-p> :Commands<CR>fzf#
 "nnoremap <C-p><C-l> :Lines<CR>
 
 "For jmcomets/vim-pony
-nnoremap <leader>d :Commands<CR>^D 
+nnoremap <leader>d :Commands<CR>'DjangoGoto 
+
+" Workspace Search
+command! -bang Work call fzf#vim#files('~/Workspace', <bang>0)
+
+" Grep current git project
+command! -bang -nargs=* Work2
+  \ call fzf#vim#files(
+  \   'git grep --line-number -- '.shellescape(<q-args>), 0,
+  \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
+
+command! -bang -nargs=* GGrep
+  \ call fzf#vim#grep(
+  \   'git grep --line-number -- '.shellescape(<q-args>), 0,
+  \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
+
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   'rg --column --line-number --no-heading --color=always --smart-case -- '.shellescape(<q-args>), 1,
+  \   fzf#vim#with_preview(), <bang>0)

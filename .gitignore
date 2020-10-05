@@ -10,3 +10,5 @@ dotfiles/.config/tmux/resurrect/
 dotfiles/.config/coc/mru
 dotfiles/.config/coc/extensions/coc-yank-data/yank
 dotfiles/.config/coc/memos.json
+dotfiles/.config/coc/history.json
+dotfiles/.config/nvim/library/

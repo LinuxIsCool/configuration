@@ -1,6 +1,6 @@
 # change pane numbers to start with 1 instead of 0
-set -g base-index 1
-set -g pane-base-index 1
+#set -g base-index 1
+#set -g pane-base-index 1
 
 # Set fish as default shell
 set -g default-shell /usr/bin/fish

@@ -39,7 +39,7 @@ runtime plugconfig/arielrossanigo/dir-configs-override.vim.vim
 runtime plugconfig/voldikss/vim-floaterm.vim
 runtime plugconfig/justinmk/vim-sneak.vim
 runtime plugconfig/honza/vim-snippets.vim
-runtime plugconfig/unblevable/quick-scope.vim
+"runtime plugconfig/unblevable/quick-scope.vim
 runtime plugconfig/junegunn/vim-github-dashboard.vim
 runtime plugconfig/jmcomets/vim-pony.vim
 Plug 'psliwka/vim-smoothie'
@@ -176,7 +176,7 @@ let g:indentLine_char = '┊'
 " Distraction free programming
 Plug 'junegunn/goyo.vim'
 " Goyo mappings
-nmap <C-g> :Goyo 60x60
+nmap <C-g> :Goyo<CR>
 
 
 " Tell vim-plug we finished declaring plugins, so it can load them

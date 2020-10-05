@@ -2,6 +2,9 @@
 unbind C-b
 set -g prefix ^A
 
+# Goyo
+bind G set status
+
 # New Window
 unbind ^C
 bind c new-window -c '#{pane_current_path}' 
