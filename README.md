@@ -41,6 +41,8 @@ To install:
 	Add week numbers to calendar:  
 	gsettings set org.gnome.desktop.calendar show-weekdate true
 	
+	Add Weekday to panel date  
+	gsettings set org.gnome.desktop.interface clock-show-weekday true
 	
 # Popos-Gnome
 In addition to the script-based configuration, I'll do my best to track and document my debian-gnome-popos settings, to make them as reproducable as possible.
