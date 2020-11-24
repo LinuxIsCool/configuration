@@ -8,8 +8,14 @@ These are the dotfiles that I hack on. Can easily be installed to your ~/.config
 To install:  
 1. Requirements
 	
-	sudo apt install stow xcape
+	sudo apt install stow xcape fish tmux
 	
+	Install nvm  
+	https://github.com/nvm-sh/nvm
+	
+	Change default shell to fish  
+	chsh -s `which fish`
+		
 2. Clone the repo  
 
 	git clone git@github.com:LinuxIsCool/configuration.git  
@@ -18,6 +24,13 @@ To install:
 
 	cd configuration  
 	sh stow
+	
+	Install virtualfish  
+	pip3 install virtualfish
+	
+	Install Tmux plugin manager  
+	git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm  
+	tmux -> prefix + I  
 	
 	
 # Popos-Gnome
