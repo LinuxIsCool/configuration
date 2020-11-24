@@ -8,14 +8,16 @@ These are the dotfiles that I hack on. Can easily be installed to your ~/.config
 To install:  
 1. Requirements
 	
-	sudo apt install stow xcape fish tmux
-	
-	Install nvm  
-	https://github.com/nvm-sh/nvm
+	sudo apt install stow xcape fish tmux neovim
 	
 	Change default shell to fish  
 	chsh -s `which fish`
+	
+	Install nvm  
+	https://github.com/nvm-sh/nvm
 		
+	Logout and Login 
+	
 2. Clone the repo  
 
 	git clone git@github.com:LinuxIsCool/configuration.git  
@@ -23,17 +25,18 @@ To install:
 3. Symlink into ~/.config using stow  
 
 	cd configuration  
-	sh stow
+	sh stow  
 	
 	Install virtualfish  
-	pip3 install virtualfish
+	pip3 install virtualfish  
+	vf install  
 	
 	Install Tmux plugin manager  
 	git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm  
 	tmux -> prefix + I  
 	
 	Install Nerd Hack Regular: https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf  
-	Terminal -> Preferences -> Text -> Font -> Hack Nerd Regular
+	Terminal -> Preferences -> Text -> Font -> Hack Nerd Regular  
 	
 	
 # Popos-Gnome
