@@ -44,21 +44,7 @@ In addition to the script-based configuration, I'll do my best to track and docu
 
 Aesthetic-wise, I'm currently using the Juno-Ocean Gnome theme, as per recommended by @mattcoding4days, and my vim theme is quantum, as per Matt's recommendation as well.
 
-
-
-# Keyboard-driven screenshoting
-I used the following mnemonics for shortcuts across my system. I use alt-u as the base for screenshots because function-u is the default print-screen on my keyboard.
-
-| Key                            | Shift | Ctrl        | Super  | Alt    |
-|--------------------------------|-------|-------------|--------|--------|
-| Mnemonic                       | Move  | Select Area | Window | Screen |
-|--------------------------------|-------|-------------|--------|--------|
-| Screenshot Area to Clipboard   | *     | *           |        |        |
-| Screenshot Window to Clipboard | *     |             | *      |        |
-| Screenshot Screen to Clipboard | *     |             |        | *      |
-| Screenshot Area to Pictures    |       | *           |        |        |
-| Screenshot Window to Pictures  |       |             | *      |        |
-| Screenshot Screen to Pictures  |       |             |        | *      |
-
-
-![screenshot_keys.png](popos-gnome/screenshot_keys.png)
+## Installed Extensions
+<div align="center">
+  <img src="https://raw.githubusercontent.com/LinuxIsCool/configuration/master/popos-gnome/extensions-nov-26-2020.png"/>
+</div>
