@@ -32,7 +32,8 @@ To install:
 	git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm  
 	tmux -> prefix + I  
 	
-	Terminal -> Preferences -> Text -> Font -> Hack Regular
+	Install Nerd Hack Regular: https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf  
+	Terminal -> Preferences -> Text -> Font -> Hack Nerd Regular
 	
 	
 # Popos-Gnome
