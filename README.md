@@ -6,11 +6,15 @@ These are the dotfiles that I hack on. Can easily be installed to your ~/.config
 </div>
 
 To install:  
-1. Clone the repo  
+1. Requirements
+	
+	sudo apt install stow xcape
+	
+2. Clone the repo  
 
 	git clone git@github.com:LinuxIsCool/configuration.git  
 	
-2. Symlink into ~/.config using stow  
+3. Symlink into ~/.config using stow  
 
 	cd configuration  
 	sh stow
