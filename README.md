@@ -32,6 +32,8 @@ To install:
 	git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm  
 	tmux -> prefix + I  
 	
+	Terminal -> Preferences -> Text -> Font -> Hack Regular
+	
 	
 # Popos-Gnome
 In addition to the script-based configuration, I'll do my best to track and document my debian-gnome-popos settings, to make them as reproducable as possible.
