@@ -44,6 +44,8 @@ In addition to the script-based configuration, I'll do my best to track and docu
 
 Aesthetic-wise, I'm currently using the Juno-Ocean Gnome theme, as per recommended by @mattcoding4days, and my vim theme is quantum, as per Matt's recommendation as well.
 
+
+
 # Keyboard-driven screenshoting
 I used the following mnemonics for shortcuts across my system. I use alt-u as the base for screenshots because function-u is the default print-screen on my keyboard.
 
