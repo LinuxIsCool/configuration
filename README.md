@@ -29,15 +29,19 @@ To install:
 	
 4. Optional Upgrades
 
-	Install virtualfish  
+	Run the essentials script for faster repeat key and remapping caps lock:  
+	essentials
+
+	Install virtualfish:   
 	pip3 install virtualfish  
 	vf install  
 	
-	Install Tmux plugin manager  
+	Install Tmux plugin manager:  
 	git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm  
 	tmux -> prefix + I  
 	
-	Install Nerd Hack Regular: https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf  
+	Install Nerd Hack Regular:  
+	https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf  
 	Terminal -> Preferences -> Text -> Font -> Hack Nerd Regular  
 	
 	Add week numbers to calendar:  
