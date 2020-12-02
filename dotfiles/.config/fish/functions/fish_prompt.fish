@@ -1,1 +1,1 @@
-/home/ygg/.local/share/omf/themes/gentoo/fish_prompt.fish
+/home/shawn/.local/share/omf/themes/gentoo/fish_prompt.fish
