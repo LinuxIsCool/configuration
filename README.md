@@ -27,6 +27,8 @@ To install:
 	cd configuration  
 	sh stow  
 	
+4. Optional Upgrades
+
 	Install virtualfish  
 	pip3 install virtualfish  
 	vf install  
@@ -41,8 +43,12 @@ To install:
 	Add week numbers to calendar:  
 	gsettings set org.gnome.desktop.calendar show-weekdate true
 	
-	Add Weekday to panel date  
+	Add Weekday to panel date:  
 	gsettings set org.gnome.desktop.interface clock-show-weekday true
+	
+	Install Autojump:  
+	https://github.com/wting/autojump
+	
 	
 # Popos-Gnome
 In addition to the script-based configuration, I'll do my best to track and document my debian-gnome-popos settings, to make them as reproducable as possible.
