@@ -1,1 +1,1 @@
-/home/ygg/.config/fish/fisher/fish-fzf/fzf-complete.fish
+/home/shawn/.config/fish/fisher/fish-fzf/fzf-complete.fish

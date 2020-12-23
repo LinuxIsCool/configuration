@@ -1,1 +1,1 @@
-/home/ygg/.config/fish/fisher/fish-fzf/__fzf_report_file_type.fish
+/home/shawn/.config/fish/fisher/fish-fzf/__fzf_report_file_type.fish

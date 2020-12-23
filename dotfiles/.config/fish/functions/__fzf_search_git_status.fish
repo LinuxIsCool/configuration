@@ -1,1 +1,1 @@
-/home/ygg/.config/fish/fisher/fish-fzf/__fzf_search_git_status.fish
+/home/shawn/.config/fish/fisher/fish-fzf/__fzf_search_git_status.fish

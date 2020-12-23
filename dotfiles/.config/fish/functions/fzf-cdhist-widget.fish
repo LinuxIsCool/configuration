@@ -1,1 +1,1 @@
-/home/ygg/.config/fish/fisher/fish-fzf/fzf-cdhist-widget.fish
+/home/shawn/.config/fish/fisher/fish-fzf/fzf-cdhist-widget.fish

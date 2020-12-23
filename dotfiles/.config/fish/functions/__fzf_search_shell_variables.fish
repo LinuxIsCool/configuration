@@ -1,1 +1,1 @@
-/home/ygg/.config/fish/fisher/fish-fzf/__fzf_search_shell_variables.fish
+/home/shawn/.config/fish/fisher/fish-fzf/__fzf_search_shell_variables.fish

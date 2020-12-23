@@ -1,1 +1,1 @@
-/home/ygg/.config/fish/fisher/fish-github/fclone.fish
+/home/shawn/.config/fish/fisher/fish-github/fclone.fish

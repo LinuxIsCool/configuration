@@ -1,1 +1,1 @@
-/home/ygg/.config/fish/fisher/fish-github/readme.fish
+/home/shawn/.config/fish/fisher/fish-github/readme.fish

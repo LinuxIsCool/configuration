@@ -178,6 +178,11 @@ Plug 'junegunn/goyo.vim'
 " Goyo mappings
 nmap <C-g> :Goyo<CR>
 
+" Slimux
+Plug 'esamattis/slimux'
+map <M-s> :SlimuxREPLSendLine<CR>j
+vmap <M-s> :SlimuxREPLSendSelection<CR>
+
 
 " Tell vim-plug we finished declaring plugins, so it can load them
 call plug#end()

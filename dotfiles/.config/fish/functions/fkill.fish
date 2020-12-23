@@ -1,1 +1,1 @@
-/home/ygg/.config/fish/fisher/fish-github/fkill.fish
+/home/shawn/.config/fish/fisher/fish-github/fkill.fish

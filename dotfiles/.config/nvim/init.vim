@@ -27,3 +27,7 @@ noremap <C-k> kk
 " This makes the location of the current open file always the current working
 " directory of vim. This pairs very nicely with tmux. Added - Sept 15th 2020
 autocmd BufEnter * lcd %:p:h
+
+" Spookie bug. I think I was hacked and that someone i fucking with me. 
+" Whenever I would pres shift K it would open a new tab in nvim.
+inoremap <S-k> <S-k>

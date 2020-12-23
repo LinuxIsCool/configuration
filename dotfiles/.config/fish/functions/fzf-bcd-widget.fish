@@ -1,1 +1,1 @@
-/home/ygg/.config/fish/fisher/fish-fzf/fzf-bcd-widget.fish
+/home/shawn/.config/fish/fisher/fish-fzf/fzf-bcd-widget.fish

@@ -1,1 +1,1 @@
-/home/ygg/.config/fish/fisher/fish-utils/EditDailyLog.fish
+/home/shawn/.config/fish/fisher/fish-utils/EditDailyLog.fish

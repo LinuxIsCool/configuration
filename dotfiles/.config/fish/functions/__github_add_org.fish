@@ -1,1 +1,1 @@
-/home/ygg/.config/fish/fisher/fish-github/__github_add_org.fish
+/home/shawn/.config/fish/fisher/fish-github/__github_add_org.fish

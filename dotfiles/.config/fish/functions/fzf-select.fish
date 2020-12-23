@@ -1,1 +1,1 @@
-/home/ygg/.config/fish/fisher/fish-fzf/fzf-select.fish
+/home/shawn/.config/fish/fisher/fish-fzf/fzf-select.fish

@@ -27,11 +27,15 @@ vnoremap <leader>P "+P
 
 
 " tab navigation mappings
-map tt :tabnew 
-map <M-Right> :tabn<CR>
-imap <M-Right> <ESC>:tabn<CR>
-map <M-Left> :tabp<CR>
-imap <M-Left> <ESC>:tabp<CR>
+map tt :tabnew<CR> 
+map <S-k> :tabn<CR>
+imap <S-k> <ESC>:tabn<CR>
+map <S-j> :tabp<CR>
+imap <S-j> <ESC>:tabp<CR>
+map <M-k> :tabn<CR>
+imap <M-k> <ESC>:tabn<CR>
+map <M-j> :tabp<CR>
+imap <M-j> <ESC>:tabp<CR>
 
 " clear search results
 nnoremap <silent> // :noh<CR>

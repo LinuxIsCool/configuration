@@ -1,1 +1,1 @@
-/home/ygg/.config/fish/fisher/fish-github/forgit.plugin.fish
+/home/shawn/.config/fish/fisher/fish-github/forgit.plugin.fish

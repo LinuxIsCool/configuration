@@ -1,4 +1,6 @@
 python.setInterpreter
+python.setLinter
+python.execInTerminal
 snippets.editSnippets
 fzf-preview.Jumps
 explorer

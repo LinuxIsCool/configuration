@@ -1,1 +1,1 @@
-/home/ygg/.config/fish/fisher/fish-github/fcd.fish
+/home/shawn/.config/fish/fisher/fish-github/fcd.fish
