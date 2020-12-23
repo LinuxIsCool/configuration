@@ -27,6 +27,10 @@ To install:
 	cd configuration  
 	sh stow  
 	
+4. Run fisher to autoload all the fish plugins
+
+	fisher
+	
 4. Optional Upgrades
 
 	Run the essentials script for faster repeat key and remapping caps lock:  
