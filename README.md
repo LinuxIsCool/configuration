@@ -8,7 +8,7 @@ These are the dotfiles that I hack on. Can easily be installed to your ~/.config
 To install:  
 1. Requirements
 	
-	sudo apt install stow xcape fish tmux neovim
+	sudo apt install stow xcape fish tmux neovim jq
 	
 	Change default shell to fish  
 	chsh -s `which fish`
