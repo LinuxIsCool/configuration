@@ -31,3 +31,15 @@ autocmd BufEnter * lcd %:p:h
 " Spookie bug. I think I was hacked and that someone i fucking with me. 
 " Whenever I would pres shift K it would open a new tab in nvim.
 inoremap <S-k> <S-k>
+
+" Here, I borrow some mappings from readline! These are great, google
+" `readline cheatsheet` I map alt-a to home because I use ctr-a for tmux
+" leader.
+inoremap <C-b> <left>
+inoremap <C-f> <right>
+inoremap <C-e> <end>
+inoremap <M-a> <home>
+nnoremap <C-e> <end>
+nnoremap <M-a> <home>
+
+
