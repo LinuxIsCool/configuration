@@ -33,7 +33,7 @@
 # Color schemes should be put in $XDG_CONFIG_HOME/bpython/ e.g. to use the theme
 # $XDG_CONFIG_HOME/bpython/foo.theme set color_scheme = foo. Leave blank or set
 # to "default" to use the default theme
-# color_scheme = default
+ color_scheme = ginyu
 
 # External editor to use for editing the current line, block, or full history
 # Examples: vi (vim)
