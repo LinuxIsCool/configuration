@@ -13,5 +13,9 @@
   "L2hvbWUvc2hhd24vV29ya3NwYWNlL0xURvCfmoAvVGhlRm94aG91bmRQcm9qZWN0L3Rlc3Rz": [
     "python.setin",
     "python.setint"
+  ],
+  "L2hvbWUvc2hhd24vV29ya3NwYWNlL0xURvCfmoAvdG9rZW5zcGljZTI=": [
+    "setInterpreter",
+    "pythonsetInt"
   ]
 }
