@@ -1,1 +1,1 @@
-/home/shawn/.config/fish/fisher/fish-fzf/fzf_key_bindings.fish
+/home/shawn/.fzf/shell/key-bindings.fish

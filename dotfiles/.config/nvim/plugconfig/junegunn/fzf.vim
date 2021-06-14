@@ -5,6 +5,8 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Fzf.vim ------------------------------
 Plug 'junegunn/fzf.vim' 
 
+" From https://github.com/antoinemadec/coc-fzf
+Plug 'antoinemadec/coc-fzf'
 "COMMANDS                                                      *fzf-vim-commands*
 "==============================================================================
 

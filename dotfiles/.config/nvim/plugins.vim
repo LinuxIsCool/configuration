@@ -183,6 +183,19 @@ Plug 'esamattis/slimux'
 map <M-s> :SlimuxREPLSendLine<CR>j
 vmap <M-s> :SlimuxREPLSendSelection<CR>
 
+Plug 'pangloss/vim-javascript'
+
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'neoclide/jsonc.vim'
+
+Plug 'ludovicchabant/vim-gutentags'
+
+Plug 'vimwiki/vimwiki'
+
+Plug 'bfredl/nvim-ipy'
 
 " Tell vim-plug we finished declaring plugins, so it can load them
 call plug#end()

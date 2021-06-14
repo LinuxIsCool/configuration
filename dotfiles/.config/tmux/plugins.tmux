@@ -4,8 +4,8 @@ set -g @plugin 'tmux-plugins/tmux-sensible'
 
 # Tmux Power
 set -g @plugin 'wfxr/tmux-power'
-set -g @tmux_power_theme 'sky' # dark slate blue
-set -g @tmux_power_date_icon '🎄' # set it to a blank will disable the icon
+set -g @tmux_power_theme 'forest' # dark slate blue
+set -g @tmux_power_date_icon '🥥' # set it to a blank will disable the icon
 set -g @tmux_power_time_icon '🕘' # emoji can be used if your terminal supports
 set -g @tmux_power_user_icon '🍄'
 set -g @tmux_power_session_icon ''

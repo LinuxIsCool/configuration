@@ -5,3 +5,4 @@ tuvistavie/fish-completion-helpers
 ~/.config/fish/fisher/fish-audio
 ~/.config/fish/fisher/fish-fzf
 danhper/fish-fastdir
+edc/bass
