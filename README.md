@@ -6,16 +6,13 @@ These are the dotfiles that I hack on. Can easily be installed to your ~/.config
 </div>
 
 To install:  
-1. Requirements
+1. Install Requirements
 	
 	sudo apt install stow xcape fish tmux neovim jq
 	
-	Change default shell to fish  
-	chsh -s `which fish`
-	
-	Install nvm  
-	https://github.com/nvm-sh/nvm
-		
+2. Change default shell to fish
+  
+	chsh -s \`which fish\`  
 	Logout and Login 
 	
 2. Clone the repo  
@@ -27,26 +24,41 @@ To install:
 	cd configuration  
 	sh stow  
 	
-4. Run fisher to autoload all the fish plugins
+5. Install autojump
+
+	sudo apt install python  
+	git clone git://github.com/wting/autojump.git && cd autojump && python install.py
+	
+6. Install fzf
+
+	git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf                
+	~/.fzf/install 
+	
+7. Run fisher to autoload all the fish plugins
 
 	fisher
 	
-4. Optional Upgrades
+8. Install virtualfish
 
-	Run the essentials script for faster repeat key and remapping caps lock:  
-	essentials
-
-	Install virtualfish:   
 	pip3 install virtualfish  
 	vf install  
 	
-	Install Tmux plugin manager:  
+9. Install Tmux plugin manager
+
 	git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm  
-	tmux -> prefix + I  
+	tmux  
+	prefix + I  
 	
-	Install Nerd Hack Regular:  
+10. Install a nerd font like Hack Regular (otf prefered over ttf): 
+ 
 	https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf  
 	Terminal -> Preferences -> Text -> Font -> Hack Nerd Regular  
+	
+11. Make sure essentials is autoloading
+
+	essentials
+
+12. Gnome tweaks
 	
 	Add week numbers to calendar:  
 	gsettings set org.gnome.desktop.calendar show-weekdate true
@@ -54,8 +66,8 @@ To install:
 	Add Weekday to panel date:  
 	gsettings set org.gnome.desktop.interface clock-show-weekday true
 	
-	Install Autojump:  
-	https://github.com/wting/autojump
+	Make alt-tab workspace specific:  
+	gsettings set org.gnome.shell.app-switcher current-workspace-only true
 	
 	
 # Popos-Gnome
