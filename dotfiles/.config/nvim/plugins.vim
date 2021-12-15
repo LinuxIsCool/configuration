@@ -37,7 +37,7 @@ runtime plugconfig/neoclide/coc.vim.vim
 runtime plugconfig/junegunn/fzf.vim
 runtime plugconfig/arielrossanigo/dir-configs-override.vim.vim
 runtime plugconfig/voldikss/vim-floaterm.vim
-runtime plugconfig/justinmk/vim-sneak.vim
+"runtime plugconfig/justinmk/vim-sneak.vim
 runtime plugconfig/honza/vim-snippets.vim
 "runtime plugconfig/unblevable/quick-scope.vim
 runtime plugconfig/junegunn/vim-github-dashboard.vim
@@ -51,11 +51,15 @@ Plug 'majutsushi/tagbar'
 " * current block not refreshing'
 "
 " toggle tagbar display
-nmap <leader>tb :TagbarToggle<CR>
+nmap <leader>o :TagbarToggle<CR>
+nmap <leader>t :Tasklist<CR>
+Plug 'metakirby5/codi.vim'
 
 " autofocus on tagbar open
 let g:tagbar_autofocus = 1
-
+Plug 'esamattis/slimux'
+map <Leader>s :SlimuxREPLSendLine<CR>
+vmap <Leader>s :SlimuxREPLSendSelection<CR>
 
 " Search results counter
 Plug 'vim-scripts/IndexedSearch'
@@ -178,6 +182,7 @@ Plug 'junegunn/goyo.vim'
 " Goyo mappings
 nmap <C-g> :Goyo<CR>
 
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 " Tell vim-plug we finished declaring plugins, so it can load them
 call plug#end()

@@ -9,7 +9,8 @@ map <C-n> :NERDTreeToggle<CR>
 nmap <leader><C-n> :NERDTreeFind<CR>
 
 "Special close
-nmap <C-c> :NERDTreeClose<CR>
+" It seems like this is preventing me from getting out of coc menus.
+"nmap <C-c> :NERDTreeClose<CR>
 
 " don't show these file types
 let NERDTreeIgnore = ['\.pyc$', '\.pyo$']

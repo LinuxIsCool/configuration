@@ -23,6 +23,9 @@ set smartcase       " Override the 'ignorecase' option if the search pattern con
 map <leader>/ :nohl<CR>
 noremap <C-j> jj
 noremap <C-k> kk
+" Cycle tabs 
+nnoremap <silent> <S-k> gt
+nnoremap <silent> <S-j> gT
 
 " This makes the location of the current open file always the current working
 " directory of vim. This pairs very nicely with tmux. Added - Sept 15th 2020

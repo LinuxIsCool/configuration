@@ -40,7 +40,7 @@ Plug 'junegunn/fzf.vim'
   "`:Helptags`        | Help tags [1]
   "`:Filetypes`       | File types
  "------------------+-----------------------------------------------------------------------
-nnoremap <C-f> :Commands<CR>fzf#
+nnoremap <C-f> :Commands<CR>fzf#<Space> 
 nnoremap <C-p> :History<CR>
 "nnoremap <C-p><C-r> :History:<CR>
 "nnoremap <C-p><C-s> :History/<CR>

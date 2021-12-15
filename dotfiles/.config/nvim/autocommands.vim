@@ -29,7 +29,7 @@ autocmd BufWritePost config.h,config.def.h !sudo make install; make clean
 autocmd BufWritePost answers.tex !pdflatex answers.tex   
 
 " Compile VIU markdown notes to pdf
-autocmd BufWritePost notes.md !pandoc -s -o notes.pdf notes.md
+"autocmd BufWritePost notes.md !pandoc -s -o notes.pdf notes.md
 
 " clear empty spaces at the end of lines on save of python files
 "autocmd BufWritePre *.py :%s/\s\+$//e
