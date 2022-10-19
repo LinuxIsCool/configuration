@@ -27,38 +27,51 @@ To install:
 5. Install autojump
 
 	sudo apt install python  
-	git clone git://github.com/wting/autojump.git && cd autojump && python install.py
+	git clone git@github.com:wting/autojump.git && cd autojump && python install.py
 	
-6. Install fzf
+	
+6. Run fisher to autoload all the fish plugins
+
+	fisher
+	
+7. Use Oh my fish to install gentoo theme
+
+
+	Install omf:  
+	curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+
+	Install gentoo:  
+	omf install gentoo
+
+	
+8. Install fzf
 
 	git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf                
 	~/.fzf/install 
 	
-7. Run fisher to autoload all the fish plugins
 
-	fisher
 	
-8. Install virtualfish
+9. Install virtualfish
 
-	pip3 install virtualfish  
+	pip install virtualfish  
 	vf install  
 	
-9. Install Tmux plugin manager
+10. Install Tmux plugin manager
 
 	git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm  
 	tmux  
 	prefix + I  
 	
-10. Install a nerd font like Hack Regular (otf prefered over ttf): 
+11. Install a nerd font like Hack Regular (otf prefered over ttf): 
  
 	https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf  
 	Terminal -> Preferences -> Text -> Font -> Hack Nerd Regular  
 	
-11. Make sure essentials is autoloading
+12. Make sure essentials is autoloading
 
 	essentials
 
-12. Gnome tweaks
+13. Gnome tweaks
 	
 	Add week numbers to calendar:  
 	gsettings set org.gnome.desktop.calendar show-weekdate true
@@ -68,6 +81,9 @@ To install:
 	
 	Make alt-tab workspace specific:  
 	gsettings set org.gnome.shell.app-switcher current-workspace-only true
+	
+	Allow switcher when in full screen:  
+	Extensions -> Pop Shell Settings -> Allow launcher over fullscreen window  
 	
 	
 # Popos-Gnome
