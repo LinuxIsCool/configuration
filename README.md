@@ -69,6 +69,9 @@ To install:
 	Make alt-tab workspace specific:  
 	gsettings set org.gnome.shell.app-switcher current-workspace-only true
 	
+	Allow switcher when in full screen:  
+	Extensions -> Pop Shell Settings -> Allow launcher over fullscreen window  
+	
 	
 # Popos-Gnome
 In addition to the script-based configuration, I'll do my best to track and document my debian-gnome-popos settings, to make them as reproducable as possible.
