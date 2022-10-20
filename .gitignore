@@ -12,3 +12,7 @@ dotfiles/.config/coc/extensions/coc-yank-data/yank
 dotfiles/.config/coc/memos.json
 dotfiles/.config/coc/history.json
 dotfiles/.config/nvim/library/
+**/*nvm*
+**/bin/vf
+**/bin/virtualenv
+**/virtualfish-loader.fish

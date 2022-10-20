@@ -7,11 +7,11 @@
 # workflow.
 #-------------------------------------------------------------------------------
 # Abbreviations 
-abbr python python3
-abbr vim nvim
-abbr cat bat
+#abbr python python3
+#abbr vim nvim
+#abbr cat bat
 abbr pd prevd
-abbr l ls -a
+#abbr l ls -a
 
 #-------------------------------------------------------------------------------
 # Key Bindings
