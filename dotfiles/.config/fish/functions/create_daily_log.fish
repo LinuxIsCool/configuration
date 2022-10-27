@@ -1,1 +1,0 @@
-/home/shawn/.config/fish/fisher/fish-utils/create_daily_log.fish

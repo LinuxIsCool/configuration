@@ -1,1 +1,0 @@
-/home/shawn/.config/fish/fisher/fish-github/__github_add_org.fish

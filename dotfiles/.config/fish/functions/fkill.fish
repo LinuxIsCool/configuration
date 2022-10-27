@@ -1,1 +1,0 @@
-/home/shawn/.config/fish/fisher/fish-github/fkill.fish

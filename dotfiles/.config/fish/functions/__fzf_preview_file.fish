@@ -1,1 +1,0 @@
-/home/shawn/.config/fish/fisher/fish-fzf/__fzf_preview_file.fish

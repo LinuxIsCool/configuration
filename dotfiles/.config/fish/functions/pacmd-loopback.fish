@@ -1,1 +1,0 @@
-/home/shawn/.config/fish/fisher/fish-audio/pacmd-loopback.fish

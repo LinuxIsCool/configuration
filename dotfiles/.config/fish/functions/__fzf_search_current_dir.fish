@@ -1,1 +1,0 @@
-/home/shawn/.config/fish/fisher/fish-fzf/__fzf_search_current_dir.fish
