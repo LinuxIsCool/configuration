@@ -33,45 +33,36 @@ To install:
 6. Run fisher to autoload all the fish plugins
 
 	fisher
-	
-7. Use Oh my fish to install gentoo theme
-
-
-	Install omf:  
-	curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-
-	Install gentoo:  
-	omf install gentoo
 
 	
-8. Install fzf
+7. Install fzf
 
 	git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf                
 	~/.fzf/install 
 	
 
 	
-9. Install virtualfish
+8. Install virtualfish
 
 	pip install virtualfish  
 	vf install  
 	
-10. Install Tmux plugin manager
+9. Install Tmux plugin manager
 
 	git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm  
 	tmux  
 	prefix + I  
 	
-11. Install a nerd font like Hack Regular (otf prefered over ttf): 
+10. Install a nerd font like Hack Regular (otf prefered over ttf): 
  
 	https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf  
 	Terminal -> Preferences -> Text -> Font -> Hack Nerd Regular  
 	
-12. Make sure essentials is autoloading
+11. Make sure essentials is autoloading
 
 	essentials
 
-13. Gnome tweaks
+12. Gnome tweaks
 	
 	Add week numbers to calendar:  
 	gsettings set org.gnome.desktop.calendar show-weekdate true
