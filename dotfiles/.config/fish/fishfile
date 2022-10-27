@@ -1,8 +1,5 @@
 jorgebucaran/nvm.fish
 tuvistavie/fish-completion-helpers
-~/.config/fish/fisher/fish-github
-~/.config/fish/fisher/fish-utils
-~/.config/fish/fisher/fish-audio
-~/.config/fish/fisher/fish-fzf
 danhper/fish-fastdir
 edc/bass
+jichu4n/fish-command-timer
