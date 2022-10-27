@@ -56,6 +56,6 @@ abbr gp git push origin master
 abbr python python
 
 set -gx GOPATH $HOME/go; set -gx GOROOT $HOME/.go; set -gx PATH $GOPATH/bin $PATH; # g-install: do NOT edit, see https://github.com/stefanmaric/g
-abbr cat batcat
+#abbr cat batcat
 abbr pip pip3
 bind \cd delete

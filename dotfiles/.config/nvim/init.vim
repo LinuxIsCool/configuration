@@ -43,4 +43,6 @@ inoremap <M-a> <home>
 nnoremap <C-e> <end>
 nnoremap <M-a> <home>
 
-
+:set cursorline
+:set number
+:set relativenumber!
