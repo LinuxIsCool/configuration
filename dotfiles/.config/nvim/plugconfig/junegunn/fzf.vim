@@ -1,5 +1,5 @@
 " Fzf ------------------------------
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " The amazing junegunn fzf in vim.
 
 " Fzf.vim ------------------------------
