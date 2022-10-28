@@ -8,7 +8,7 @@ These are the dotfiles that I hack on. Can easily be installed to your ~/.config
 To install:  
 1. Install Requirements
 	
-	sudo apt install stow xcape fish tmux neovim jq
+	sudo apt install stow xcape fish tmux neovim jq universal-ctags python
 	
 2. Change default shell to fish
   
@@ -25,7 +25,7 @@ To install:
 	sh stow  
 	
 	
-5. Install fisher  and run to autoload all the fish plugins
+5. Install fisher and fish plugins
 
 	curl -sL https://git.io/fisher | source && fisher install (cat ~/.config/fish/fish_plugins)
 
@@ -37,7 +37,7 @@ To install:
 	
 7. Install autojump
 
-	sudo apt install python  
+	cd ~/.local/share/  
 	git clone git@github.com:wting/autojump.git && cd autojump && python install.py
 	
 8. Install virtualfish
