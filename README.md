@@ -24,23 +24,21 @@ To install:
 	cd configuration  
 	sh stow  
 	
-5. Install autojump
-
-	sudo apt install python  
-	git clone git@github.com:wting/autojump.git && cd autojump && python install.py
 	
-	
-6. Run fisher to autoload all the fish plugins
+5. Install fisher  and run to autoload all the fish plugins
 
-	fisher
+	curl -sL https://git.io/fisher | source && fisher install (cat ~/.config/fish/fish_plugins)
 
 	
-7. Install fzf
+6. Install fzf through neovim
 
 	git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf                
 	~/.fzf/install 
 	
+7. Install autojump
 
+	sudo apt install python  
+	git clone git@github.com:wting/autojump.git && cd autojump && python install.py
 	
 8. Install virtualfish
 
