@@ -37,7 +37,7 @@ To install:
 	
 7. Install autojump
 
-	cd ~/.local/share/
+	cd ~/.local/share/  
 	git clone git@github.com:wting/autojump.git && cd autojump && python install.py
 	
 8. Install virtualfish
