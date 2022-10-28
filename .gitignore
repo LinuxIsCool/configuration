@@ -16,3 +16,4 @@ dotfiles/.config/nvim/library/
 **/bin/vf
 **/bin/virtualenv
 **/virtualfish-loader.fish
+**/blsd
