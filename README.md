@@ -30,10 +30,10 @@ To install:
 	curl -sL https://git.io/fisher | source && fisher install (cat ~/.config/fish/fish_plugins)
 
 	
-6. Install fzf through neovim
+6. Install neovim plugins (will install fzf)
 
-	git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf                
-	~/.fzf/install 
+	nvim  
+	:PlugInstall  
 	
 7. Install autojump
 
