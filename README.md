@@ -8,7 +8,7 @@ These are the dotfiles that I hack on. Can easily be installed to your ~/.config
 To install:  
 1. Install Requirements
 	
-	sudo apt install stow xcape fish tmux neovim jq universal-ctags python
+	sudo apt install stow xcape fish tmux neovim jq universal-ctags python bat ripgrep tree cmake
 	
 2. Change default shell to fish
   
@@ -25,42 +25,49 @@ To install:
 	sh stow  
 	
 	
-5. Install fisher and fish plugins
+5. Install fisher and fish plugins (will install nvm)
 
 	curl -sL https://git.io/fisher | source && fisher install (cat ~/.config/fish/fish_plugins)
-
 	
-6. Install neovim plugins (will install fzf)
+6. Install g for Go
+
+	curl -sSL https://git.io/g-install | sh -s
+
+7. Install blsd
+
+	bass "bash <(curl -fL https://raw.githubusercontent.com/junegunn/blsd/master/install)"
+
+8. Install neovim plugins (will install fzf)
 
 	nvim  
 	:PlugInstall  
 	
-7. Install autojump
+9. Install autojump
 
 	cd ~/.local/share/  
 	git clone git@github.com:wting/autojump.git && cd autojump && python install.py
 	
-8. Install virtualfish
+10. Install virtualfish
 
 	pip install virtualfish  
 	vf install  
 	
-9. Install Tmux plugin manager
+11. Install Tmux plugin manager
 
 	git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm  
 	tmux  
 	prefix + I  
 	
-10. Install a nerd font like Hack Regular (otf prefered over ttf): 
+12. Install a nerd font like Hack Regular (otf prefered over ttf): 
  
 	https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf  
 	Terminal -> Preferences -> Text -> Font -> Hack Nerd Regular  
 	
-11. Make sure essentials is autoloading
+13. Make sure essentials is autoloading
 
 	essentials
 
-12. Gnome tweaks
+14. Gnome tweaks
 	
 	Add week numbers to calendar:  
 	gsettings set org.gnome.desktop.calendar show-weekdate true
