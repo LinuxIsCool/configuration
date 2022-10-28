@@ -29,9 +29,9 @@ if type d &> /dev/null
 end
 
 # Ctrl-o for preview file using bat
-if type bat &> /dev/null                     
-  set FZF_PREVIEW_FILE_CMD "bat"
-  set FZF_CTRL_O_COMMAND "bat ~/.local/share/autojump/autojump.txt | sort -nr | fzf-tmux +s | awk -F '\t' '{printf \$2}'"
+if type batcat &> /dev/null                     
+  set FZF_PREVIEW_FILE_CMD "batcat"
+  set FZF_CTRL_O_COMMAND "batcat ~/.local/share/autojump/autojump.txt | sort -nr | fzf-tmux +s | awk -F '\t' '{printf \$2}'"
   bind \co eval $FZF_CTRL_O_COMMAND
 end
 
@@ -42,9 +42,3 @@ end
 
 # Alt-c for directory history using blsd
 command -v blsd > /dev/null && export FZF_ALT_C_COMMAND='blsd'
-
-
-#-------------------------------------------------------------------------------
-# GO
-set -gx GOPATH $HOME/go; set -gx GOROOT $HOME/.go; set -gx PATH $GOPATH/bin $PATH; # g-install: do NOT edit, see https://github.com/stefanmaric/g
-

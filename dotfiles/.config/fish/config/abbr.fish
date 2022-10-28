@@ -9,5 +9,18 @@ abbr gs git status
 abbr pd prevd
 
 # Programs
-#abbr vim nvim
-#abbr cat bat
+
+# Neovim
+if type nvim &> /dev/null                     
+    abbr vim nvim
+end
+
+# Batcat
+if type batcat &> /dev/null                     
+    abbr cat batcat
+end
+
+# Ripgrep
+if type rg &> /dev/null                     
+    abbr grep rg
+end
