@@ -17,3 +17,12 @@ dotfiles/.config/nvim/library/
 **/bin/virtualenv
 **/virtualfish-loader.fish
 **/blsd
+dotfiles/.config/coc/**/*.json
+dotfiles/.config/coc/**/*.dat
+tags*
+!dotfiles/.config/coc/ultisnips/python.snippets
+dotfiles/.config/coc/commands
+dotfiles/.config/coc/explorer-actions
+dotfiles/.config/coc/extensions/
+dotfiles/.config/coc/lists
+

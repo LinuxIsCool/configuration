@@ -35,6 +35,7 @@ runtime plugconfig/preservim/nerdcommenter.vim
 runtime plugconfig/preservim/nerdtree.vim
 runtime plugconfig/neoclide/coc.vim.vim
 runtime plugconfig/junegunn/fzf.vim
+runtime plugconfig/junegunn/vim-peekaboo.vim
 runtime plugconfig/arielrossanigo/dir-configs-override.vim.vim
 runtime plugconfig/voldikss/vim-floaterm.vim
 runtime plugconfig/justinmk/vim-sneak.vim
