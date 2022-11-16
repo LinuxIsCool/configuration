@@ -8,7 +8,8 @@ These are the dotfiles that I hack on. Can easily be installed to your ~/.config
 To install:  
 1. Install Requirements
 	
-	sudo apt install stow xcape fish tmux neovim jq universal-ctags python bat ripgrep tree cmake
+	sudo apt install stow xcape fish tmux jq universal-ctags python bat ripgrep tree cmake  
+	Install the latest version of neovim: https://github.com/neovim/neovim/releases/tag/stable  
 	
 2. Change default shell to fish
   
