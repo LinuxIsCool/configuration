@@ -4,7 +4,7 @@ set -g @plugin 'tmux-plugins/tmux-sensible'
 
 # Tmux Power
 set -g @plugin 'linuxiscool/tmux-power'
-set -g @tmux_power_theme 'forest' # dark slate blue
+set -g @tmux_power_theme 'violet' # dark slate blue
 set -g @tmux_power_date_icon '🍁' # set it to a blank will disable the icon
 set -g @tmux_power_time_icon '⌚' # emoji can be used if your terminal supports
 set -g @tmux_power_user_icon '🍄'
@@ -18,6 +18,9 @@ set -g @tmux_power_prefix_highlight_pos 'LR'
 # Prefix Highlight
 set -g @plugin 'tmux-plugins/tmux-prefix-highlight'
 set -ag status-right "#{prefix_highlight}"
+
+# Tmux Text Macros for Emojis!
+set -g @plugin 'linuxiscool/tmux-text-macros'
 
 # Initialize Plugins
  run -b "~/.config/tmux/plugins/tpm/tpm"
