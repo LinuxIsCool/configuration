@@ -1,0 +1,306 @@
+#!/bin/bash
+help() {
+  printf '\ncontact is a command line contact manager\n\n'
+  help-short
+  printf '\n\nA typical contact looks like this:
+
+name=John Doe
+email=john.doe@doe-trading.com
+mobile=1234567890
+nick=Johnny
+
+You can add any number of properties more: address, country, city, email2, url, xmpp or any custom property.
+
+`contact mutt-aliases` will print all contacts with alias file syntax. It will read the "name", "nick", and "email" properties. You can run `contact mutt-aliases > ~/.mutt/aliases` to update your aliases file.
+
+`contact vcf-export` will format the output in0 vCard syntax, which can then be imported into various other applications. It will read the "name", "email", "mobile", "work", "home", and "phone" properties. Create a .vcf file for importing with `contact vcf-export > ~/contacts.vcf`
+'
+}
+help-short() {
+  printf 'Syntax:
+    contact [COMMAND] [NAME] [PROPERTY]
+    Commands:
+    No command: Interactive prompt
+    add: Add new contact
+    edit: Edit existing contact
+    delete: Delete contact
+    get: Get property of contact
+    getfiltered: start interactive prompt, but only list properties matching $2
+    git: Interact with the git repository directly
+    Example: `contact git status`
+    To enable the git repository features of contact you need to run:
+    `contact git init`
+    If you already have contacts you need to manually commit them:
+    `contact git add --all;contact git commit -m "Commit all existing contacts"`
+    help: Show this message
+    mutt-aliases: Export as mutt aliases.
+    vcf-export: Export as .vcf file.
+    rename-all: Rename all files to the correct name
+    rebuild: Rebuild the cache\n'
+}
+error() {
+  case $1 in
+    64)
+      msg="No matching contact"
+      ;;
+    65)
+      msg="Please specify name (name=Max Muster)"
+      ;;
+    66)
+      msg="Contact already exists"
+      ;;
+    67)
+      msg="No contacts in storage. Add a contact first. Run \`contact help\` for more information"
+      ;;
+  esac
+  echo >&2 "Error: $msg"
+  exit $1
+}
+rebuild() {
+  check-files
+  files=$(for f in *; do printf "%s: %s\n" "$f" "$(sed ':a;N;$!ba;s/\n/; /g' "$f")"; done)
+  mkdir -p "$HOME"/.cache
+  echo "$files" > "$HOME"/.cache/contact-cache
+}
+getcache() {
+  if [ ! -f "$HOME/.cache/contact-cache" ]; then
+    rebuild
+  fi
+  echo "$(< "$HOME"/.cache/contact-cache)"
+}
+getprop() {
+  if [ ! -f "$1" ]; then
+    error 64
+  fi
+  properties="$(< "$1")"
+  if [ -n "$3" ]; then
+    properties="$(echo "$properties" | grep "$3")"
+  fi
+  if [ -n "$2" ]; then
+    val=$(echo "$properties" | fzf -e -f "$2=")
+  else
+    val=$(echo "$properties" | fzf)
+  fi
+  val="$(echo "${val}" | sed 's/.*=//g')"
+  echo "$val"
+}
+getall() {
+  val="$(fzf -e -f "$2=" < "$1")"
+  list=""
+  while read -r line; do
+    list+="${line#*=}\n"
+  done <<< "$val"
+  echo -e "$list"
+}
+getfile() {
+  set -e
+  files="$(getcache)"
+  if [ -n "$1" ]; then
+    ret=$(echo "$files" | fzf -f "$1")
+    file=$(echo "$ret" | head -n1)
+  else
+    file=$(echo "$files" | fzf)
+  fi
+  file=$(echo "$file" | cut -d":" -f1)
+  if [ ! -f "$file" ]; then
+    error 64
+  fi
+  echo "$file"
+}
+edit() {
+  file="$1"
+  if [ -n "$EDITOR" ]; then
+    $EDITOR "$file"
+  else
+    vi "$file"
+  fi
+  filter "$file"
+  rename "$file"
+}
+filter() {
+  file="$1"
+  sed '/^$/d' "$file" > "$file.new"
+  mv "$file.new" "$file"
+}
+rename() {
+  file="$1"
+  filter "$file"
+  name=$(getprop "$file" "name")
+  if [ -z "$name" ]; then
+    error 65
+  fi
+  if [ "$cdir/$name" != "$file" ]; then
+    if [ -f "$name" ]; then
+      error 66
+    fi
+    mv "$file" "$name"
+    if [ -d ".git" ]; then
+      git rm "$file" > /dev/null 2>&1 || :
+    fi
+  fi
+  if [ -d ".git" ]; then
+    git add "$name" || :
+    git commit -m "Updated $name" > /dev/null 2>&1 || :
+  fi
+  rebuild
+}
+delete() {
+  file="$1"
+  rm "$file"
+  if [ -d ".git" ]; then
+    git rm "$file" > /dev/null || :
+    git commit -m "Deleted $file" > /dev/null 2>&1 || :
+  fi
+  rebuild
+}
+check-files() {
+  if [ -z "$(ls -A)" ]; then
+    error 67
+  fi
+}
+mutt-aliases() {
+  check-files
+  for f in *; do
+    name=$(getprop "$f" "name")
+    mails=$(getprop "$f" "email")
+    if [ -n "$mails" ]; then
+      count=0
+      echo "$mails" | while read mail; do
+        nick=$(getprop "$f" "nick")
+        if [ -z "$nick" ]; then
+          nick="$name"
+        fi
+        if [ "$count" -gt 0 ]; then
+          nick="${nick} $count"
+        fi
+        # Replace space with underscore
+        nick="${nick// /_}"
+        # Lowercase the string
+        nick="${nick,,}"
+        count=$((count + 1))
+        printf "alias %s %s <%s>\n" "$nick" "$name" "$mail"
+      done
+    fi
+  done
+}
+
+vcf-export() {
+  check-files
+  for f in *; do
+    name=$(getprop "$f" "name")
+    lastname=$(echo "$name" | rev | cut -d' ' -f1 | rev)
+    firstname=$(echo "$name" | cut -d' ' -f1)
+    if [ "$lastname" = "$firstname" ]; then
+      lastname=""
+    fi
+    nick=$(getall "$f" "nick")
+    mail=$(getall "$f" "email")
+    cell=$(getall "$f" "mobile")
+    work=$(getall "$f" "work")
+    home=$(getall "$f" "home")
+    phone=$(getall "$f" "phone")
+    address=$(getprop "$f" "address" | head -n1)
+    zip=$(getprop "$f" "zip" | head -n1)
+    city=$(getprop "$f" "city" | head -n1)
+    country=$(getprop "$f" "country" | head -n1)
+    birthday=$(getprop "$f" "birthday" | sed -e 's/\.//g' -e 's/-//g')
+    eol="\r\n"
+    out="BEGIN:VCARD${eol}"
+    out+="VERSION:3.0${eol}"
+    out+="N:$lastname;$firstname;;;${eol}"
+    out+="FN:$name${eol}"
+    if [ -n "$birthday" ]; then
+      out+="BDAY:$birthday${eol}"
+    fi
+    while read -r e; do
+      if [ -n "$e" ]; then
+        out+="TEL:$e${eol}"
+      fi
+    done <<< "$phone"
+    while read -r e; do
+      if [ -n "$e" ]; then
+        out+="TEL;TYPE=CELL:$e${eol}"
+      fi
+    done <<< "$cell"
+    while read -r e; do
+      if [ -n "$e" ]; then
+        out+="TEL;TYPE=WORK:$work${eol}"
+      fi
+    done <<< "$work"
+    while read -r e; do
+      if [ -n "$e" ]; then
+        out+="TEL;TYPE=HOME:$e${eol}"
+      fi
+    done <<< "$home"
+    if [ -n "$address" ] || [ -n "$city" ] || [ -n "$zip" ] || [ -n "$country" ]; then
+      out+="ADR;HOME:;;${address};${city};;${zip};$country${eol}"
+    fi
+    while read -r e; do
+      if [ -n "$e" ]; then
+        out+="EMAIL;TYPE=INTERNET;TYPE=PREF;TYPE=HOME:$e${eol}"
+      fi
+    done <<< "$mail"
+    while read -r e; do
+      if [ -n "$e" ]; then
+        out+="X-ANDROID-CUSTOM:vnd.android.cursor.item/nickname;$e;1;;;;;;;;;;;;;${eol}"
+      fi
+    done <<< "$nick"
+    out+="END:VCARD${eol}"
+    out+="${eol}"
+    echo -ne $out
+  done
+}
+template="name=
+email=
+mobile="
+
+set -e
+cdir="$HOME"/.contacts
+mkdir -p "$cdir"
+cd "$cdir"
+command="$1"
+if [ "$command" = "add" ]; then
+  tmp=$(mktemp)
+  echo "$template" > "$tmp"
+  edit "$tmp"
+elif [ "$command" = "edit" ]; then
+  file=$(getfile "$2")
+  edit "$cdir/$file"
+elif [ "$command" = "delete" ]; then
+  file=$(getfile "$2")
+  delete "$file"
+elif [ "$command" = "getfile" ]; then
+  file=$(getfile "$2")
+  echo "$file"
+elif [ "$command" = "rename-all" ]; then
+  for f in *; do
+    rename "$cdir/$f"
+  done
+  rebuild
+elif [ "$command" = "rebuild" ]; then
+  rebuild
+elif [ "$command" = "vcf-export" ]; then
+  vcf-export
+elif [ "$command" = "mutt-aliases" ]; then
+  mutt-aliases
+elif [ "$command" = "git" ]; then
+  "$@"
+elif [ "$command" = "help" ]; then
+  help
+elif [ "$command" = "get" ]; then
+  file=$(getfile "$2")
+  property=$(getprop "$file" "$3")
+  echo "$property"
+elif [ "$command" = "getfiltered" ]; then
+  file=$(getfile)
+  property=$(getprop "$file" "" "$2")
+  echo "$property"
+elif [ "$command" = "" ]; then
+  file=$(getfile)
+  property=$(getprop "$file")
+  echo "$property"
+else
+  help-short >&2
+  printf >&2 '\nRun `contact help` for more information\n'
+  exit 100
+fi
