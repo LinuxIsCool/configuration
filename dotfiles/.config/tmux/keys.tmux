@@ -9,7 +9,13 @@ bind G set status
 unbind ^C
 bind c new-window -c '#{pane_current_path}' 
 
-#urxvt tab like window switching (-n: no prior escape seq)
+# List Commands and Keys
+unbind ?
+bind ? list-keys
+
+# Window management with arrow keys (-n: no prior escape seq)
+bind -n C-up switch-client -p
+bind -n C-down switch-client -n
 bind -n C-left prev
 bind -n C-right next
 bind -n S-Left { swap-window -t -1; previous-window }
