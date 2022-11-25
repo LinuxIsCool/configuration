@@ -10,17 +10,11 @@ unbind ^C
 bind c new-window -c '#{pane_current_path}' 
 
 #urxvt tab like window switching (-n: no prior escape seq)
-bind -n S-down new-window
-bind -n S-left prev
-bind -n S-right next
-bind -n C-left swap-window -t -1
-bind -n C-right swap-window -t +1
+bind -n C-left prev
+bind -n C-right next
+bind -n S-Left { swap-window -t -1; previous-window }
+bind -n S-Right { swap-window -t +1; next-window }
 
-# zoom a pane into a new window for temporary work
-# unbind +
- bind + new-window -d -n tmux-zoom 'clear && echo TMUX ZOOM && read' \; swap-pane -s tmux-zoom.0 \; select-window -t tmux-zoom
-# unbind -
- bind - last-window \; swap-pane -s tmux-zoom.0 \; kill-window -t tmux-zoom
 #detach ^D d
 unbind ^D
 bind ^D detach
