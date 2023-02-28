@@ -86,10 +86,10 @@ To install:
 	# Extensions -> Pop Shell Settings -> Allow launcher over fullscreen window  
 
 	# Set the keyboard repeat interval
-	gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 10
+	gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 12
 	
 	# Set the keybaord repeat delay
-	gsettings set org.gnome.desktop.peripherals.keyboard delay 140
+	gsettings set org.gnome.desktop.peripherals.keyboard delay 160
 	```
 	
 # Popos-Gnome
