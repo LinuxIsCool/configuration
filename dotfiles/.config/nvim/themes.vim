@@ -19,5 +19,3 @@ if (&term =~? 'mlterm\|xterm\|xterm-256\|screen-256') || has('nvim')
 else
     colorscheme jellybeans
 endif
-
-

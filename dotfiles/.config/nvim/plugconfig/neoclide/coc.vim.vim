@@ -33,7 +33,7 @@ function! s:check_back_space() abort
 endfunction
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
+      "\ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
@@ -57,7 +57,7 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window
-"nnoremap <silent> K :call <SID>show_documentation()<CR>
+nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
@@ -137,7 +137,7 @@ function! StatusDiagnostic() abort
 endfunction
 
 " Disable node version warning
-let g:coc_disable_startup_warning = 1
+let g:coc_disable_startup_warning = 0
 
 " Vim script coc extension
 let g:markdown_fenced_languages = [

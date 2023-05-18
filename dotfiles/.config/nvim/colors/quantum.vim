@@ -16,8 +16,8 @@ let g:quantum_black = get(g:, 'quantum_black', 0)
 
 " Color Palette
 let s:gray1     = g:quantum_black ? '#000000' : '#000'
-let s:gray2     = g:quantum_black ? '#292929' : '#2c3a41'
-let s:gray3     = g:quantum_black ? '#474646' : '#425762'
+let s:gray2     = g:quantum_black ? '#393939' : '#2c3a41'
+let s:gray3     = g:quantum_black ? '#565656' : '#425762'
 let s:gray4     = g:quantum_black ? '#6a6c6c' : '#658494'
 let s:gray5     = g:quantum_black ? '#b7bdc0' : '#aebbc5'
 let s:red       = '#dd7186'
@@ -85,7 +85,7 @@ call s:HL('TabLineSel',                     s:yellow,   s:gray3,    'none')
 call s:HL('Title',                          s:green,    '',         'none')
 call s:HL('VertSplit',                      s:gray4,    s:gray1,    'none')
 call s:HL('Visual',                         s:gray5,    s:gray3,    '')
-call s:HL('WarningMsg',                     s:red,      '',         '')
+call s:HL('WarningMsg',                     s:red,      '',         'bold')
 call s:HL('WildMenu',                       s:gray2,    s:cyan,	    '')
 
 " Standard Syntax

@@ -1,3 +1,8 @@
+augroup vyper_ft
+  au!
+  autocmd BufNewFile,BufRead *.vy   set syntax=vyper
+augroup END
+
 " Set tabs for certain file types
 " for html and css js and vue
 autocmd FileType html setlocal ts=2 sw=2 expandtab
@@ -28,8 +33,10 @@ autocmd BufWritePost config.h,config.def.h !sudo make install; make clean
 " Comile any latex document into pdf form
 autocmd BufWritePost answers.tex !pdflatex answers.tex   
 
-" Compile VIU markdown notes to pdf
-autocmd BufWritePost notes.md !pandoc -s -o notes.pdf notes.md
+" Compile markdown notes to pdf
+" This is fucking cool but also requires a bunch on dependencies on popos.
+" requires pandoc and texlive-latex-base
+"autocmd BufWritePost notes.md !pandoc -s -o notes.pdf notes.md
 
 " clear empty spaces at the end of lines on save of python files
 "autocmd BufWritePre *.py :%s/\s\+$//e

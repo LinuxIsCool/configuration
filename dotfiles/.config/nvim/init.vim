@@ -46,3 +46,6 @@ nnoremap <M-a> <home>
 :set cursorline
 :set number
 :set relativenumber!
+:set autoread
+
+let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-tsserver', 'coc-pyright', 'coc-solidity']

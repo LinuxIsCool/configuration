@@ -27,18 +27,34 @@ vnoremap <leader>P "+P
 
 
 " tab navigation mappings
-map tt :tabnew<CR> 
-map <S-k> :tabn<CR>
-imap <S-k> <ESC>:tabn<CR>
-map <S-j> :tabp<CR>
-imap <S-j> <ESC>:tabp<CR>
-map <M-k> :tabn<CR>
-imap <M-k> <ESC>:tabn<CR>
-map <M-j> :tabp<CR>
-imap <M-j> <ESC>:tabp<CR>
+
+" New tab
+map <C-t> :tabnew<CR> 
+imap <C-t> <ESC>:tabnew<CR> 
+
+" Close tab
+map <C-q> :tabclose<CR> 
+imap <C-q> :tabclose<CR> 
+
+" Move Right
+map <C-l> :tabn<CR>
+imap <C-l> <ESC>:tabn<CR>
+map <C-j> :tabn<CR>
+imap <C-j> <ESC>:tabn<CR>
+
+" Move Left
+map <C-h> :tabp<CR>
+imap <C-h> <ESC>:tabp<CR>
+map <C-k> :tabp<CR>
+imap <C-k> <ESC>:tabp<CR>
 
 " clear search results
 nnoremap <silent> // :noh<CR>
+
+" FZF Searches
+nnoremap <C-p> :History<CR>
+nnoremap <C-b> :Buffers<CR>
+nnoremap <C-g> :GGrep<CR>
 
 
 

@@ -7,15 +7,16 @@ set tags=tags
 " ------------------------------------------------------------------------------
 "  These are inherited from MattCoding4Days
 "" Make vim scroll faster
-set ttyfast
+set ttyfast " Removed in Nvim "
 set mouse=a
 set lazyredraw
 set nu
 set nowrap
 set relativenumber
 set encoding=UTF-8
-" set tabline to not display full path
-set guitablabel=%t
+" set tabline to (not) display full path
+set guitablabel=%F
+set showtabline=2
 
 " tabs and spaces handling
 set expandtab

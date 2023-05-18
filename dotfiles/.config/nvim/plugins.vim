@@ -154,13 +154,36 @@ Plug 'neomake/neomake'
 
 " Nice icons: Need to install patched font for this to work
 Plug 'ryanoasis/vim-devicons'
-" This is solves a bug in devicons that appears when sourcing vimrc
-if exists("g:loaded_webdevicons")
-  call webdevicons#refresh()
-endif
+
 " Devicon Configurations
 " loading the plugin
 let g:webdevicons_enable = 1
+
+" This is solves a bug in devicons that appears when sourcing vimrc
+if !exists('g:syntax_on')
+    syntax enable
+endif
+if exists("g:loaded_webdevicons")
+  call webdevicons#refresh()
+endif
+
+let g:webdevicons_enable_nerdtree = 1
+
+" let g:NERDTreeHighlightFolders = 1
+let g:NERDTreeHighlightFoldersFullName = 1
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1 " enable folder glyph flag
+let g:DevIconsEnableFoldersOpenClose = 1
+let g:DevIconsEnableFolderExtensionPatternMatching = 1
+let g:webdevicons_conceal_nerdtree_brackets = 1
+
+" Basically disable nerdtree markers
+let g:NERDTreeDirArrowExpandable = ' '
+let g:NERDTreeDirArrowCollapsible = ' '
+
+let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol = ' '
+let g:DevIconsDefaultFolderOpenSymbol = ' '
+
+
 
 
 
@@ -179,16 +202,25 @@ Plug 'junegunn/goyo.vim'
 " Goyo mappings
 nmap <C-g> :Goyo<CR>
 
+
 " Slimux
-Plug 'esamattis/slimux'
+Plug 'lotabout/slimux'
 map <M-s> :SlimuxREPLSendLine<CR>j
 vmap <M-s> :SlimuxREPLSendSelection<CR>
 
 Plug 'pangloss/vim-javascript'
 
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+"Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'} " mru and stuff
+Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'} " color highlighting
 
 Plug 'neoclide/jsonc.vim'
 
@@ -197,6 +229,14 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'vimwiki/vimwiki'
 
 Plug 'bfredl/nvim-ipy'
+
+Plug 'vyperlang/vim-vyper'
+
+Plug 'jmcantrell/vim-virtualenv'
+
+Plug 'mkitt/tabline.vim'
+
+Plug 'prisma/vim-prisma'
 
 " Tell vim-plug we finished declaring plugins, so it can load them
 call plug#end()
