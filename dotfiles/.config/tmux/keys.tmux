@@ -14,8 +14,8 @@ unbind ?
 bind ? list-keys
 
 # Window management with arrow keys (-n: no prior escape seq)
-bind -n C-up switch-client -p
-bind -n C-down switch-client -n
+bind -n C-up switch-client -n
+bind -n C-down switch-client -p
 bind -n C-left prev
 bind -n C-right next
 bind -n S-Left { swap-window -t -1; previous-window }
