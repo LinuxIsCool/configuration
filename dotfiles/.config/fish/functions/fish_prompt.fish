@@ -17,7 +17,8 @@ function fish_prompt
   set -l normal (set_color normal)                                                         
                                                                                            
   if set -q VIRTUAL_ENV                                                                    
-   echo -n -s (set_color white) "🐍(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
+   echo -n -s (set_color white) "(🐍"-(basename "$VIRTUAL_ENV")")" (set_color normal) " "
+   #echo -n -s "(vf🐍)"
   end                                                                                      
                                                                                            
   set -l cwd (pwd | sed -e "s!^$HOME!~!g")                                                 

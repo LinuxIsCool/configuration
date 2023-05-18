@@ -24,3 +24,9 @@ end
 if type rg &> /dev/null                     
     abbr grep rg
 end
+
+# Lunarvim
+#abbr nvim lvim
+#abbr vim lvim
+abbr nvim nvim
+abbr vim nvim
