@@ -24,7 +24,7 @@ scrolling:
 # Font configuration
 font:
   # Point size
-  size: 12.0
+  size: 14
   # Normal (roman) font face
   normal:
     family: monospace
@@ -67,6 +67,8 @@ cursor:
 live_config_reload: true
 
 # Colors (Tomorrow Night)
+
+draw_bold_text_with_bright_colors: true
 colors:
   # Default colors
   primary:
