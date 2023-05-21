@@ -26,7 +26,7 @@ scrolling:
 # Font configuration
 font:
   # Point size
-  size: 14
+  size: 12
   # Normal (roman) font face
   normal:
     family: monospace
@@ -74,8 +74,8 @@ draw_bold_text_with_bright_colors: true
 colors:
   # Default colors
   primary:
-    background: '#000000'
-    foreground: '#F2F2F2'
+    background: '#16141D'
+    foreground: '#D0CFCC'
  
  # Normal colors
   normal:
@@ -98,9 +98,6 @@ colors:
     magenta: '#8086e8'
     cyan:    '#33c5ba'
     white:   '#fdf6e3'
-
-import:
- - ~/.config/alacritty/themes/themes/challenger_deep.yaml
 
 key_bindings:
     - { key: F11,     action: ToggleFullscreen }
