@@ -26,11 +26,11 @@ scrolling:
 # Font configuration
 font:
   # Point size
-  size: 12
+  size: 13
   # Normal (roman) font face
   normal:
     family: monospace
-    style: Regular
+    style: Bold
 
   bold:
     family: monospace
@@ -44,6 +44,35 @@ font:
     family: monospace
     style: Bold Italic
 
+draw_bold_text_with_bright_colors: true
+
+colors:
+  # Default colors
+  primary:
+    background: '#16141D'
+    foreground: '#D0CFCC'
+ 
+ # Normal colors
+  normal:
+    black:   '#171421'
+    red:     '#d12f2c'
+    green:   '#33D17A'
+    yellow:  '#E9AD0C'
+    blue:    '#2A7BDE'
+    magenta: '#C061CB'
+    cyan:    '#33C7DE'
+    white:   '#bfbaac'
+ 
+  # Bright colors
+  bright:
+    black:   '#4a697d'
+    red:     '#fa3935'
+    green:   '#33D17A'
+    yellow:  '#d9a400'
+    blue:    '#2ca2f5'
+    magenta: '#C061CB'
+    cyan:    '#33C7DE'
+    white:   '#fdf6e3'
  
 cursor:
   # Cursor style
@@ -69,35 +98,6 @@ cursor:
 live_config_reload: true
 
 # Colors (Tomorrow Night)
-
-draw_bold_text_with_bright_colors: true
-colors:
-  # Default colors
-  primary:
-    background: '#16141D'
-    foreground: '#D0CFCC'
- 
- # Normal colors
-  normal:
-    black:   '#171421'
-    red:     '#d12f2c'
-    green:   '#33D17A'
-    yellow:  '#E9AD0C'
-    blue:    '#2A7BDE'
-    magenta: '#C061CB'
-    cyan:    '#33C7DE'
-    white:   '#bfbaac'
- 
-  # Bright colors
-  bright:
-    black:   '#4a697d'
-    red:     '#fa3935'
-    green:   '#33D17A'
-    yellow:  '#d9a400'
-    blue:    '#2ca2f5'
-    magenta: '#8086e8'
-    cyan:    '#33c5ba'
-    white:   '#fdf6e3'
 
 key_bindings:
     - { key: F11,     action: ToggleFullscreen }
