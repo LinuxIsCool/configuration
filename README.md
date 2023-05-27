@@ -1,9 +1,3 @@
-BTW as of Oct 22, I'm not actively maintaining these docs, as I have my machine installed and humming with my new System76 Lemur Pro. Additionally, I am diving into building with LunarVim, maintaining my own configuration, while contributing to the community.   
-https://system76.com/laptops/lemur    
-https://www.lunarvim.org/   
-
-I havn't added my LunarVim config here yet as I am still in experimentation mode, rapidly picking up the platform and how to customize it to highest compatibility. Working on that now as I continue to develop. 
-
 # Use at your own risk. No warrenties. 
 I practice human-in-the-loop computing. This workflow is designed by me to be most effective for me and my life towards my intentions. It wasn't defined with mass scalability in mind. I encourage you to persue the discovery of computing interfaces on your personel journey as well. Please feel free to take inspiration from my workflow and open dialougue in collaboration.  
 
