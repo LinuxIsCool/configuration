@@ -1,3 +1,9 @@
+" This makes the location of the current open file always the current working
+" directory of vim. This pairs very nicely with tmux. Added - Sept 15th 2020
+autocmd BufEnter * lcd %:p:h
+
+
+
 augroup vyper_ft
   au!
   autocmd BufNewFile,BufRead *.vy   set syntax=vyper
