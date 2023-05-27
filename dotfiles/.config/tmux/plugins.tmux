@@ -8,9 +8,9 @@ set -g @plugin 'tmux-plugins/tmux-sensible'
 # Tmux Power
 set -g @plugin 'linuxiscool/tmux-power'
 #set -g @tmux_power_theme 'moon' # dark slate blue
-set -g @tmux_power_theme 'violet' # dark slate blue
+set -g @tmux_power_theme 'coral' # dark slate blue
 #set -g @tmux_power_date_icon '☃️ ☃️ ☃️  February' # set it to a blank will disable the icon
-set -g @tmux_power_date_icon '🌱 %B' # set it to a blank will disable the icon
+set -g @tmux_power_date_icon '🌱 %B %d' # set it to a blank will disable the icon
 set -g @tmux_power_time_icon '⌚ %A' # emoji can be used if your terminal supports
 #set -g @tmux_power_user_icon '🀄'
 set -g @tmux_power_user_icon '🍄'
