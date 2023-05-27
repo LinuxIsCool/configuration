@@ -102,6 +102,10 @@ live_config_reload: true
 key_bindings:
     - { key: F11,     action: ToggleFullscreen }
 
+# Needed for tmux to display colors properly in vim:
+env:
+  TERM: xterm-256color
+
 # Import additional configuration files
 #
 # Imports are loaded in order, skipping all missing files, with the importing
