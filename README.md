@@ -74,16 +74,26 @@ To install:
 	essentials
 
 14. Gnome tweaks
+
+	Setting key repeat and interval:  
+	```
+	gsettings set org.gnome.desktop.peripherals.keyboard delay 160
+	gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 12
+
+	```
 	
 	Add week numbers to calendar:  
+	```
 	gsettings set org.gnome.desktop.calendar show-weekdate true
-	
+	```
 	Add Weekday to panel date:  
+	```
 	gsettings set org.gnome.desktop.interface clock-show-weekday true
-	
+	```
 	Make alt-tab workspace specific:  
+	```
 	gsettings set org.gnome.shell.app-switcher current-workspace-only true
-	
+	```
 	Allow switcher when in full screen:  
 	Extensions -> Pop Shell Settings -> Allow launcher over fullscreen window  
 	
