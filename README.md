@@ -81,6 +81,10 @@ To install:
 	gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 12
 
 	```
+	Make launcher work when an app is open in full screen:  
+	```
+	gsettings set org.gnome.shell.extensions.pop-shell fullscreen-launcher true
+	```
 	
 	Add week numbers to calendar:  
 	```
