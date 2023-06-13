@@ -61,7 +61,7 @@ To install:
 10. Install virtualfish
 
 	pip install virtualfish  
-	fish_add_path ~/.local/bin/
+	fish_add_path ~/.local/bin/  
 	vf install  
 	
 11. Install Tmux plugin manager
@@ -69,15 +69,7 @@ To install:
 	git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm  
 	tmux  
 	prefix + I  
-	
-12. Make sure that a nerd font has been installed (Included in this repo in .local/share/fonts/) (otf prefered over ttf): 
- 
-	https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf  
-	Terminal -> Preferences -> Text -> Font -> Hack Nerd Regular  
-	
-13. Make sure essentials is autoloading
 
-	essentials
 
 14. Gnome tweaks
 
