@@ -13,7 +13,7 @@ They are designed to get a brand new machine installed with https://pop.system76
 To install:  
 1. Install Requirements
 	
-	sudo apt install stow fish tmux jq python-is-python3 bat ripgrep tree cmake alacritty delta  
+	sudo apt install stow fish tmux jq python-is-python3 bat ripgrep tree cmake alacritty delta pip  
 	Install the latest version of neovim: https://github.com/neovim/neovim/releases/tag/stable  
 	
 2. Change default shell to fish
@@ -61,6 +61,7 @@ To install:
 10. Install virtualfish
 
 	pip install virtualfish  
+	fish_add_path ~/.local/bin/
 	vf install  
 	
 11. Install Tmux plugin manager
