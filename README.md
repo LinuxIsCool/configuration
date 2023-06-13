@@ -13,7 +13,7 @@ They are designed to get a brand new machine installed with https://pop.system76
 To install:  
 1. Install Requirements
 	
-	sudo apt install stow fish tmux jq python-is-python3 bat ripgrep tree cmake alacritty  
+	sudo apt install stow fish tmux jq python-is-python3 bat ripgrep tree cmake alacritty delta  
 	Install the latest version of neovim: https://github.com/neovim/neovim/releases/tag/stable  
 	
 2. Change default shell to fish
@@ -48,6 +48,11 @@ To install:
 	nvim  
 	:PlugInstall  
 	
+9. Make sure fzf is installed system wide
+
+	cd ~/.config/nvim/plugged/fzf/  
+	./install
+	
 9. Install autojump
 
 	cd ~/.local/share/  
@@ -64,7 +69,7 @@ To install:
 	tmux  
 	prefix + I  
 	
-12. Install a nerd font like Hack Regular (otf prefered over ttf): 
+12. Make sure that a nerd font has been installed (Included in this repo in .local/share/fonts/) (otf prefered over ttf): 
  
 	https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf  
 	Terminal -> Preferences -> Text -> Font -> Hack Nerd Regular  
