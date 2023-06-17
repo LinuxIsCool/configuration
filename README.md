@@ -11,67 +11,111 @@ They are designed to get a brand new machine installed with https://pop.system76
 </div>
 
 To install:  
-1. Install Requirements
-	
+-1. Install PopOS: https://pop.system76.com/ 
+
+0. Update System
+	```
+	sudo apt update && sudo apt upgrade
+	```	
+
+1. Install required and recommended utilities.
+	```
 	sudo apt install stow fish tmux jq python-is-python3 bat ripgrep tree cmake alacritty delta pip  
-	Install the latest version of neovim: https://github.com/neovim/neovim/releases/tag/stable  
+	```  
 	
 2. Change default shell to fish
-  
+  	```
 	chsh -s \`which fish\`  
 	Logout and Login 
-	
-2. Clone the repo  
+	```
 
+3. Enable Wayland: https://linuxconfig.org/how-to-enable-disable-wayland-on-ubuntu-22-04-desktop 
+
+4. Remap caps to control and escape with keyd: https://github.com/rvaiya/keyd
+	
+5. Clone this repo  
+	```
 	git clone git@github.com:LinuxIsCool/configuration.git  
+	```
 	
-3. Symlink into ~/.config using stow  
-
+6. Symlink into ~/.config using stow  
+	```
 	cd configuration  
 	sh stow  
+	```
 	
-	
-5. Install fisher and fish plugins (will install nvm)
-
+7. Install fisher and fish plugins (will install nvm)
+	```
 	curl -sL https://git.io/fisher | source && fisher install (cat ~/.config/fish/fish_plugins)
+	```
 	
-6. Install g for Go
+8. Use nvm to install node
+	```
+	nvm use latest
+	```
 
+8. Install g for Go: https://github.com/stefanmaric/g#usage 
+	```````
 	curl -sSL https://git.io/g-install | sh -s
+	g install latest
+	```
 
-7. Install blsd
-
+9. Install blsd
+	```
 	bass "bash <(curl -fL https://raw.githubusercontent.com/junegunn/blsd/master/install)"
-
-8. Install neovim plugins (will install fzf)
-
-	nvim  
-	:PlugInstall  
+	```
 	
-9. Make sure fzf is installed system wide
+5. Install Rust: https://www.rust-lang.org/tools/install  
+	```
+	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+	fish_add_path ~/.cargo/bin/
+	```
+6. Install Nvim using Bob  
+	```
+	cargo install bob-nvim
+	bob complete fish > ~/.config/fish/completions/bob.fish
+	fish_add_path ~/.local/share/bob/nvim-bin/
+	bob use latest
+	```
 
+10. Install neovim plugins (will install fzf)
+	```
+	nvim  
+	:PlugInstall
+	```
+	
+11. Make sure fzf is installed system wide
+	```
 	cd ~/.config/nvim/plugged/fzf/  
 	./install
+	```
 	
-9. Install autojump
-
+12. Install autojump
+	```
 	cd ~/.local/share/  
 	git clone git@github.com:wting/autojump.git && cd autojump && python install.py
-	
-10. Install virtualfish
+	```
 
+13. Install virtualfish
+	```
 	pip install virtualfish  
 	fish_add_path ~/.local/bin/  
 	vf install  
+	```
 	
-11. Install Tmux plugin manager
-
+14. Install python poetry: https://python-poetry.org/docs/#installation
+	```
+	curl -sSL https://install.python-poetry.org | python3 -
+	```
+	
+15. Install Tmux plugin manager
+	```
 	git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm  
 	tmux  
 	prefix + I  
+	```
 
-
-14. Gnome tweaks
+16. Gnome tweaks
 
 	Setting key repeat and interval:  
 	```
@@ -97,8 +141,13 @@ To install:
 	gsettings set org.gnome.shell.app-switcher current-workspace-only true
 	```
 	Allow switcher when in full screen:  
-	Extensions -> Pop Shell Settings -> Allow launcher over fullscreen window  
+	```
+	gsettings set org.gnome.shell.extensions.pop-shell fullscreen-launcher true
 	
+	or   
+	
+	Extensions -> Pop Shell Settings -> Allow launcher over fullscreen window  
+	```
 	
 # Popos-Gnome
 In addition to the script-based configuration, I'll do my best to track and document my debian-gnome-popos settings, to make them as reproducable as possible.
