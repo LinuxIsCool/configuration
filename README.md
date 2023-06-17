@@ -120,33 +120,37 @@ To install:
 	prefix + I  
 	```
 
-16. Gnome tweaks
+16. Gnome tweaks (Optional)
 
 	Setting key repeat and interval:  
 	```
 	gsettings set org.gnome.desktop.peripherals.keyboard delay 175
 	gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 12
 	```
+	
 	Make launcher work when an app is open in full screen:  
 	```
 	gsettings set org.gnome.shell.extensions.pop-shell fullscreen-launcher true
+	```
+	
+	Make alt-tab workspace specific:  
+	```
+	gsettings set org.gnome.shell.app-switcher current-workspace-only true
 	```
 	
 	Add week numbers to calendar:  
 	```
 	gsettings set org.gnome.desktop.calendar show-weekdate true
 	```
+	
 	Add Weekday to panel date:  
 	```
 	gsettings set org.gnome.desktop.interface clock-show-weekday true
 	```
-	Make alt-tab workspace specific:  
+	
+	Set background opacity for dash to dock:  
 	```
-	gsettings set org.gnome.shell.app-switcher current-workspace-only true
-	```
-	Allow switcher when in full screen:  
-	```
-	gsettings set org.gnome.shell.extensions.pop-shell fullscreen-launcher true   
+	gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity 0.4
 	```
 	
 17. Install Gnome Extensions. Here is an example of some extensions that I use:
@@ -156,17 +160,25 @@ To install:
 
 18. Load Dconf to load gnome extension tweaks
 ```
-Coming  Soon...
+More Coming  Soon...
 ```
 
 19. Load custom keybaord mappings and shortcuts
+* Hide all windows: super+d
+* Workspaces: super+w
+* Open Calendar: super+c
+* Open Gmail: super+g
+* Open Files: super+f
+* Open Browser: super+b
+* Open Terminal: super+t
 ```
-Coming  Soon...
+More Coming  Soon...
 ```
 
-20. Install Apps and Programs
+20. Install Apps and Programs through Pop Shop
+* OBS, Discord, Telegram, Lutris, Slack, Spotify, Clementine, QDirStat, Zoom
 ```
-Coming  Soon...
+More Coming  Soon...
 ```
 
 ### Notes
