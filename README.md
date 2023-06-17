@@ -35,6 +35,9 @@ To install:
 4. Remap caps to control and escape with keyd: https://github.com/rvaiya/keyd
 
 3. Enable Wayland: https://linuxconfig.org/how-to-enable-disable-wayland-on-ubuntu-22-04-desktop 
+	```
+	set -Ux MOZ_ENABLE_WAYLAND 1 # For Firefox in Wayland
+	```
 
 	
 5. Clone this repo  
