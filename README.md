@@ -3,10 +3,14 @@ These are the dotfiles that I hack on. Can easily be installed to your ~/.config
 
 They are designed to get a brand new machine installed with https://pop.system76.com/ into a production ready state. For me production means participating in digital platforms, writing code, and editing media. I run a FinTech business in Canada called Longtail Financial, provides data science and token engineering services. I work with partners at LTF to drive the business towards stability and success. This configuration is an optimized build for maximum effectiveness. To learn more about my workflow, follow me on twitter: https://twitter.com/ygg_anderson
 
-The following is a screencapture of The Serious Configuration Framework running in a triple monitor setup. This build should be very easy to pick up for anyone who wishes to be a terminal           oriented power user in linux.
+The following is a screencapture of The Serious Configuration Framework running in a triple monitor setup. This build should be very easy to pick up for anyone who wishes to be a terminal           oriented power user in linux, and will also feel right at home with a familiar desktop experience for anyone coming from Mac, Windows, or Debian operating systems since it uses the very intuitive Gnome Desktop in the Pop Shell, a fork of the Ubuntu linux distribution. It's the fastest paced work environment for creatives, producers, and technologists who want to simply get things done. 
 <div align="center">
   <img src="https://raw.githubusercontent.com/LinuxIsCool/configuration/master/popos-gnome/Screenshot%20from%202020-09-29%2001-56-33.png"/>
 </div>
+
+
+This is the Serious Configuration Framework. Optimized for Simplicity. 
+
 
 To install:  
 -1. Install PopOS: https://pop.system76.com/ 
