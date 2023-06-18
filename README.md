@@ -166,9 +166,7 @@ To install:
 </div>
 
 18. Load Dconf to load gnome extension tweaks
-```
-More Coming  Soon...
-```
+
 
 19. Load custom keybaord mappings and shortcuts
 * Hide all windows: super+d
@@ -178,15 +176,21 @@ More Coming  Soon...
 * Open Files: super+f
 * Open Browser: super+b
 * Open Terminal: super+t
-```
-More Coming  Soon...
-```
+
 
 20. Install Apps and Programs through Pop Shop
 * OBS, Discord, Telegram, Lutris, Slack, Spotify, Clementine, QDirStat, Zoom
-```
-More Coming  Soon...
-```
+
+
+21. Install Firefox Plugins
+* Video Speed Controller
+* Add Blocker Plus
+* Metamask
+* ETH Gas Station
+
+	```
+	More Coming  Soon...
+	```
 
 ### Notes
 * Fonts used can be found in alacritty.yml, and fonts are cached in .local/share/fonts/ in this repository. Make sure to use a patched nerd font with emoji support.
