@@ -1,111 +1,204 @@
-# Use at your own risk. No warrenties. 
-I practice human-in-the-loop computing. This workflow is designed by me to be most effective for me and my life towards my intentions. It wasn't defined with mass scalability in mind. I encourage you to persue the discovery of computing interfaces on your personel journey as well. Please feel free to take inspiration from my workflow and open dialougue in collaboration.  
-
 # Pop-os - Gnome - Tmux - Fish - Vim - FZF - Serious Configuration - Shawn Anderson
 These are the dotfiles that I hack on. Can easily be installed to your ~/.config/ by using the gnu stow utility.
 
-They are designed to get a brand new machine installed with https://pop.system76.com/ into a production ready state. For me production means participating in digital platforms, writing code, and editing media. I run a FinTech business in Canada called Longtail Financial, where I am in contract for providing data science and token engineering services. I work with my partner Liam Perison to drive the business towards stability and success. Please contact me if you are interested in funding Canadian Computing Technology that is driving services and products in the domain of finance, web, and computing. We practice Data Science, Token Engineering, and Software Engineering. We co-design products and services with ecoystem partners, primarily in the DAO and Token spaces. 
+They are designed to get a brand new machine installed with https://pop.system76.com/ into a production ready state. For me production means participating in digital platforms, writing code, and editing media. I run a FinTech business in Canada called Longtail Financial, provides data science and token engineering services. I work with partners at LTF to drive the business towards stability and success. This configuration is an optimized build for maximum effectiveness. To learn more about my workflow, follow me on twitter: https://twitter.com/ygg_anderson
 
+The following is a screencapture of The Serious Configuration Framework running in a triple monitor setup. This build should be very easy to pick up for anyone who wishes to be a terminal           oriented power user in linux, and will also feel right at home with a familiar desktop experience for anyone coming from Mac, Windows, or Debian operating systems since it uses the very intuitive Gnome Desktop in the Pop Shell, a fork of the Ubuntu linux distribution. It's the fastest paced work environment for creatives, producers, and technologists who want to simply get things done. 
 <div align="center">
   <img src="https://raw.githubusercontent.com/LinuxIsCool/configuration/master/popos-gnome/Screenshot%20from%202020-09-29%2001-56-33.png"/>
 </div>
 
+
+This is the Serious Configuration Framework. Optimized for Simplicity. 
+
+
 To install:  
-1. Install Requirements
-	
-	sudo apt install stow fish tmux jq python3 bat ripgrep tree cmake  
-	Install the latest version of neovim: https://github.com/neovim/neovim/releases/tag/stable  
+-1. Install PopOS: https://pop.system76.com/ 
+
+0. Update System
+	```
+	super+t to open a terminal.
+	sudo apt update && sudo apt upgrade
+	```	
+
+1. Install necessary utilities.
+	```
+	sudo apt install stow fish tmux jq python-is-python3 bat ripgrep tree cmake alacritty delta pip  
+	```  
+2. Set alacritty to default terminal
+	```
+	super -> keyboard -> custom shortcut -> set super+t as `alacritty`
+	```
 	
 2. Change default shell to fish
-  
+  	```
 	chsh -s \`which fish\`  
 	Logout and Login 
+	```
 	
-2. Clone the repo  
+4. Remap caps to control and escape with keyd: https://github.com/rvaiya/keyd
 
+3. Enable Wayland: https://linuxconfig.org/how-to-enable-disable-wayland-on-ubuntu-22-04-desktop 
+	```
+	set -Ux MOZ_ENABLE_WAYLAND 1 # For Firefox in Wayland
+	```
+
+	
+5. Clone this repo  
+	```
 	git clone git@github.com:LinuxIsCool/configuration.git  
+	```
 	
-3. Symlink into ~/.config using stow  
-
+6. Symlink into ~/.config using stow  
+	```
 	cd configuration  
 	sh stow  
+	```
 	
-	
-5. Install fisher and fish plugins (will install nvm)
-
+7. Install fisher and fish plugins (will install nvm)
+	```
 	curl -sL https://git.io/fisher | source && fisher install (cat ~/.config/fish/fish_plugins)
+	```
 	
-6. Install g for Go
+8. Use nvm to install node
+	```
+	nvm use latest
+	```
 
+8. Install g for Go: https://github.com/stefanmaric/g#usage 
+	```
 	curl -sSL https://git.io/g-install | sh -s
+	g install latest
+	```
 
-7. Install blsd
-
+9. Install blsd: https://github.com/junegunn/blsd
+	```
 	bass "bash <(curl -fL https://raw.githubusercontent.com/junegunn/blsd/master/install)"
-
-8. Install neovim plugins (will install fzf)
-
-	nvim  
-	:PlugInstall  
+	```
 	
-9. Install autojump
+5. Install Rust: https://www.rust-lang.org/tools/install  
+	```
+	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+	fish_add_path ~/.cargo/bin/
+	```
 
+6. Install Nvim using Bob  
+	```
+	cargo install bob-nvim
+	bob complete fish > ~/.config/fish/completions/bob.fish
+	fish_add_path ~/.local/share/bob/nvim-bin/
+	bob use latest
+	```
+
+10. Install neovim plugins (will install fzf)
+	```
+	nvim  
+	:PlugInstall
+	```
+	
+11. Make sure fzf is installed system wide
+	```
+	cd ~/.config/nvim/plugged/fzf/  
+	./install
+	```
+	
+12. Install autojump
+	```
 	cd ~/.local/share/  
 	git clone git@github.com:wting/autojump.git && cd autojump && python install.py
-	
-10. Install virtualfish
+	```
 
+13. Install virtualfish
+	```
 	pip install virtualfish  
+	fish_add_path ~/.local/bin/  
 	vf install  
+	```
 	
-11. Install Tmux plugin manager
-
+14. Install python poetry: https://python-poetry.org/docs/#installation
+	```
+	curl -sSL https://install.python-poetry.org | python3 -
+	```
+	
+15. Install Tmux plugin manager
+	```
 	git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm  
 	tmux  
 	prefix + I  
-	
-12. Install a nerd font like Hack Regular (otf prefered over ttf): 
- 
-	https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf  
-	Terminal -> Preferences -> Text -> Font -> Hack Nerd Regular  
-	
-13. Make sure essentials is autoloading
+	```
 
-	essentials
-
-14. Gnome tweaks
+16. Gnome tweaks (Optional)
 
 	Setting key repeat and interval:  
 	```
-	gsettings set org.gnome.desktop.peripherals.keyboard delay 160
+	gsettings set org.gnome.desktop.peripherals.keyboard delay 175
 	gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 12
-
+	```
+	
+	Make launcher work when an app is open in full screen:  
+	```
+	gsettings set org.gnome.shell.extensions.pop-shell fullscreen-launcher true
+	```
+	
+	Make alt-tab workspace specific:  
+	```
+	gsettings set org.gnome.shell.app-switcher current-workspace-only true
 	```
 	
 	Add week numbers to calendar:  
 	```
 	gsettings set org.gnome.desktop.calendar show-weekdate true
 	```
+	
 	Add Weekday to panel date:  
 	```
 	gsettings set org.gnome.desktop.interface clock-show-weekday true
 	```
-	Make alt-tab workspace specific:  
-	```
-	gsettings set org.gnome.shell.app-switcher current-workspace-only true
-	```
-	Allow switcher when in full screen:  
-	Extensions -> Pop Shell Settings -> Allow launcher over fullscreen window  
 	
+	Set background opacity for dash to dock:  
+	```
+	gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity 0.4
+	```
 	
-# Popos-Gnome
-In addition to the script-based configuration, I'll do my best to track and document my debian-gnome-popos settings, to make them as reproducable as possible.
-
-Aesthetic-wise, I'm currently using the Juno-Ocean Gnome theme, as per recommended by @mattcoding4days, and my vim theme is quantum, as per Matt's recommendation as well.
-
-## Installed Extensions
+17. Install Gnome Extensions. Here is an example of some extensions that I use:
 <div align="center">
   <img src="https://raw.githubusercontent.com/LinuxIsCool/configuration/master/popos-gnome/extensions-nov-26-2020.png"/>
 </div>
+
+18. Load Dconf to load gnome extension tweaks
+
+
+19. Load custom keybaord mappings and shortcuts
+* Hide all windows: super+d
+* Workspaces: super+w
+* Open Calendar: super+c
+* Open Gmail: super+g
+* Open Files: super+f
+* Open Browser: super+b
+* Open Terminal: super+t
+
+
+20. Install Apps and Programs through Pop Shop
+* OBS, Discord, Telegram, Lutris, Slack, Spotify, Clementine, QDirStat, Zoom
+
+
+21. Install Firefox Plugins
+* Video Speed Controller
+* Add Blocker Plus
+* Metamask
+* ETH Gas Station
+
+	```
+	More Coming  Soon...
+	```
+
+### Notes
+* Fonts used can be found in alacritty.yml, and fonts are cached in .local/share/fonts/ in this repository. Make sure to use a patched nerd font with emoji support.
+* Vim theme is vim-quantum https://github.com/tyrannicaltoucan/vim-quantum
+* Fish prompt is inspired by gentoo theme: https://github.com/ribugent/theme-gentoo 
+* Gnome themes available here: https://www.gnome-look.org/browse/ 
+* Gnome extensions available here: https://extensions.gnome.org/
+
+Use at your own risk. No warrenties. I practice human-in-the-loop computing. This workflow is designed by me to be most effective for me and my life and my intentions. It wasn't defined with mass adoption in mind. I encourage you to persue the discovery of computing interfaces on your personel journey as well. Please feel free to take inspiration from my workflow and open dialougue in collaboration.  
 
 Blessings 🌟💎🦋💖
