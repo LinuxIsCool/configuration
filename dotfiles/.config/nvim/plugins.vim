@@ -238,6 +238,12 @@ Plug 'mkitt/tabline.vim'
 
 Plug 'prisma/vim-prisma'
 
+
+Plug 'lewis6991/gitsigns.nvim' " OPTIONAL: for git status
+Plug 'nvim-tree/nvim-web-devicons' " OPTIONAL: for file icons
+Plug 'romgrk/barbar.nvim'
+runtime plugconfig/barbar.vim
+
 "" LSP Support
 "Plug 'neovim/nvim-lspconfig'                           " Required
 "Plug 'williamboman/mason.nvim', {'do': ':MasonUpdate'} " Optional

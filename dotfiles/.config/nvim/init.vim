@@ -21,8 +21,8 @@ noremap <leader>j $
 set ignorecase      " ignores case of letters on searches
 set smartcase       " Override the 'ignorecase' option if the search pattern contains upper case characters
 map <leader>/ :nohl<CR>
-noremap <C-j> jj
-noremap <C-k> kk
+" noremap <C-j> jj
+" noremap <C-k> kk
 
 " This makes the location of the current open file always the current working
 " directory of vim. This pairs very nicely with tmux. Added - Sept 15th 2020
