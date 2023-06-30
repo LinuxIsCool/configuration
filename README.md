@@ -227,6 +227,7 @@ More Coming  Soon...
 * Fish prompt is inspired by gentoo theme: https://github.com/ribugent/theme-gentoo 
 * Gnome themes available here: https://www.gnome-look.org/browse/ 
 * Gnome extensions available here: https://extensions.gnome.org/
+* This looks like a good resource: https://linuxconfig.org/introduction-to-the-dconf-configuration-system  
 
 Use at your own risk. No warrenties. I practice human-in-the-loop computing. This workflow is designed by me to be most effective for me and my life and my intentions. It wasn't defined with mass adoption in mind. I encourage you to persue the discovery of computing interfaces on your personel journey as well. Please feel free to take inspiration from my workflow and open dialougue in collaboration.  
 
