@@ -238,8 +238,51 @@ Plug 'mkitt/tabline.vim'
 
 Plug 'prisma/vim-prisma'
 
+
+Plug 'lewis6991/gitsigns.nvim' " OPTIONAL: for git status
+Plug 'nvim-tree/nvim-web-devicons' " OPTIONAL: for file icons
+Plug 'romgrk/barbar.nvim'
+runtime plugconfig/barbar.vim
+
+"" LSP Support
+"Plug 'neovim/nvim-lspconfig'                           " Required
+"Plug 'williamboman/mason.nvim', {'do': ':MasonUpdate'} " Optional
+"Plug 'williamboman/mason-lspconfig.nvim'               " Optional
+
+  """ Autocompletion
+  ""Plug 'hrsh7th/nvim-cmp'         " Required
+  ""Plug 'hrsh7th/cmp-nvim-lsp'     " Required
+  ""Plug 'L3MON4D3/LuaSnip'         " Required
+
+"Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v2.x'}
+
+"Plug 'lukas-reineke/lsp-format.nvim'
+
+
 " Tell vim-plug we finished declaring plugins, so it can load them
 call plug#end()
+
+"lua <<EOF
+    "local lsp = require('lsp-zero').preset({})
+
+    "lsp.on_attach(function(client, bufnr)
+    "lsp.default_keymaps({buffer = bufnr})
+    "end)
+
+    "-- " (Optional) Configure lua language server for neovim
+    "require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
+
+    "require("lsp-format").setup {}
+
+    "local on_attach = function(client)
+       "require("lsp-format").on_attach(client)
+
+       "-- ... custom code ...
+    "end
+    "require("lspconfig").gopls.setup { on_attach = on_attach }
+
+    "lsp.setup()
+"EOF
 
 " ============================================================================
 " Install plugins the first time vim runs

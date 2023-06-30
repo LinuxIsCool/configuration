@@ -1,3 +1,9 @@
+" This makes the location of the current open file always the current working
+" directory of vim. This pairs very nicely with tmux. Added - Sept 15th 2020
+autocmd BufEnter * lcd %:p:h
+
+
+
 augroup vyper_ft
   au!
   autocmd BufNewFile,BufRead *.vy   set syntax=vyper
@@ -83,3 +89,20 @@ let g:neomake_virtualtext_current_error = 1
 "     autocmd!
 "     autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
 " augroup END
+
+
+" Auto Format javascript files.
+" requires: pip3 install --user jsbeautifier
+autocmd FileType javascript setlocal equalprg=js-beautify\ --stdin
+"autocmd FileType javascript BufWritePre :%!js-beautify
+
+"lua <<EOF
+    "vim.api.nvim_create_augroup('AutoFormatting', {})
+    "vim.api.nvim_create_autocmd('BufWritePre', {
+      "pattern = '*.lua',
+      "group = 'AutoFormatting',
+      "callback = function()
+        "vim.lsp.buf.format({ async = true })
+      "end,
+    "})
+"EOF
