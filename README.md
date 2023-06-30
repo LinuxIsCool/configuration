@@ -13,7 +13,8 @@ This is the Serious Configuration Framework. Optimized for Simplicity.
 
 
 To install:  
--1. Install PopOS: https://pop.system76.com/ 
+
+0. Install PopOS: https://pop.system76.com/ 
 
 0. Update System
 	```
@@ -160,7 +161,8 @@ To install:
 	gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity 0.4
 	```
 	
-17. Install Gnome Extensions. Here is an example of some extensions that I use:
+17. Install Gnome Extensions (Optional).
+Here is an example of some extensions that I use:
 ![image](https://github.com/LinuxIsCool/configuration/assets/31582215/7f06581f-5938-48da-8c16-e4e5be20dc54)
 Older:
 <div align="center">
@@ -169,7 +171,7 @@ Older:
 
 
 
-18. Load Dconf to load gnome extension tweaks: https://bgstack15.wordpress.com/2017/10/04/dconf-save-and-load-from-file/ 
+22. Load Dconf settings (Optional): https://bgstack15.wordpress.com/2017/10/04/dconf-save-and-load-from-file/ 
 ```
 # Load Settings
 dconf load / < popos-gnome/dconf/settings.dconf
@@ -178,7 +180,7 @@ dconf load / < popos-gnome/dconf/settings.dconf
 dconf dump / > popos-gnome/dconf/settings.dconf
 ```
 
-19. Load Dash to Panel Settings: https://github.com/home-sweet-gnome/dash-to-panel/issues/517 
+23. Load Dash to Panel Settings (Optional): https://github.com/home-sweet-gnome/dash-to-panel/issues/517 
 ```
 # Load settings
  dconf load /org/gnome/shell/extensions/dash-to-panel/ < popos-gnome/dconf/dash_to_panel.settings
@@ -188,7 +190,7 @@ dconf dump /org/gnome/shell/extensions/dash-to-panel/ > popos-gnome/dconf/dash_t
 ```
 
 
-19. Load custom keybaord mappings and shortcuts
+24. Load custom keybaord mappings and shortcuts (Optional):
 * Hide all windows: super+d
 * Workspaces: super+w
 * Open Calendar: super+c
@@ -196,24 +198,28 @@ dconf dump /org/gnome/shell/extensions/dash-to-panel/ > popos-gnome/dconf/dash_t
 * Open Files: super+f
 * Open Browser: super+b
 * Open Terminal: super+t
+* In the future: https://jb.rainsberger.ca/permalink/remap-keys-on-system76-less-painfully  
+* Also good resource: https://jb.rainsberger.ca/permalink/remap-keys-on-system76-less-painfully 
 
-In the future: https://jb.rainsberger.ca/permalink/remap-keys-on-system76-less-painfully
-Also good resource: https://jb.rainsberger.ca/permalink/remap-keys-on-system76-less-painfully 
 
-
-20. Install Apps and Programs through Pop Shop
+25. Install Apps and Programs through Pop Shop (Optional):
 * OBS, Discord, Telegram, Lutris, Slack, Spotify, Clementine, QDirStat, Zoom
 
 
-21. Install Firefox Plugins
+26. Install Firefox Plugins (Optional):
 * Video Speed Controller
 * Add Blocker Plus
 * Metamask
 * ETH Gas Station
 
-	```
-	More Coming  Soon...
-	```
+
+ 27. Update wallpaper:
+
+
+
+```
+More Coming  Soon...
+```
 
 ### Notes
 * Fonts used can be found in alacritty.yml, and fonts are cached in .local/share/fonts/ in this repository. Make sure to use a patched nerd font with emoji support.
