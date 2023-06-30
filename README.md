@@ -36,7 +36,7 @@ To install:
 	Logout and Login 
 	```
 	
-4. Remap caps to control and escape with keyd: https://github.com/rvaiya/keyd
+4. Remap caps to control and escape with keyd: https://github.com/rvaiya/keyd (don't remap escape to caps lock)
 
 3. Enable Wayland: https://linuxconfig.org/how-to-enable-disable-wayland-on-ubuntu-22-04-desktop 
 	```
@@ -161,11 +161,18 @@ To install:
 	```
 	
 17. Install Gnome Extensions. Here is an example of some extensions that I use:
+![image](https://github.com/LinuxIsCool/configuration/assets/31582215/7f06581f-5938-48da-8c16-e4e5be20dc54)
+Older:
 <div align="center">
   <img src="https://raw.githubusercontent.com/LinuxIsCool/configuration/master/popos-gnome/extensions-nov-26-2020.png"/>
 </div>
 
+
+
 18. Load Dconf to load gnome extension tweaks
+```
+dconf load / < dconf-settings.ini
+```
 
 
 19. Load custom keybaord mappings and shortcuts
@@ -176,6 +183,9 @@ To install:
 * Open Files: super+f
 * Open Browser: super+b
 * Open Terminal: super+t
+
+In the future: https://jb.rainsberger.ca/permalink/remap-keys-on-system76-less-painfully
+Also good resource: https://jb.rainsberger.ca/permalink/remap-keys-on-system76-less-painfully 
 
 
 20. Install Apps and Programs through Pop Shop
