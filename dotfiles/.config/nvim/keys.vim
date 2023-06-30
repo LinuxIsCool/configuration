@@ -11,8 +11,8 @@ noremap <leader>j $
 map <leader>/ :nohl<CR>
 
 " Faster scrolling with control
-noremap <C-j> jj
-noremap <C-k> kk
+" noremap <C-j> jj
+" noremap <C-k> kk
 
 " Spookie bug. I think I was hacked and that someone i fucking with me. 
 " Whenever I would pres shift K it would open a new tab in nvim.
