@@ -169,9 +169,22 @@ Older:
 
 
 
-18. Load Dconf to load gnome extension tweaks
+18. Load Dconf to load gnome extension tweaks: https://bgstack15.wordpress.com/2017/10/04/dconf-save-and-load-from-file/ 
 ```
-dconf load / < dconf-settings.ini
+# Load Settings
+dconf load / < popos-gnome/dconf/settings.dconf
+
+# To Dump Settings 
+dconf dump / > popos-gnome/dconf/settings.dconf
+```
+
+19. Load Dash to Panel Settings: https://github.com/home-sweet-gnome/dash-to-panel/issues/517 
+```
+# Load settings
+ dconf load /org/gnome/shell/extensions/dash-to-panel/ < popos-gnome/dconf/dash_to_panel.settings
+
+# To Dump Settings
+dconf dump /org/gnome/shell/extensions/dash-to-panel/ > popos-gnome/dconf/dash_to_panel.settings
 ```
 
 
