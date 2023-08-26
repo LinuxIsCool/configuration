@@ -36,11 +36,11 @@ font:
     style: Bold
 
   italic:
-    family: VictorMono Nerd Font
+    family: FiraCode Nerd Font
     style: Medium Italic
 
   bold_italic:
-    family: VictorMono Nerd Font
+    family: FiraCode Nerd Font
     style: Bold Italic
 
 
