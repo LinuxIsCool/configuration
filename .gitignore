@@ -28,3 +28,4 @@ dotfiles/.config/coc/lists
 
 dotfiles/.local/
 dotfiles/.config/alacritty/themes/
+dotfiles/.config/nvim/
