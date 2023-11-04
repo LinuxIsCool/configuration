@@ -100,8 +100,8 @@ To install:
 	
 11. Make sure fzf is installed system wide
 	```
-	cd ~/.config/nvim/plugged/fzf/  
-	./install
+	git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+	~/.fzf/install
 	```
 	
 12. Install autojump
