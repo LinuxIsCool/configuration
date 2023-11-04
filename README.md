@@ -88,8 +88,8 @@ To install:
 	```
 	cargo install bob-nvim
 	bob complete fish > ~/.config/fish/completions/bob.fish
-	fish_add_path ~/.local/share/bob/nvim-bin/
 	bob use latest
+	fish_add_path ~/.local/share/bob/nvim-bin/
 	```
 
 10. Install neovim plugins (will install fzf)
