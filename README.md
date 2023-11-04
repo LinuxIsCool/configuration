@@ -33,9 +33,10 @@ To install:
 	
 2. Change default shell to fish
   	```
-	chsh -s \`which fish\`  
-	Logout and Login 
+	chsh -s `which fish`  
 	```
+   	Logout and Login 
+
 	
 4. Remap caps to control and escape with keyd: https://github.com/rvaiya/keyd (don't remap escape to caps lock)
 
