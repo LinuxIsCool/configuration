@@ -34,5 +34,15 @@ set -g @plugin 'linuxiscool/tmux-text-macros'
 # Tmux FZF
 set -g @plugin 'sainnhe/tmux-fzf'
 
+# Tmux chatgpt
+# set -g @plugin '/home/ygg/Repos/tmux-chatgpt'
+# unbind-key -n C-g
+
+# Tmux Yank
+set -g @plugin 'tmux-plugins/tmux-yank'
+
+# Tmux Copy
+set -g @plugin 'tmux-plugins/tmux-copycat'
+
 # Initialize Plugins
  run -b "~/.config/tmux/plugins/tpm/tpm"
