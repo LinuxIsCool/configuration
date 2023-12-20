@@ -64,6 +64,7 @@ To install:
 	
 8. Use nvm to install node
 	```
+ 	nvm install latest
 	nvm use latest
 	```
 
