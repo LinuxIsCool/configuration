@@ -36,11 +36,11 @@ font:
     style: Bold
 
   italic:
-    family: FiraCode Nerd Font
-    style: Medium Italic
+    family: Hack
+    style: Italic
 
   bold_italic:
-    family: FiraCode Nerd Font
+    family: Hack
     style: Bold Italic
 
 
