@@ -64,6 +64,7 @@ To install:
 	
 8. Use nvm to install node
 	```
+ 	nvm install latest
 	nvm use latest
 	```
 
@@ -94,8 +95,10 @@ To install:
 
 10. Install neovim plugins (will install fzf)
 	```
-	nvim  
-	:PlugInstall
+ 	rm -rf ~/.config/nvim
+	git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim 
+	rm -rf ~/.config/nvim/lua/custom
+ 	git clone https://github.com/LinuxIsCool/nvchadcustom.git ~/.config/nvim/lua/custom
 	```
 	
 11. Make sure fzf is installed system wide
@@ -107,7 +110,7 @@ To install:
 12. Install autojump
 	```
 	cd ~/.local/share/  
-	git clone git@github.com:wting/autojump.git && cd autojump && python install.py
+	git clone https://github.com/wting/autojump.git && cd autojump && python install.py
 	```
 
 13. Install virtualfish
