@@ -36,11 +36,11 @@ font:
     style: Bold
 
   italic:
-    family: Hack
-    style: Italic
+    family: Fira Mono
+    style: Regular Italic
 
   bold_italic:
-    family: Hack
+    family: Fira Mono
     style: Bold Italic
 
 
