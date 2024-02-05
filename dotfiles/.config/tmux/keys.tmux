@@ -112,3 +112,12 @@ bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel 'xc
 # The above commands use xclip, a Linux command line tool for X11. You can
 # replace xclip -se c -i with a platform-specific command like pbcopy (MacOS) or
 # wl-copy (Wayland).
+
+
+# Fix C-i and tab
+# Define the escape sequence for Ctrl-I
+# set -s user-keys[0] "\x1b[105;6u"
+# Bind user key 0 (Ctrl-I) to a specific tmux command or send-keys
+# bind-key -n User0 send-keys "\x1b[105;6u"
+
+
