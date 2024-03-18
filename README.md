@@ -132,16 +132,17 @@ To install:
 	prefix + I  
 	```
 
- 15. Install NVChad
-	```
-	rm -rf ~/.config/nvim
-	rm -rf ~/.local/share/nvim
-	git clone -b v2.0 git@github.com:NvChad/NvChad.git ~/.config/nvim && nvim
-	git clone git@github.com:LinuxIsCool/nvchadcustom.git ~/.config/nvim/lua/custom
-	nvim
-	```
+ 16. Install NVChad
 
-17. Gnome tweaks (Optional)
+ 
+	rm -rf ~/.config/nvim  
+	rm -rf ~/.local/share/nvim  
+	git clone -b v2.0 git@github.com:NvChad/NvChad.git ~/.config/nvim && nvim  
+	git clone git@github.com:LinuxIsCool/nvchadcustom.git ~/.config/nvim/lua/custom  
+	nvim  
+
+
+18. Gnome tweaks (Optional)
 
 	Setting key repeat and interval:  
 	```
@@ -174,7 +175,7 @@ To install:
 	gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity 0.4
 	```
 	
-18. Install Gnome Extensions (Optional).
+19. Install Gnome Extensions (Optional).
 Here is an example of some extensions that I use:
 ![image](https://github.com/LinuxIsCool/configuration/assets/31582215/7f06581f-5938-48da-8c16-e4e5be20dc54)
 Older:
