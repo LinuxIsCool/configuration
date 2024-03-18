@@ -24,7 +24,7 @@ To install:
 
 1. Install necessary utilities.
 	```
-	sudo apt install stow fish tmux jq python-is-python3 bat ripgrep tree cmake alacritty delta pip  
+	sudo apt install stow fish tmux jq python-is-python3 bat ripgrep tree cmake alacritty delta pip python3.10-venv
 	```  
 2. Set alacritty to default terminal
 	```
@@ -132,7 +132,16 @@ To install:
 	prefix + I  
 	```
 
-16. Gnome tweaks (Optional)
+ 15. Install NVChad
+	```
+	rm -rf ~/.config/nvim
+	rm -rf ~/.local/share/nvim
+	git clone -b v2.0 git@github.com:NvChad/NvChad.git ~/.config/nvim && nvim
+	git clone git@github.com:LinuxIsCool/nvchadcustom.git ~/.config/nvim/lua/custom
+	nvim
+	```
+
+17. Gnome tweaks (Optional)
 
 	Setting key repeat and interval:  
 	```
@@ -165,7 +174,7 @@ To install:
 	gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity 0.4
 	```
 	
-17. Install Gnome Extensions (Optional).
+18. Install Gnome Extensions (Optional).
 Here is an example of some extensions that I use:
 ![image](https://github.com/LinuxIsCool/configuration/assets/31582215/7f06581f-5938-48da-8c16-e4e5be20dc54)
 Older:
