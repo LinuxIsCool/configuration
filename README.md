@@ -117,7 +117,7 @@ To install:
 	```
 	python -m pip install --user virtualfish 
 	fish_add_path ~/.local/bin/  
-	vf install  
+	vf install
 	```
 	
 14. Install python poetry: https://python-poetry.org/docs/#installation
