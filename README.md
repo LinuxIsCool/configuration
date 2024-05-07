@@ -115,7 +115,7 @@ To install:
 
 13. Install virtualfish
 	```
-	pip install virtualfish  
+	python -m pip install --user virtualfish 
 	fish_add_path ~/.local/bin/  
 	vf install  
 	```
