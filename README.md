@@ -92,14 +92,14 @@ To install:
 	bob use latest
 	fish_add_path ~/.local/share/bob/nvim-bin/
 	```
-
-10. Install neovim plugins (will install fzf)
+16. Install NVChad
 	```
- 	rm -rf ~/.config/nvim
-	git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim 
-	rm -rf ~/.config/nvim/lua/custom
- 	git clone https://github.com/LinuxIsCool/nvchadcustom.git ~/.config/nvim/lua/custom
-	```
+	rm -rf ~/.config/nvim  
+	rm -rf ~/.local/share/nvim  
+	git clone -b v2.0 git@github.com:NvChad/NvChad.git ~/.config/nvim --branch v2.0 --depth 1
+	git clone git@github.com:LinuxIsCool/nvchadcustom.git ~/.config/nvim/lua/custom  
+	nvim  
+ 	```
 	
 11. Make sure fzf is installed system wide
 	```
@@ -132,14 +132,6 @@ To install:
 	prefix + I  
 	```
 
- 16. Install NVChad
-
- 
-	rm -rf ~/.config/nvim  
-	rm -rf ~/.local/share/nvim  
-	git clone -b v2.0 git@github.com:NvChad/NvChad.git ~/.config/nvim && nvim  
-	git clone git@github.com:LinuxIsCool/nvchadcustom.git ~/.config/nvim/lua/custom  
-	nvim  
 
 
 18. Gnome tweaks (Optional)
