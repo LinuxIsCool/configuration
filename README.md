@@ -138,8 +138,8 @@ To install:
 
 	Setting key repeat and interval:  
 	```
-	gsettings set org.gnome.desktop.peripherals.keyboard delay 120
-	gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 10
+	gsettings set org.gnome.desktop.peripherals.keyboard delay 140
+	gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 11
 	```
 	
 	Make launcher work when an app is open in full screen:  
