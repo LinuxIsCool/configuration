@@ -97,7 +97,8 @@ To install:
 	rm -rf ~/.config/nvim  
 	rm -rf ~/.local/share/nvim  
 	git clone -b v2.0 git@github.com:NvChad/NvChad.git ~/.config/nvim --branch v2.0 --depth 1
-	git clone git@github.com:LinuxIsCool/nvchadcustom.git ~/.config/nvim/lua/custom  
+	# git clone git@github.com:LinuxIsCool/nvchadcustom.git ~/.config/nvim/lua/custom
+ 	git clone git@github.com:LinuxIsCool/neovim-python.git ~/.config/nvim/lua/custom
 	nvim  
  	```
 	
