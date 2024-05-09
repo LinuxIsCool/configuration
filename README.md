@@ -125,7 +125,7 @@ To install:
 	curl -sSL https://install.python-poetry.org | python3 -
 	```
 	
-15. Install Tmux and Tmux plugin manager (Install tmux version 3.1c in order to have proper behavior with passing ctrl-i independent from <Tab>)
+15. Install Tmux and Tmux plugin manager (Install tmux version 3.1c in order to have proper behavior with passing ctrl-i independent from \<tab\>)
  	```
  	# Install tmux 3.1c
 	sudo apt install build-essential libevent-dev libncurses-dev yacc
