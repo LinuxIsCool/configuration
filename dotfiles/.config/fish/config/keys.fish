@@ -11,9 +11,16 @@ bind \er 'exec fish'
 bind \cg delete-char
 
 # What does this do relative to the above?
-bind \cd delete
+# bind \cd delete
 
 # Replace <C-a> with <Alt-a> because <C-a> is used as tmux leader key.
 # Note: Consider alternatives
 bind \ea beginning-of-line                    
 
+
+# Clear and reprompt
+function clear_and_prompt
+    clear
+    commandline -f repaint
+end
+bind \; clear_and_prompt
