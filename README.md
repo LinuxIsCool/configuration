@@ -24,7 +24,7 @@ To install:
 
 1. Install necessary utilities.
 	```
-	sudo apt install stow fish tmux jq python-is-python3 bat ripgrep tree cmake alacritty delta pip python3.10-venv
+	sudo apt install stow fish jq python-is-python3 bat ripgrep tree cmake alacritty delta pip python3.10-venv
 	```  
 2. Set alacritty to default terminal
 	```
@@ -125,9 +125,18 @@ To install:
 	curl -sSL https://install.python-poetry.org | python3 -
 	```
 	
-15. Install Tmux plugin manager
-	```
-	git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm  
+15. Install Tmux and Tmux plugin manager (Install tmux version 3.1c in order to have proper behavior with passing ctrl-i independent from <Tab>)
+ 	```
+ 	# Install tmux 3.1c
+	sudo apt install build-essential libevent-dev libncurses-dev yacc
+	wget https://github.com/tmux/tmux/releases/download/3.1c/tmux-3.1c.tar.gz -O /tmp/tmux-3.1c.tar.gz
+	tar -xzf /tmp/tmux-3.1c.tar.gz -C /tmp
+	cd /tmp/tmux-3.1c
+	./configure && make
+	sudo make install
+
+	# Install tmux plugin manager
+ 	git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm  
 	tmux  
 	prefix + I  
 	```
