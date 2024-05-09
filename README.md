@@ -24,7 +24,7 @@ To install:
 
 1. Install necessary utilities.
 	```
-	sudo apt install stow fish tmux jq python-is-python3 bat ripgrep tree cmake alacritty delta pip  
+	sudo apt install stow fish jq python-is-python3 bat ripgrep tree cmake alacritty delta pip python3.10-venv
 	```  
 2. Set alacritty to default terminal
 	```
@@ -92,14 +92,15 @@ To install:
 	bob use latest
 	fish_add_path ~/.local/share/bob/nvim-bin/
 	```
-
-10. Install neovim plugins (will install fzf)
+16. Install NVChad
 	```
- 	rm -rf ~/.config/nvim
-	git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim 
-	rm -rf ~/.config/nvim/lua/custom
- 	git clone https://github.com/LinuxIsCool/nvchadcustom.git ~/.config/nvim/lua/custom
-	```
+	rm -rf ~/.config/nvim  
+	rm -rf ~/.local/share/nvim  
+	git clone -b v2.0 git@github.com:NvChad/NvChad.git ~/.config/nvim --branch v2.0 --depth 1
+	# git clone git@github.com:LinuxIsCool/nvchadcustom.git ~/.config/nvim/lua/custom
+ 	git clone git@github.com:LinuxIsCool/neovim-python.git ~/.config/nvim/lua/custom
+	nvim  
+ 	```
 	
 11. Make sure fzf is installed system wide
 	```
@@ -115,9 +116,9 @@ To install:
 
 13. Install virtualfish
 	```
-	pip install virtualfish  
+	python -m pip install --user virtualfish 
 	fish_add_path ~/.local/bin/  
-	vf install  
+	vf install
 	```
 	
 14. Install python poetry: https://python-poetry.org/docs/#installation
@@ -125,19 +126,30 @@ To install:
 	curl -sSL https://install.python-poetry.org | python3 -
 	```
 	
-15. Install Tmux plugin manager
-	```
-	git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm  
+15. Install Tmux and Tmux plugin manager (Install tmux version 3.1c in order to have proper behavior with passing ctrl-i independent from \<tab\>)
+ 	```
+ 	# Install tmux 3.1c
+	sudo apt install build-essential libevent-dev libncurses-dev yacc
+	wget https://github.com/tmux/tmux/releases/download/3.1c/tmux-3.1c.tar.gz -O /tmp/tmux-3.1c.tar.gz
+	tar -xzf /tmp/tmux-3.1c.tar.gz -C /tmp
+	cd /tmp/tmux-3.1c
+	./configure && make
+	sudo make install
+
+	# Install tmux plugin manager
+ 	git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm  
 	tmux  
 	prefix + I  
 	```
 
-16. Gnome tweaks (Optional)
+
+
+18. Gnome tweaks (Optional)
 
 	Setting key repeat and interval:  
 	```
-	gsettings set org.gnome.desktop.peripherals.keyboard delay 175
-	gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 12
+	gsettings set org.gnome.desktop.peripherals.keyboard delay 140
+	gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 11
 	```
 	
 	Make launcher work when an app is open in full screen:  
@@ -165,7 +177,7 @@ To install:
 	gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity 0.4
 	```
 	
-17. Install Gnome Extensions (Optional).
+19. Install Gnome Extensions (Optional).
 Here is an example of some extensions that I use:
 ![image](https://github.com/LinuxIsCool/configuration/assets/31582215/7f06581f-5938-48da-8c16-e4e5be20dc54)
 Older:
