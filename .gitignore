@@ -29,6 +29,7 @@ dotfiles/.config/coc/lists
 # dotfiles/.local/bin/ - exclude most, only track key scripts
 dotfiles/.local/bin/*
 !dotfiles/.local/bin/install-alacritty-sixel
+!dotfiles/.local/bin/install-tmux
 !dotfiles/.local/bin/contact
 !dotfiles/.local/bin/essentials
 

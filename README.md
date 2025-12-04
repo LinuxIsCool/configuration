@@ -143,21 +143,19 @@ To install:
 	curl -sSL https://install.python-poetry.org | python3 -
 	```
 	
-15. Install Tmux and Tmux plugin manager (Install tmux version 3.1c in order to have proper behavior with passing ctrl-i independent from \<tab\>)
- 	```
- 	# Install tmux 3.1c
-	sudo apt install build-essential libevent-dev libncurses-dev yacc
-	wget https://github.com/tmux/tmux/releases/download/3.1c/tmux-3.1c.tar.gz -O /tmp/tmux-3.1c.tar.gz
-	tar -xzf /tmp/tmux-3.1c.tar.gz -C /tmp
-	cd /tmp/tmux-3.1c
-	./configure && make
-	sudo make install
+15. Install Tmux and Tmux plugin manager
+	```
+	# Install tmux 3.5a (required for Sixel passthrough support)
+	~/.local/bin/install-tmux
 
 	# Install tmux plugin manager
- 	git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm  
-	tmux  
-	prefix + I  
+ 	git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+	tmux
+	prefix + I
 	```
+	Note: We use tmux 3.5a for `allow-passthrough` which enables Sixel graphics inside tmux.
+	Previous versions (3.1c) were used for Ctrl+I/Tab key distinction, but tmux 3.3+ has improved
+	extended-keys support (`set -g extended-keys on`) that handles this better.
 
 
 

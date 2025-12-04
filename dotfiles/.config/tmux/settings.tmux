@@ -15,6 +15,10 @@ set-option -g allow-rename off
 set -g default-terminal "tmux-256color" # or tmux-256color
 set -ga terminal-overrides ",*256col*:Tc"
 
+# Sixel graphics passthrough (requires tmux 3.4+)
+set -g allow-passthrough on
+set -ga terminal-overrides ',*:Sixel=1'
+
 # No lag after ESC.
 set-option -sg escape-time 0
 

@@ -1,0 +1,61 @@
+#!/bin/bash
+# Install tmux 3.5a from source
+# Required for Sixel graphics passthrough (allow-passthrough option)
+#
+# Usage: ./install-tmux
+#
+# Dependencies installed automatically:
+#   - build-essential, libevent-dev, libncurses-dev, bison
+
+set -e
+
+TMUX_VERSION="3.5a"
+BUILD_DIR="/tmp/tmux-build-$$"
+INSTALL_DIR="$HOME/.local/bin"
+
+echo "Installing tmux ${TMUX_VERSION}..."
+echo ""
+
+# Install build dependencies
+echo "Installing build dependencies..."
+sudo apt install -y build-essential libevent-dev libncurses-dev bison
+
+# Create build directory
+mkdir -p "$BUILD_DIR"
+cd "$BUILD_DIR"
+
+# Download tmux
+echo ""
+echo "Downloading tmux ${TMUX_VERSION}..."
+wget -q "https://github.com/tmux/tmux/releases/download/${TMUX_VERSION}/tmux-${TMUX_VERSION}.tar.gz"
+tar xzf "tmux-${TMUX_VERSION}.tar.gz"
+cd "tmux-${TMUX_VERSION}"
+
+# Build
+echo ""
+echo "Building tmux..."
+./configure --prefix="$HOME/.local" > /dev/null
+make -j$(nproc)
+
+# Install
+echo ""
+echo "Installing to ${INSTALL_DIR}/tmux..."
+mkdir -p "$INSTALL_DIR"
+cp tmux "$INSTALL_DIR/tmux"
+
+# Cleanup
+echo ""
+echo "Cleaning up..."
+rm -rf "$BUILD_DIR"
+
+# Verify
+echo ""
+echo "Installation complete!"
+echo ""
+"$INSTALL_DIR/tmux" -V
+echo ""
+echo "Make sure ~/.local/bin is in your PATH."
+echo ""
+echo "Sixel passthrough is enabled in ~/.config/tmux/settings.tmux with:"
+echo "  set -g allow-passthrough on"
+echo "  set -ga terminal-overrides ',*:Sixel=1'"
