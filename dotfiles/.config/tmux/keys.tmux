@@ -72,6 +72,9 @@ bind P command-prompt -p "(rename-pane)" -I "#T" "select-pane -T '%%'"
 unbind T
 bind T choose-tree
 
+# Cycle Claude Code statusline theme
+bind u run-shell -b "~/.claude/theme-cycle.sh > /dev/null 2>&1" \; send-keys "!" Escape
+
 # https://gitlab.com/protesilaos/dotfiles/blob/master/tmux/.tmux.conf
 # copy mode
 # Vim copy-paste behaviour using the clipboard
