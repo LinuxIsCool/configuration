@@ -24,14 +24,31 @@ To install:
 
 1. Install necessary utilities.
 	```
-	sudo apt install stow fish jq python-is-python3 bat ripgrep tree cmake alacritty delta pip python3.10-venv
-	```  
+	sudo apt install stow fish jq python-is-python3 bat ripgrep tree cmake delta pip python3.10-venv libsixel-bin
+	```
+	Note: We install `libsixel-bin` for Sixel graphics support (img2sixel). We don't install system alacritty - we build our own with Sixel support (see step 2.5).  
 2. Set alacritty to default terminal
 	```
-	super -> keyboard -> custom shortcut -> set super+t as `alacritty`
+	super -> keyboard -> custom shortcut -> set super+t as `~/.local/bin/alacritty`
 	```
-	
-2. Change default shell to fish
+
+2.5. Build Alacritty with Sixel graphics and emoji support
+	```
+	# Install build dependencies
+	sudo apt install build-essential pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
+
+	# Run the install script (builds from ayosec's graphics fork with crossfont patch)
+	~/.local/bin/install-alacritty-sixel
+	```
+	This builds alacritty from [ayosec's graphics branch](https://github.com/ayosec/alacritty/tree/graphics) with a patched crossfont to restore color emoji support.
+
+	Test with:
+	```
+	img2sixel /usr/share/icons/hicolor/256x256/apps/firefox.png
+	echo "Emoji test: lotus heart star"
+	```
+
+3. Change default shell to fish
   	```
 	chsh -s `which fish`  
 	```

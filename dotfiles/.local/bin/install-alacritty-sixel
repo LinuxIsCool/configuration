@@ -1,0 +1,111 @@
+#!/bin/bash
+# Install Alacritty with Sixel graphics support and emoji fix
+# This script builds alacritty from ayosec's graphics fork with a crossfont patch
+# to restore colored emoji support (broken in crossfont 0.8.x)
+
+set -e
+
+INSTALL_DIR="${HOME}/.local/bin"
+BUILD_DIR="${HOME}/.local/src"
+CROSSFONT_DIR="${BUILD_DIR}/crossfont"
+ALACRITTY_DIR="${BUILD_DIR}/alacritty"
+
+echo "=== Installing Alacritty with Sixel + Emoji support ==="
+echo ""
+
+# Check dependencies
+echo "Checking dependencies..."
+for cmd in cargo git cmake pkg-config; do
+    if ! command -v $cmd &> /dev/null; then
+        echo "ERROR: $cmd is required but not installed."
+        echo "Install with: sudo apt install build-essential cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev"
+        exit 1
+    fi
+done
+
+# Create build directory
+mkdir -p "$BUILD_DIR"
+mkdir -p "$INSTALL_DIR"
+
+# Clone or update crossfont (v0.7.0 - before emoji regression)
+echo ""
+echo "Setting up crossfont v0.7.0 (with emoji support)..."
+if [ -d "$CROSSFONT_DIR" ]; then
+    echo "Crossfont directory exists, updating..."
+    cd "$CROSSFONT_DIR"
+    git fetch --all --tags
+else
+    echo "Cloning crossfont..."
+    git clone https://github.com/alacritty/crossfont "$CROSSFONT_DIR"
+    cd "$CROSSFONT_DIR"
+fi
+
+# Checkout v0.7.0 (before the "Ignore scalable colored fonts" commit)
+git checkout v0.7.0
+
+# Hack version to satisfy alacritty's dependency requirement
+echo "Patching crossfont version for compatibility..."
+sed -i 's/^version = "0.7.0"/version = "0.8.1"/' Cargo.toml
+
+# Clone or update alacritty from ayosec's graphics fork
+echo ""
+echo "Setting up alacritty (ayosec graphics fork)..."
+if [ -d "$ALACRITTY_DIR" ]; then
+    echo "Alacritty directory exists, updating..."
+    cd "$ALACRITTY_DIR"
+    git fetch --all
+else
+    echo "Cloning alacritty..."
+    git clone https://github.com/alacritty/alacritty "$ALACRITTY_DIR"
+    cd "$ALACRITTY_DIR"
+    git remote add ayosec https://github.com/ayosec/alacritty || true
+    git fetch ayosec
+fi
+
+# Checkout ayosec's graphics branch
+git checkout ayosec/graphics
+
+# Add crossfont patch to Cargo.toml if not present
+if ! grep -q "patch.crates-io" Cargo.toml; then
+    echo "" >> Cargo.toml
+    echo "# Patch crossfont to re-enable colored emoji fonts" >> Cargo.toml
+    echo "[patch.crates-io]" >> Cargo.toml
+    echo "crossfont = { path = \"$CROSSFONT_DIR\" }" >> Cargo.toml
+else
+    # Update existing patch path
+    sed -i "s|crossfont = { path = \".*\" }|crossfont = { path = \"$CROSSFONT_DIR\" }|" Cargo.toml
+fi
+
+# Update cargo lockfile
+echo ""
+echo "Updating cargo dependencies..."
+cargo update -p crossfont
+
+# Build
+echo ""
+echo "Building alacritty (this may take a few minutes)..."
+cargo build --release
+
+# Install
+echo ""
+echo "Installing to $INSTALL_DIR..."
+cp target/release/alacritty "$INSTALL_DIR/alacritty-sixel-emoji"
+
+# Create symlink as default alacritty
+ln -sf "$INSTALL_DIR/alacritty-sixel-emoji" "$INSTALL_DIR/alacritty"
+
+echo ""
+echo "=== Installation complete ==="
+echo ""
+echo "Installed binaries:"
+echo "  $INSTALL_DIR/alacritty-sixel-emoji  (the actual binary)"
+echo "  $INSTALL_DIR/alacritty              (symlink)"
+echo ""
+echo "Features:"
+echo "  - Sixel graphics support (img2sixel, lsix, etc.)"
+echo "  - Color emoji support (Noto Color Emoji, etc.)"
+echo ""
+echo "Test with:"
+echo "  img2sixel /path/to/image.png"
+echo "  echo 'Emoji test: heart red lotus star fish'"
+echo ""

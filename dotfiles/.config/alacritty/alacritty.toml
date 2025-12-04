@@ -1,0 +1,86 @@
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black = "#4a697d"
+blue = "#2ca2f5"
+cyan = "#33C7DE"
+green = "#33D17A"
+magenta = "#C061CB"
+red = "#fa3935"
+white = "#fdf6e3"
+yellow = "#d9a400"
+
+[colors.normal]
+black = "#171421"
+blue = "#2A7BDE"
+cyan = "#33C7DE"
+green = "#33D17A"
+magenta = "#C061CB"
+red = "#d12f2c"
+white = "#bfbaac"
+yellow = "#E9AD0C"
+
+[colors.primary]
+background = "#010101"
+foreground = "#D0CFCC"
+
+[cursor.style]
+blinking = "On"
+shape = "Beam"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 13
+
+[font.bold]
+family = "FiraCode Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "Fira Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "Fira Mono"
+style = "Regular Italic"
+
+[font.normal]
+family = "FiraCode Nerd Font"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "F11"
+
+[[keyboard.bindings]]
+chars = "\u001B[105;6u"
+key = "I"
+mods = "Control"
+
+[general]
+live_config_reload = true
+
+[terminal.shell]
+program = "/usr/bin/fish"
+
+[mouse]
+hide_when_typing = true
+
+[scrolling]
+history = 99000
+
+[window]
+decorations = "full"
+dynamic_padding = true
+dynamic_title = true
+opacity = 0.87
+startup_mode = "Fullscreen"
+
+[window.padding]
+x = 4
+y = 0
+
+[keyboard]
