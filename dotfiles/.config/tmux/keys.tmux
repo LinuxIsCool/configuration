@@ -61,6 +61,12 @@ bind k select-pane -U
 unbind l
 bind l select-pane -R
 
+# Resize panes with Ctrl+Alt+hjkl (no prefix needed)
+bind -n C-M-h resize-pane -L 5
+bind -n C-M-j resize-pane -D 5
+bind -n C-M-k resize-pane -U 5
+bind -n C-M-l resize-pane -R 5
+
 # vi-style controls for copy-mode
 setw -g mode-keys vi
 setw -g xterm-keys on
